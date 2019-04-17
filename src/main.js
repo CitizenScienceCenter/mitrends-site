@@ -19,6 +19,7 @@ Vue.use(VueRouter);
 Vue.use(Vuex);
 Vue.use(Meta);
 
+
 store.watch(
     (state) => state.c3s && state.c3s.client,
     (value) => {
@@ -27,9 +28,7 @@ store.watch(
                 store,
                 router,
                 i18n,
-                render: h => h(App),
-                beforeCreate: function () {
-                }
+                render: h => h(App)
             }).$mount('#app')
         }
     }

@@ -19,7 +19,7 @@
 <template>
   <div>
 
-    <app-content-section>
+    <app-content-section class="identification">
       <div class="content-wrapper">
 
         <div class="margin-bottom">
@@ -32,13 +32,13 @@
                 Selektieren Sie in dieser WhatsApp Nachricht jeweils einen geschlechtsspezifischen Hass-Ausdruck und fügen Sie ihn zur List hinzu.
               </p>
 
-              <div contentEditable class="speech-bubble reduced-bottom-margin" ref="bubble" @mouseup="mouseup" @blur="blur">
+              <div class="speech-bubble reduced-bottom-margin" ref="bubble">
                 wenn eine bitch bei mir liegt und sowieso nicht fickt, wird sie auf die strasse gesetzt wie pokerchips
               </div>
 
               <div class="reduced-bottom-margin">
                 <div class="button-group right-aligned">
-                  <button class="button button-primary" :disabled="!selection" ref="addButton">Hinzufügen</button>
+                  <button class="button button-primary" :disabled="!selection" @click="select">Hinzufügen</button>
                 </div>
               </div>
               <div class="form-field form-field-block form-field-language-checkbox right-aligned">
@@ -178,22 +178,16 @@ export default {
     },
   mounted() {
       let self = this;
-      this.$refs.addButton.onmousedown = function() {
-          self.selections.push( self.selection );
-      }
+      document.addEventListener('selectionchange', function(event) {
+         //console.log('selection change');
+         //console.log( event.target );
+          self.selection = window.getSelection().toString();
+      });
   },
   methods: {
-      mouseup() {
-          if( window.getSelection().toString().length > 0 ) {
-              this.selection = { 'string':window.getSelection().toString() };
-          }
-          else {
-              this.selection = null;
-          }
-      },
-      blur() {
-          this.selection = null;
-          window.getSelection().removeAllRanges();
+      select() {
+        this.selections.push( { 'string':this.selection } );
+        window.getSelection().removeAllRanges();
       },
       openWizard() {
           this.$refs.wizard.openWizard();
@@ -208,7 +202,12 @@ export default {
   @import '@/styles/theme.scss';
   @import '@/styles/shared/variables.scss';
 
+  * {
+    user-select: none;
+  }
+
   .speech-bubble {
+    user-select: text;
     background-color: #DCF8C6;
     color: $color-primary;
     padding: $spacing-2;
