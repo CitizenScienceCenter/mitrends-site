@@ -80,7 +80,7 @@
       <div class="content-wrapper">
         <div class="row row-centered margin-bottom">
 
-          <div class="col col-large-6">
+          <div class="col col-tablet-portrait-10 col-large-8 col-xlarge-6">
             <h2 class="heading centered">Fragen & Antworten</h2>
             <expandable>
               <template slot="header">Wozu verpflichte ich mich?</template>
