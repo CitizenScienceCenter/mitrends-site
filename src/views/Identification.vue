@@ -3,13 +3,13 @@
 
   "en": {
 
-  "page-title": "Hate Speech | Citizen Science Center Zurich"
+  "page-title": "Identification"
 
   },
 
   "de": {
 
-  "page-title": "Hate Speech Identifikation | Citizen Science Center Zürich"
+  "page-title": "Identifikation"
 
   }
 
@@ -21,53 +21,69 @@
 
     <app-content-section>
       <div class="content-wrapper">
-        <div class="row row-wrapping margin-bottom">
 
-          <div class="col col-large-6 col-wrapping">
+        <div class="margin-bottom">
+          <div class="row row-wrapping">
 
-            <h2 class="heading centered left-aligned-large" id="projects">Schritt 1: Selektion</h2>
-            <p>
-              Selektieren Sie in dieser WhatsApp Nachricht jeweils einen geschlechtsspezifischen Hass-Ausdruck und fügen Sie ihn zur List hinzu.
-            </p>
-            <div class="speech-bubble reduced-bottom-margin">
-              wenn eine bitch bei mir liegt und sowieso nicht fickt, wird sie auf die strasse gesetzt wie pokerchips
-            </div>
-            <div class="button-group right-aligned">
-              <button class="button button-primary">Hinzufügen</button>
-            </div>
+            <div class="col col-large-6 col-wrapping scroll-effect">
 
-            <div class="form-field">
-              <div class="options" id="notification-options">
-                <label>
-                  <input type="checkbox">
-                  <div class="checkbox">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                      <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
-                    </svg>
-                  </div>
-                  <span>Text ist nicht deutsch</span>
-                </label>
+              <h2 class="heading small centered left-aligned-large" id="projects">Schritt 1: Selektion</h2>
+              <p>
+                Selektieren Sie in dieser WhatsApp Nachricht jeweils einen geschlechtsspezifischen Hass-Ausdruck und fügen Sie ihn zur List hinzu.
+              </p>
+
+              <div contentEditable class="speech-bubble reduced-bottom-margin" ref="bubble" @mouseup="mouseup" @blur="blur">
+                wenn eine bitch bei mir liegt und sowieso nicht fickt, wird sie auf die strasse gesetzt wie pokerchips
               </div>
+
+              <div class="reduced-bottom-margin">
+                <div class="button-group right-aligned">
+                  <button class="button button-primary" :disabled="!selection" ref="addButton">Hinzufügen</button>
+                </div>
+              </div>
+              <div class="form-field form-field-block form-field-language-checkbox right-aligned">
+                <div class="options">
+                  <label>
+                    <input type="checkbox">
+                    <div class="checkbox">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                      </svg>
+                    </div>
+                    <span>Text ist nicht deutsch</span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col col-large-6 col-wrapping scroll-effect scroll-effect-delayed-1">
+              <h2 class="heading small centered left-aligned-large" id="projects">Schritt 2: Klassifikation</h2>
+              <p>
+                Bitte klassifizieren sie die ausgewählten Hass-Ausdrücke:
+              </p>
+              <template v-if="selections.length > 0">
+                <div class="item" v-for="(selection, index) in selections" :key="'selection_'+index">
+                  {{ selection }}
+                </div>
+              </template>
+              <p v-else style="opacity: 0.25">
+                Noch keine Ausdrücke hinzugefügt.
+              </p>
             </div>
 
           </div>
-
-          <div class="col col-large-6 col-wrapping">
-            <h2 class="heading centered left-aligned-large" id="projects">Schritt 2: Klassifikation</h2>
-            <p>
-              Bitte klassifizieren sie die ausgewählten Hass-Ausdrücke:
-            </p>
-          </div>
-
         </div>
 
-        <div class="row row-wrapping">
+        <div class="row row-wrapping scroll-effect scroll-effect-delayed-2">
           <div class="col col-large-6 col-wrapping">
-            Nachricht 1 von 302
+            <p class="small">
+              Nachricht 1 von 302
+            </p>
           </div>
           <div class="col col-large-6 col-wrapping">
             <div class="button-group right-aligned">
-              <button class="button button-secondary button-secondary-naked">Anleitung</button>
+              <button class="button button-secondary button-secondary-naked" @click="openWizard">Anleitung</button>
               <button class="button button-secondary">Überspringen</button>
               <button class="button button-primary">Weiter</button>
             </div>
@@ -80,7 +96,7 @@
       <div class="content-wrapper">
         <div class="row row-centered margin-bottom">
 
-          <div class="col col-tablet-portrait-10 col-large-8 col-xlarge-6">
+          <div class="col col-tablet-portrait-10 col-large-8 col-xlarge-6 scroll-effect">
             <h2 class="heading centered">Fragen & Antworten</h2>
             <expandable>
               <template slot="header">Wozu verpflichte ich mich?</template>
@@ -119,6 +135,8 @@
 
     <app-footer></app-footer>
 
+    <step-wizard ref="wizard"></step-wizard>
+
   </div>
 </template>
 
@@ -129,12 +147,14 @@ import {mapState} from 'vuex'
 import ContentSection from '@/components/shared/ContentSection.vue';
 import Footer from '@/components/shared/Footer.vue';
 import SectionNewsletterSignup from "@/components/shared/SectionNewsletterSignup";
-import Expandable from "../components/shared/Expandable";
+import Expandable from "@/components/shared/Expandable";
+import StepWizard from "@/components/shared/StepWizard";
 
 
 export default {
   name: 'Home',
   components: {
+      StepWizard,
       Expandable,
       SectionNewsletterSignup,
     'app-content-section': ContentSection,
@@ -142,14 +162,42 @@ export default {
   },
   metaInfo: function() {
       return {
-          title: this.$t('page-title'),
-          titleTemplate: null
+          title: this.$t('page-title')
+      }
+  },
+  data() {
+      return {
+          selection: null,
+          selections: []
       }
   },
   computed: {
       ...mapState({
           user: state => state.c3s.user
       })
+    },
+  mounted() {
+      let self = this;
+      this.$refs.addButton.onmousedown = function() {
+          self.selections.push( self.selection );
+      }
+  },
+  methods: {
+      mouseup() {
+          if( window.getSelection().toString().length > 0 ) {
+              this.selection = { 'string':window.getSelection().toString() };
+          }
+          else {
+              this.selection = null;
+          }
+      },
+      blur() {
+          this.selection = null;
+          window.getSelection().removeAllRanges();
+      },
+      openWizard() {
+          this.$refs.wizard.openWizard();
+      }
   }
 }
 
@@ -162,9 +210,11 @@ export default {
 
   .speech-bubble {
     background-color: #DCF8C6;
-    color: $color-primary-shade-20;
+    color: $color-primary;
     padding: $spacing-2;
     font-size: $font-size-medium;
+    font-weight: 700;
+    outline: none;
 
     &::selection {
       color: white;
@@ -172,12 +222,19 @@ export default {
     }
 
     &:active {
-      color: $color-primary-shade-40;
+      color: $color-primary-shade-20;
     }
     @media (hover: hover) {
       &:hover {
-        color: $color-primary-shade-40;
+        color: $color-primary-shade-20;
       }
+    }
+  }
+
+  .form-field.form-field-language-checkbox {
+    .options {
+      display: inline-block;
+      margin: 0;
     }
   }
 

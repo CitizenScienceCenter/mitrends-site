@@ -3,7 +3,7 @@
 
   "en": {
 
-  "page-title": "Hate Speech | Citizen Science Center Zurich",
+  "page-title": "Forum",
 
   "forum-heading": "Forum"
 
@@ -11,7 +11,7 @@
 
   "de": {
 
-  "page-title": "Hate Speech | Citizen Science Center Zürich",
+  "page-title": "Forum",
 
   "forum-heading": "Forum"
 
@@ -28,7 +28,7 @@
     <div class="content-wrapper">
 
       <div class="row row-centered">
-        <div class="col col-large-6">
+        <div class="col col-large-6 scroll-effect">
           <h2 class="heading">{{ $t('forum-heading') }}</h2>
 
           <comments :sourceId="projectId" withTitles></comments>
@@ -67,8 +67,7 @@ export default {
   },
   metaInfo: function() {
       return {
-          title: this.$t('page-title'),
-          titleTemplate: null
+          title: this.$t('page-title')
       }
   },
   computed: {

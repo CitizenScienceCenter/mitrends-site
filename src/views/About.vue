@@ -3,14 +3,14 @@
 
   "en": {
 
-  "page-title": "Hate Speech | Citizen Science Center Zurich"
+  "page-title": "About"
 
 
   },
 
   "de": {
 
-  "page-title": "Hate Speech | Citizen Science Center Zürich"
+  "page-title": "About"
 
   }
 
@@ -23,7 +23,7 @@
     <app-content-section>
       <div class="content-wrapper">
         <div class="row row-centered">
-          <div class="col col-large-10">
+          <div class="col col-large-10 scroll-effect">
             <h2 class="heading centered" id="projects">About</h2>
           </div>
         </div>
@@ -55,8 +55,7 @@ export default {
   },
   metaInfo: function() {
       return {
-          title: this.$t('page-title'),
-          titleTemplate: null
+          title: this.$t('page-title')
       }
   },
   computed: {

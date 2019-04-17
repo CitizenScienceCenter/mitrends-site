@@ -3,14 +3,14 @@
 
   "en": {
 
-  "page-title": "Hate Speech | Citizen Science Center Zurich"
+  "page-title": "Image Sources"
 
 
   },
 
   "de": {
 
-  "page-title": "Hate Speech | Citizen Science Center Zürich"
+  "page-title": "Bildquellen"
 
   }
 
@@ -71,8 +71,7 @@ export default {
   },
   metaInfo: function() {
       return {
-          title: this.$t('page-title'),
-          titleTemplate: null
+          title: this.$t('page-title')
       }
   },
   computed: {
