@@ -1,3 +1,5 @@
+import Identification from '@/views/Identification';
+import Forum from '@/views/Forum';
 
 import Login from '@/views/shared/user/Login';
 import Register from '@/views/shared/user/Register';
@@ -9,6 +11,16 @@ import Reset from '@/views/shared/user/Reset';
 const Home = resolve => {
     require.ensure(["@/views/Home.vue"], () => {
         resolve(require("@/views/Home.vue"));
+    });
+};
+const About = resolve => {
+    require.ensure(["@/views/About.vue"], () => {
+        resolve(require("@/views/About.vue"));
+    });
+};
+const Sources = resolve => {
+    require.ensure(["@/views/Sources.vue"], () => {
+        resolve(require("@/views/Sources.vue"));
     });
 };
 const Terms = resolve => {
@@ -24,10 +36,30 @@ export const routes = [
         name: 'Home',
         beforeEnter: null,
         meta: {
-            requiresAuth: true,
             i18n: "page-homepage",
             nav: false
         }
+    },
+    {
+        path: "/identification",
+        component: Identification,
+        meta: {requiresAuth: true, i18n: 'page-identification', nav: true}
+    },
+    {
+        path: "/forum",
+        component: Forum,
+        name: "Forum",
+        meta: {requiresAuth: true, i18n: 'page-forum', nav: true},
+    },
+    {
+        path: "/about",
+        component: About,
+        meta: {i18n: 'page-about', nav: true}
+    },
+    {
+        path: "/sources",
+        component: Sources,
+        meta: {i18n: 'page-sources', nav: true}
     },
     {
         path: "/terms",
@@ -62,7 +94,7 @@ export const routes = [
         path: "/profile",
         name: "UserProfile",
         component: Profile,
-        meta: {requiresAuth: true, i18n: 'page-profile', nav: false}
+        meta: {requiresAccount: true, i18n: 'page-profile', nav: false}
     },
     {
         path: "/error",

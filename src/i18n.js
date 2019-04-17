@@ -31,17 +31,17 @@ export const i18n = new VueI18n({
           'page-homepage': {
               'link': 'Home'
           },
-          'page-challenge': {
-              'link': 'Challenge'
+          'page-identification': {
+              'link': 'Identification'
           },
           'page-forum': {
               'link': 'Forum'
           },
-          'page-ranking': {
-              'link': 'Winners'
-          },
           'page-about': {
-              'link': 'About'
+              'link': 'About the Project'
+          },
+          'page-sources': {
+              'link': 'Image Sources'
           },
           'page-terms': {
               'link': 'Privacy Policy & Terms of Use'
@@ -66,17 +66,17 @@ export const i18n = new VueI18n({
           'page-homepage': {
               'link': 'Home'
           },
-          'page-challenge': {
-              'link': 'Challenge'
+          'page-identification': {
+              'link': 'Identifikation'
           },
           'page-forum': {
               'link': 'Forum'
           },
-          'page-ranking': {
-              'link': 'Gewinner'
-          },
           'page-about': {
-              'link': 'Über das Projekt'
+              'link': 'About the Project'
+          },
+          'page-sources': {
+              'link': 'Image Sources'
           },
           'page-terms': {
               'link': 'Privacy Policy & Terms of Use'
