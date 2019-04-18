@@ -135,7 +135,107 @@
 
     <app-footer></app-footer>
 
-    <step-wizard ref="wizard"></step-wizard>
+    <step-wizard ref="wizard">
+      <step-wizard-step>
+        <template slot="title">Title 1</template>
+        <template slot="content">
+          <div class="row row-wrapping">
+            <div class="col col-large-6 col-wrapping">
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+            </div>
+            <div class="col col-large-6 col-wrapping">
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+              content 1<br/>
+            </div>
+          </div>
+        </template>
+      </step-wizard-step>
+
+      <step-wizard-step>
+        <template slot="title">Title 2</template>
+        <template slot="content">
+          <div class="row row-wrapping">
+            <div class="col col-large-6 col-wrapping">
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+            </div>
+            <div class="col col-large-6 col-wrapping">
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+              content 2<br/>
+            </div>
+          </div>
+        </template>
+      </step-wizard-step>
+    </step-wizard>
 
   </div>
 </template>
@@ -149,11 +249,13 @@ import Footer from '@/components/shared/Footer.vue';
 import SectionNewsletterSignup from "@/components/shared/SectionNewsletterSignup";
 import Expandable from "@/components/shared/Expandable";
 import StepWizard from "@/components/shared/StepWizard";
+import StepWizardStep from "@/components/shared/StepWizardStep";
 
 
 export default {
   name: 'Home',
   components: {
+      StepWizardStep,
       StepWizard,
       Expandable,
       SectionNewsletterSignup,
@@ -210,10 +312,27 @@ export default {
     user-select: text;
     background-color: #DCF8C6;
     color: $color-primary;
-    padding: $spacing-2;
+    padding: $spacing-1 $spacing-2;
     font-size: $font-size-medium;
     font-weight: 700;
     outline: none;
+    position: relative;
+    border-radius: $border-radius;
+    border-top-left-radius: 0;
+
+    //box-shadow: 0px 2px 8px -4px rgba($color-black, 1);
+    filter: drop-shadow( 0px 2px 2px rgba($color-primary-shade-40, 0.4));
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -16px;
+      width: 0;
+      height: 0;
+      border-top: 16px solid $color-whatsapp-message;
+      border-left:  16px solid transparent;
+    }
 
     &::selection {
       color: white;
@@ -235,6 +354,19 @@ export default {
       display: inline-block;
       margin: 0;
     }
+  }
+
+
+  @media only screen and (min-width: $viewport-tablet-portrait) {
+
+    .speech-bubble {
+      &:after {
+        left: -24px;
+        border-top-width: 24px;
+        border-left-width: 24px;
+      }
+    }
+
   }
 
 </style>
