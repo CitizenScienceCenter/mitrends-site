@@ -11,7 +11,6 @@ const actions = {
         commit('SET_LANGUAGE', language);
     },
     setWizardSeen({state, commit, rootState}) {
-        console.log('action wizard');
         commit('SET_WIZARDSEEN');
     }
 };
@@ -21,7 +20,6 @@ const mutations = {
         state.language = language
     },
     SET_WIZARDSEEN(state) {
-        console.log('mutate wizard');
         state.wizardSeen = true;
     }
 };
