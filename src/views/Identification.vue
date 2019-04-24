@@ -37,12 +37,12 @@
                 wenn eine bitch bei mir liegt und sowieso nicht fickt, wird sie auf die strasse gesetzt wie pokerchips
               </div>
 
-              <div class="reduced-bottom-margin">
+              <div class="add-button-group">
                 <div class="button-group right-aligned">
                   <button class="button button-primary" :disabled="!selection" @click="select">Hinzufügen</button>
                 </div>
               </div>
-              <div class="form-field form-field-block form-field-language-checkbox right-aligned">
+              <div class="form-field form-field-block form-field-language-checkbox">
                 <div class="options">
                   <label>
                     <input type="checkbox">
@@ -53,7 +53,7 @@
                     </div>
                     <span>
                       Text ist nicht deutsch
-                      <inline-hover class="overlay-right-aligned">
+                      <inline-hover>
                         <svg slot="display-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                           <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
                         </svg>
@@ -74,16 +74,17 @@
                 Bitte klassifizieren sie die ausgewählten Hass-Ausdrücke:
               </p>
 
-
-              <p class="no-items" v-if="selections.length == 0" style="opacity: 0.25">
-                Noch keine Ausdrücke hinzugefügt.
-              </p>
+              <transition name="no-item-fade">
+                <p class="no-items" v-if="selections.length == 0">
+                  Noch keine Ausdrücke hinzugefügt.
+                </p>
+              </transition>
               <transition-group name="item-fade" tag="div" class="items">
                 <div class="item" v-for="(selection, index) in selections" :key="'selection_'+index">
 
                   <div class="string">{{ selection.string }}</div>
 
-                  <button class="button button-secondary button-secondary-naked button-icon button-icon-only" @click="selections.splice(index,1)">
+                  <button class="button button-secondary button-secondary-naked button-icon button-icon-only" @click="selections.splice(index,1); checkComplete()">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                       <path d="M322.72,256,422.79,155.93a31.46,31.46,0,0,0,0-44.48L400.55,89.21a31.46,31.46,0,0,0-44.48,0L256,189.28,155.93,89.21a31.46,31.46,0,0,0-44.48,0L89.21,111.45a31.46,31.46,0,0,0,0,44.48L189.28,256,89.21,356.07a31.46,31.46,0,0,0,0,44.48l22.24,22.24a31.46,31.46,0,0,0,44.48,0L256,322.72,356.07,422.79a31.46,31.46,0,0,0,44.48,0l22.24-22.24a31.46,31.46,0,0,0,0-44.48Z"/>
                     </svg>
@@ -95,12 +96,9 @@
                       <label>Wortherkunft</label>
                       <div class="form-field">
                         <div class="custom-select">
-                          <!--
-                          <select v-model="region" :class="{'placeholder':!region}">
-                          -->
-                          <select>
-                            <option value="" disabled selected>Label</option>
-                            <option value="north-america">Wert</option>
+                          <select v-model="selection.origin" :class="{placeholder:!selection.origin}" @change="checkComplete">
+                            <option :value="undefined" disabled selected>Bitte wählen ...</option>
+                            <option value="gender">Geschlechtszugehörigkeit</option>
                           </select>
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M127.3,192h257.3c17.8,0,26.7,21.5,14.1,34.1L270.1,354.8c-7.8,7.8-20.5,7.8-28.3,0L113.2,226.1 C100.6,213.5,109.5,192,127.3,192z"/>
@@ -121,12 +119,9 @@
                       <label>Geschlecht <span class="regular">(Adressat/in)</span></label>
                       <div class="form-field">
                         <div class="custom-select">
-                          <!--
-                          <select v-model="region" :class="{'placeholder':!region}">
-                          -->
-                          <select>
-                            <option value="" disabled selected>Label</option>
-                            <option value="north-america">Wert</option>
+                          <select v-model="selection.gender" :class="{placeholder:!selection.gender}" @change="checkComplete">
+                            <option :value="undefined" disabled selected>Bitte wählen ...</option>
+                            <option value="woman">Frau</option>
                           </select>
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M127.3,192h257.3c17.8,0,26.7,21.5,14.1,34.1L270.1,354.8c-7.8,7.8-20.5,7.8-28.3,0L113.2,226.1 C100.6,213.5,109.5,192,127.3,192z"/>
@@ -147,12 +142,9 @@
                       <label>Sex. Ausrichtung <span class="regular">(Adressat/in)</span></label>
                       <div class="form-field">
                         <div class="custom-select">
-                          <!--
-                          <select v-model="region" :class="{'placeholder':!region}">
-                          -->
-                          <select>
-                            <option value="" disabled selected>Label</option>
-                            <option value="north-america">Wert</option>
+                          <select v-model="selection.sex" :class="{placeholder:!selection.sex}" @change="checkComplete">
+                            <option :value="undefined" disabled selected>Bitte wählen ...</option>
+                            <option value="unknown">Unbekannt</option>
                           </select>
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M127.3,192h257.3c17.8,0,26.7,21.5,14.1,34.1L270.1,354.8c-7.8,7.8-20.5,7.8-28.3,0L113.2,226.1 C100.6,213.5,109.5,192,127.3,192z"/>
@@ -182,7 +174,7 @@
           <div class="col col-large-6 col-wrapping">
             <div class="button-group right-aligned">
               <button class="button button-secondary">Überspringen</button>
-              <button class="button button-primary">Weiter</button>
+              <button class="button button-primary" :disabled="!complete">Weiter</button>
             </div>
           </div>
           <div class="col col-large-6 col-wrapping">
@@ -439,7 +431,8 @@ export default {
   data() {
       return {
           selection: null,
-          selections: []
+          selections: [],
+          complete: false
       }
   },
   computed: {
@@ -452,23 +445,42 @@ export default {
       document.addEventListener('selectionchange', function(event) {
          //console.log('selection change');
          //console.log( event.target );
-          self.selection = window.getSelection().toString();
+          if( window.getSelection().toString().trim() !== '' ) {
+            self.selection = window.getSelection().toString();
+          }
       });
   },
   methods: {
       select() {
-        this.selections.push( { 'string':this.selection } );
+        this.selections.push( { 'string': this.selection, 'origin': undefined, 'gender': undefined, 'sex': undefined } );
         window.getSelection().removeAllRanges();
+        this.selection = null;
+        this.checkComplete();
       },
       openWizard() {
           this.$refs.wizard.openWizard();
+      },
+      checkComplete() {
+          console.log('checkc omp');
+          let complete = true;
+          for( let i = 0; i < this.selections.length; i++ ) {
+              if( !this.selections[i].origin || !this.selections[i].gender || !this.selections[i].sex ) {
+                  complete = false;
+              }
+          }
+          if( complete && this.selections.length > 0 ) {
+              this.complete = true;
+          }
+          else {
+              this.complete = false;
+          }
       }
   }
 }
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
   @import '@/styles/theme.scss';
   @import '@/styles/shared/variables.scss';
@@ -520,6 +532,10 @@ export default {
       }
     }
 
+    .add-button-group {
+      margin-bottom: $spacing-1;
+    }
+
     .form-field.form-field-language-checkbox {
       .options {
         display: inline-block;
@@ -527,27 +543,32 @@ export default {
       }
     }
 
-    .item-fade-enter-active, .item-fade-leave-active {
-      transition: all $transition-duration-long $transition-timing-function;
-    }
-    .item-fade-enter, .item-fade-leave-to {
-      opacity: 0;
-      transform: translateY( - $spacing-2 );
-    }
+
     .no-items {
       position: absolute;
+      color: $color-black-tint-50;
+    }
+    .no-item-fade-enter-active, .no-item-fade-leave-active {
+      transition: opacity $transition-duration-long $transition-timing-function;
+    }
+    .no-item-fade-enter, .no-item-fade-leave-to {
+      opacity: 0;
     }
     .item {
 
       border-radius: $border-radius;
-      margin-bottom: $spacing-1;
+      margin-bottom: $spacing-2;
       position: relative;
       box-shadow: 0px 2px 12px -4px rgba($color-black, 0.2);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       .string {
         font-weight: 700;
         color: $color-primary-shade-20;
-        padding: calc( ( 40px - 1rem * 1.5 ) / 2 ) $spacing-2;
+        padding: calc( ( 56px - 1rem * 1.5 ) / 2 ) $spacing-2;
       }
       .button {
         position: absolute;
@@ -558,6 +579,7 @@ export default {
       .categories {
         padding: $spacing-1;
         padding-top: 0;
+        padding-bottom: $spacing-2;
         .category {
           background-color: white;
           display: flex;
@@ -587,6 +609,13 @@ export default {
           }
         }
       }
+    }
+    .item-fade-enter-active, .item-fade-leave-active {
+      transition: all $transition-duration-long $transition-timing-function;
+    }
+    .item-fade-enter, .item-fade-leave-to {
+      opacity: 0;
+      transform: translateY( - $spacing-2 );
     }
 
     .progress {
@@ -635,7 +664,7 @@ export default {
 
       .item {
         .string {
-          padding: calc( ( 48px - 1rem * 1.5 ) / 2 ) $spacing-2;
+          padding: calc( ( 64px - 1rem * 1.5 ) / 2 ) $spacing-2;
         }
       }
 
