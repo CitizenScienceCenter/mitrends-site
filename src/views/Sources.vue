@@ -21,9 +21,18 @@
   <div>
 
     <app-content-section class="overflow-hidden">
+      <div class="background-wrapper background-wrapper-move-right scroll-effect scroll-effect-delayed-1">
+        <div class="content-wrapper">
+          <div class="row row-centered row-in-background">
+            <div class="col col-tablet-portrait-10 col-large-7 col-large-before-1 col-wrapping col-large-no-bottom-margin">
+              <img src="/img/people-with-phones.jpg" style="border-radius:50%"/>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="content-wrapper">
-        <div class="row row-reverse-large">
-          <div class="col col-tablet-portrait-7 col-large-6 col-large-after-1 col-wrapping col-large-no-bottom-margin scroll-effect">
+        <div class="row">
+          <div class="col col-tablet-portrait-7 col-large-6 col-large-before-1 col-wrapping scroll-effect">
             <h2 class="heading centered left-aligned-large">Woher stammen die Texte?</h2>
             <p>
               Wenn man private Unterhaltungen untersuchen will, stellt sich die Frage, wie man zu diesen Daten kommt. In unserem Fall bauten wir bereits 2014 auf die Mitarbeit der Schweizer Bevölkerung. Nach entsprechenden Aufrufen in der Presse erhielten wir 617 ganze Chats zugeschickt. Diese enthielten ~750'000 Nachrichten, bestehend aus insgesamt ~5.5 Millionen Wörtern, die wir unter der Leitung von Prof. Dr. Elisabeth Stark in einem grösseren Projekt Doktoranden und Post-Docs zur Verfügung stellten für deren Forschungsarbeiten.
@@ -33,15 +42,6 @@
             </p>
           </div>
 
-        </div>
-      </div>
-      <div class="background-wrapper background-wrapper-move-left scroll-effect scroll-effect-delayed-1">
-        <div class="content-wrapper">
-          <div class="row row-centered row-in-background">
-            <div class="col col-tablet-portrait-10 col-large-7 col-large-after-1">
-              <img src="/img/people-with-phones.jpg" style="border-radius:50%"/>
-            </div>
-          </div>
         </div>
       </div>
     </app-content-section>

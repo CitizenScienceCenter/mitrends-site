@@ -73,10 +73,10 @@ export const i18n = new VueI18n({
               'link': 'Forum'
           },
           'page-about': {
-              'link': 'About the Project'
+              'link': 'Über das Projekt'
           },
           'page-sources': {
-              'link': 'Image Sources'
+              'link': 'Bildquellen'
           },
           'page-terms': {
               'link': 'Privacy Policy & Terms of Use'
