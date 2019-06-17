@@ -31,75 +31,79 @@ const Terms = resolve => {
 
 export const routes = [
     {
-        path: "/",
-        component: Home,
-        name: 'Home',
-        beforeEnter: null,
-        meta: {
-            i18n: "page-homepage",
-            nav: false
-        }
-    },
-    {
-        path: "/identification",
-        component: Identification,
-        meta: {requiresAuth: true, i18n: 'page-identification', nav: true}
-    },
-    {
-        path: "/forum",
-        component: Forum,
-        name: "Forum",
-        meta: {requiresAuth: true, i18n: 'page-forum', nav: true},
-    },
-    {
-        path: "/about",
-        component: About,
-        meta: {i18n: 'page-about', nav: true}
-    },
-    {
-        path: "/sources",
-        component: Sources,
-        meta: {i18n: 'page-sources', nav: true}
-    },
-    {
-        path: "/terms",
-        component: Terms,
-        meta: {i18n: "page-terms", nav: false}
-    },
-    {
-        path: "/login",
-        name: "Login",
-        component: Login,
-        meta: {i18n: 'page-login', nav: false}
-    },
-    {
-        path: "/register",
-        name: "Register",
-        component: Register,
-        meta: {i18n: 'page-register', nav: false}
-    },
-    {
-        path: "/reset",
-        name: "ResetRequest",
-        component: RequestReset,
-        meta: {i18n: 'page-reset', nav: false}
-    },
-    {
-        path: "/reset/:token",
-        name: "Reset",
-        component: Reset,
-        meta: {i18n: 'page-reset', nav: false}
-    },
-    {
-        path: "/profile",
-        name: "UserProfile",
-        component: Profile,
-        meta: {requiresAccount: true, i18n: 'page-profile', nav: false}
-    },
-    {
-        path: "/error",
-        name: "Error",
-        component: Home.Error,
-        meta: {i18n: 'page-profile', nav: false}
+        path: '/:lang',
+        component: { render (c) { return c('router-view') } },
+        children: [
+            {
+                path: "",
+                component: Home,
+                meta: {
+                    i18n: "navigation-homepage",
+                    nav: false
+                }
+            },
+            {
+                path: "identification",
+                component: Identification,
+                meta: {requiresAuth: true, i18n: 'navigation-identification', nav: true}
+            },
+            {
+                path: "forum",
+                component: Forum,
+                name: "Forum",
+                meta: {requiresAuth: true, i18n: 'navigation-forum', nav: true},
+            },
+            {
+                path: "about",
+                component: About,
+                meta: {i18n: 'navigation-about', nav: true}
+            },
+            {
+                path: "sources",
+                component: Sources,
+                meta: {i18n: 'navigation-sources', nav: true}
+            },
+            {
+                path: "terms",
+                component: Terms,
+                meta: {i18n: "navigation-terms", nav: false}
+            },
+            {
+                path: "login",
+                name: "Login",
+                component: Login,
+                meta: {i18n: 'navigation-login', nav: false}
+            },
+            {
+                path: "register",
+                name: "Register",
+                component: Register,
+                meta: {i18n: 'navigation-register', nav: false}
+            },
+            {
+                path: "reset",
+                name: "ResetRequest",
+                component: RequestReset,
+                meta: {i18n: 'navigation-reset', nav: false}
+            },
+            {
+                path: "reset/:token",
+                name: "Reset",
+                component: Reset,
+                meta: {i18n: 'navigation-reset', nav: false}
+            },
+            {
+                path: "profile",
+                name: "UserProfile",
+                component: Profile,
+                meta: {requiresAccount: true, i18n: 'navigation-profile', nav: false}
+            },
+            {
+                path: "error",
+                name: "Error",
+                component: Home.Error,
+                meta: {i18n: 'navigation-profile', nav: false}
+            }
+        ]
     }
 ];

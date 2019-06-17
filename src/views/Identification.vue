@@ -33,19 +33,21 @@
                 <span class="small"><a href="#" @click.prevent="openWizard">Hilfe anzeigen</a></span>
               </p>
 
-              <div class="speech-bubble reduced-bottom-margin" ref="bubble">
-                wenn eine bitch bei mir liegt und sowieso nicht fickt, wird sie auf die strasse gesetzt wie pokerchips
-              </div>
-
-              <div class="add-button-group">
-                <div class="button-group right-aligned">
-                  <button class="button button-primary" :disabled="!selection" @click="select">Hinzufügen</button>
+              <div :class="{disabled:wrongLanguage}">
+                <div class="speech-bubble reduced-bottom-margin" ref="bubble">
+                  wenn eine bitch bei mir liegt und sowieso nicht fickt, wird sie auf die strasse gesetzt wie pokerchips
+                </div>
+                <div class="add-button-group">
+                  <div class="button-group right-aligned">
+                    <button class="button button-primary" :disabled="!selection" @click="select">Hinzufügen</button>
+                  </div>
                 </div>
               </div>
+
               <div class="form-field form-field-block form-field-language-checkbox">
                 <div class="options">
                   <label>
-                    <input type="checkbox">
+                    <input type="checkbox" v-model="wrongLanguage">
                     <div class="checkbox">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
@@ -69,112 +71,116 @@
             </div>
 
             <div class="col col-large-6 col-wrapping scroll-effect scroll-effect-delayed-1">
-              <h2 class="heading small centered left-aligned-large" id="projects">Schritt 2: Klassifikation</h2>
-              <p>
-                Bitte klassifizieren sie die ausgewählten Hass-Ausdrücke:
-              </p>
 
-              <transition name="no-item-fade">
-                <p class="no-items" v-if="selections.length == 0">
-                  Noch keine Ausdrücke hinzugefügt.
+              <div :class="{disabled:wrongLanguage}">
+
+                <h2 class="heading small centered left-aligned-large" id="projects">Schritt 2: Klassifikation</h2>
+                <p>
+                  Bitte klassifizieren sie die ausgewählten Hass-Ausdrücke:
                 </p>
-              </transition>
 
-              <transition-group name="item-fade" tag="div" class="items">
-                <div class="item" v-for="(selection, index) in selections" :key="'selection_'+index">
+                <transition name="no-item-fade">
+                  <p class="no-items" v-if="selections.length == 0">
+                    Noch keine Ausdrücke hinzugefügt.
+                  </p>
+                </transition>
 
-                  <div class="string">{{ selection.string }}</div>
+                <transition-group name="item-fade" tag="div" class="items">
+                  <div class="item" v-for="(selection, index) in selections" :key="'selection_'+index">
 
-                  <button class="button button-secondary button-secondary-naked button-icon button-icon-only" @click="selections.splice(index,1); checkComplete()">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                      <path d="M322.72,256,422.79,155.93a31.46,31.46,0,0,0,0-44.48L400.55,89.21a31.46,31.46,0,0,0-44.48,0L256,189.28,155.93,89.21a31.46,31.46,0,0,0-44.48,0L89.21,111.45a31.46,31.46,0,0,0,0,44.48L189.28,256,89.21,356.07a31.46,31.46,0,0,0,0,44.48l22.24,22.24a31.46,31.46,0,0,0,44.48,0L256,322.72,356.07,422.79a31.46,31.46,0,0,0,44.48,0l22.24-22.24a31.46,31.46,0,0,0,0-44.48Z"/>
-                    </svg>
-                  </button>
+                    <div class="string">{{ selection.string }}</div>
 
-                  <div class="categories">
+                    <button class="button button-secondary button-secondary-naked button-icon button-icon-only" @click="selections.splice(index,1); checkComplete()">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M322.72,256,422.79,155.93a31.46,31.46,0,0,0,0-44.48L400.55,89.21a31.46,31.46,0,0,0-44.48,0L256,189.28,155.93,89.21a31.46,31.46,0,0,0-44.48,0L89.21,111.45a31.46,31.46,0,0,0,0,44.48L189.28,256,89.21,356.07a31.46,31.46,0,0,0,0,44.48l22.24,22.24a31.46,31.46,0,0,0,44.48,0L256,322.72,356.07,422.79a31.46,31.46,0,0,0,44.48,0l22.24-22.24a31.46,31.46,0,0,0,0-44.48Z"/>
+                      </svg>
+                    </button>
 
-                    <div class="category">
-                      <label>Wortherkunft</label>
-                      <div class="form-field">
-                        <div class="custom-select">
-                          <select v-model="selection.origin" :class="{placeholder:!selection.origin}" @change="checkComplete">
-                            <option :value="undefined" disabled selected>Bitte wählen ...</option>
-                            <option value="anatomy">Anatomie</option>
-                            <option value="gender">Geschlechtszugehörigkeit</option>
-                            <option value="sexual-orientation">Sexuelle Ausrichtung</option>
-                            <option value="other">Andere</option>
-                          </select>
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M127.3,192h257.3c17.8,0,26.7,21.5,14.1,34.1L270.1,354.8c-7.8,7.8-20.5,7.8-28.3,0L113.2,226.1 C100.6,213.5,109.5,192,127.3,192z"/>
-                          </svg>
+                    <div class="categories">
+
+                      <div class="category">
+                        <label>Wortherkunft</label>
+                        <div class="form-field">
+                          <div class="custom-select">
+                            <select v-model="selection.origin" :class="{placeholder:!selection.origin}" @change="checkComplete">
+                              <option :value="undefined" disabled selected>Bitte wählen ...</option>
+                              <option value="anatomy">Anatomie</option>
+                              <option value="gender">Geschlechtszugehörigkeit</option>
+                              <option value="sexual-orientation">Sexuelle Ausrichtung</option>
+                              <option value="other">Andere</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                              <path d="M127.3,192h257.3c17.8,0,26.7,21.5,14.1,34.1L270.1,354.8c-7.8,7.8-20.5,7.8-28.3,0L113.2,226.1 C100.6,213.5,109.5,192,127.3,192z"/>
+                            </svg>
+                          </div>
                         </div>
-                      </div>
-                      <inline-hover class="overlay-right-aligned">
-                        <svg slot="display-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                          <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
-                        </svg>
-                        <template slot="hover">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </template>
-                      </inline-hover>
-                    </div>
-
-                    <div class="category">
-                      <label>Geschlecht <span class="regular">(Adressat/in)</span></label>
-                      <div class="form-field">
-                        <div class="custom-select">
-                          <select v-model="selection.gender" :class="{placeholder:!selection.gender}" @change="checkComplete">
-                            <option :value="undefined" disabled selected>Bitte wählen ...</option>
-                            <option value="man">Mann</option>
-                            <option value="woman">Frau</option>
-                            <option value="diverse">Divers</option>
-                            <option value="unknown">Unbekannt</option>
-                          </select>
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M127.3,192h257.3c17.8,0,26.7,21.5,14.1,34.1L270.1,354.8c-7.8,7.8-20.5,7.8-28.3,0L113.2,226.1 C100.6,213.5,109.5,192,127.3,192z"/>
+                        <inline-hover class="overlay-right-aligned">
+                          <svg slot="display-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
                           </svg>
-                        </div>
+                          <template slot="hover">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                          </template>
+                        </inline-hover>
                       </div>
-                      <inline-hover class="overlay-right-aligned">
-                        <svg slot="display-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                          <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
-                        </svg>
-                        <template slot="hover">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </template>
-                      </inline-hover>
-                    </div>
 
-                    <div class="category">
-                      <label>Sex. Ausrichtung <span class="regular">(Adressat/in)</span></label>
-                      <div class="form-field">
-                        <div class="custom-select">
-                          <select v-model="selection.sex" :class="{placeholder:!selection.sex}" @change="checkComplete">
-                            <option :value="undefined" disabled selected>Bitte wählen ...</option>
-                            <option value="hetereo">Hetereosexuell</option>
-                            <option value="homo">Homosexuell</option>
-                            <option value="bisexual">Bisexuell</option>
-                            <option value="unknown">Unbekannt</option>
-                          </select>
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M127.3,192h257.3c17.8,0,26.7,21.5,14.1,34.1L270.1,354.8c-7.8,7.8-20.5,7.8-28.3,0L113.2,226.1 C100.6,213.5,109.5,192,127.3,192z"/>
+                      <div class="category">
+                        <label>Geschlecht <span class="regular">(Adressat/in)</span></label>
+                        <div class="form-field">
+                          <div class="custom-select">
+                            <select v-model="selection.gender" :class="{placeholder:!selection.gender}" @change="checkComplete">
+                              <option :value="undefined" disabled selected>Bitte wählen ...</option>
+                              <option value="man">Mann</option>
+                              <option value="woman">Frau</option>
+                              <option value="diverse">Divers</option>
+                              <option value="unknown">Unbekannt</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                              <path d="M127.3,192h257.3c17.8,0,26.7,21.5,14.1,34.1L270.1,354.8c-7.8,7.8-20.5,7.8-28.3,0L113.2,226.1 C100.6,213.5,109.5,192,127.3,192z"/>
+                            </svg>
+                          </div>
+                        </div>
+                        <inline-hover class="overlay-right-aligned">
+                          <svg slot="display-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
                           </svg>
-                        </div>
+                          <template slot="hover">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                          </template>
+                        </inline-hover>
                       </div>
-                      <inline-hover class="overlay-right-aligned">
-                        <svg slot="display-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                          <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
-                        </svg>
-                        <template slot="hover">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        </template>
-                      </inline-hover>
-                    </div>
 
+                      <div class="category">
+                        <label>Sex. Ausrichtung <span class="regular">(Adressat/in)</span></label>
+                        <div class="form-field">
+                          <div class="custom-select">
+                            <select v-model="selection.sex" :class="{placeholder:!selection.sex}" @change="checkComplete">
+                              <option :value="undefined" disabled selected>Bitte wählen ...</option>
+                              <option value="hetereo">Hetereosexuell</option>
+                              <option value="homo">Homosexuell</option>
+                              <option value="bisexual">Bisexuell</option>
+                              <option value="unknown">Unbekannt</option>
+                            </select>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                              <path d="M127.3,192h257.3c17.8,0,26.7,21.5,14.1,34.1L270.1,354.8c-7.8,7.8-20.5,7.8-28.3,0L113.2,226.1 C100.6,213.5,109.5,192,127.3,192z"/>
+                            </svg>
+                          </div>
+                        </div>
+                        <inline-hover class="overlay-right-aligned">
+                          <svg slot="display-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
+                          </svg>
+                          <template slot="hover">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                          </template>
+                        </inline-hover>
+                      </div>
+
+                    </div>
                   </div>
-                </div>
-              </transition-group>
+                </transition-group>
 
+              </div>
             </div>
 
           </div>
@@ -184,7 +190,7 @@
           <div class="col col-large-6 col-wrapping">
             <div class="button-group right-aligned">
               <button class="button button-secondary">Auslassen</button>
-              <button class="button button-primary" :disabled="!complete">Weiter</button>
+              <button class="button button-primary" :disabled="!complete && !wrongLanguage">Weiter</button>
             </div>
           </div>
           <div class="col col-large-6 col-wrapping">
@@ -494,13 +500,21 @@ export default {
   },
   metaInfo: function() {
       return {
-          title: this.$t('page-title')
+          title: this.$t('page-title'),
+          meta: [
+              {
+                  property: 'og:title',
+                  content: this.$t('page-title'),
+                  template: '%s | '+this.$t('site-title')
+              }
+          ]
       }
   },
   data() {
       return {
           selection: null,
           selections: [],
+          wrongLanguage: false,
           complete: false
       }
   },
@@ -559,6 +573,12 @@ export default {
   }
 
   .identification {
+
+    .disabled {
+      opacity: 0.25;
+      pointer-events: none;
+      transition: opacity $transition-duration-short $transition-timing-function;
+    }
 
     .speech-bubble {
       user-select: text;

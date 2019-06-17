@@ -6,94 +6,98 @@ Vue.use(VueI18n);
 
 var language;
 if( !store.state.settings.language ) {
+    // no language in store
 
-    // no language in store, check browser
+    // check browser
     language = window.navigator.userLanguage || window.navigator.language;
-    if (language.indexOf('-') !== -1) {
-        language = language.split('-')[0];
+
+    // trim
+    language = language.substr(0,2);
+
+    // check if valid
+    if( language !== 'de' && language !== 'fr' && language !== 'it' ) {
+        language = "de";
     }
-    else if (language.indexOf('_') !== -1) {
-        language = language.split('_')[0];
-    }
-    if( language !== 'en' && language !== 'de') {
+
+    // language for prerendering default routes
+    if( navigator.userAgent === 'ReactSnap' ) {
         language = "de";
     }
 
     store.dispatch("settings/setLanguage", language );
 }
-language = store.state.settings.language;
 
 export const i18n = new VueI18n({
-  locale: language,
+  locale: store.state.settings.language,
   silentTranslationWarn: true,
   messages: {
       'en': {
-          'page-homepage': {
+          'navigation-homepage': {
               'link': 'Home'
           },
-          'page-identification': {
+          'navigation-identification': {
               'link': 'Identification'
           },
-          'page-forum': {
+          'navigation-forum': {
               'link': 'Forum'
           },
-          'page-about': {
+          'navigation-about': {
               'link': 'About the Project'
           },
-          'page-sources': {
+          'navigation-sources': {
               'link': 'Image Sources'
           },
-          'page-terms': {
+          'navigation-terms': {
               'link': 'Privacy Policy & Terms of Use'
           },
-          'page-login': {
+          'navigation-login': {
               'link': 'Login'
           },
-          'page-register': {
+          'navigation-register': {
               'link': 'Register'
           },
-          'page-logout': {
+          'navigation-logout': {
               'link': 'Logout'
           },
-          'page-reset': {
+          'navigation-reset': {
               'link': 'Reset Password'
           },
-          'page-profile': {
+          'navigation-profile': {
               'link': 'Profil'
           }
       },
       'de': {
-          'page-homepage': {
+          'navigation-homepage': {
               'link': 'Home'
           },
-          'page-identification': {
+          'navigation-identification': {
               'link': 'Identifikation'
           },
-          'page-forum': {
+          'navigation-forum': {
               'link': 'Forum'
           },
-          'page-about': {
+          'navigation-about': {
               'link': 'Über das Projekt'
           },
-          'page-sources': {
+          'navigation-sources': {
               'link': 'Bildquellen'
           },
-          'page-terms': {
+          'navigation-terms': {
               'link': 'Privacy Policy & Terms of Use'
           },
-          'page-login': {
+          'navigation-login': {
               'link': 'Anmelden'
           },
-          'page-register': {
+          'navigation-register': {
               'link': 'Registrieren'
           },
-          'page-logout': {
+          'navigation-logout': {
               'link': 'Logout'
           },
-          'page-reset': {
+          'navigation-reset': {
               'link': 'Passwort zurücksetzen'
           },
-          'page-profile': {
+          'navigation-profile': {
               'link': 'Profil'
           }
       }

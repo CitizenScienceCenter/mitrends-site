@@ -13,7 +13,7 @@
 
 <template>
   <div id="app">
-    <app-header project-name="Hate<br/>Speech" :languages="['de','fr','it','en']"></app-header>
+    <app-header project-name="Hate<br/>Speech" :languages="['de','fr','it']"></app-header>
     <div class="content-area">
       <router-view></router-view>
     </div>
@@ -45,25 +45,20 @@ export default {
                   content: this.$t('site-description')
               },
               {
-                  property: 'og:title',
-                  content: this.$t('site-title')
-              },
-              {
-                  property: 'og:description',
-                  content: this.$t('site-description')
-              },
-              {
                   property: 'og:type',
                   content: 'website'
               },
               {
                   property: 'og:url',
-                  content: 'https://snakes.citizenscience.ch'
+                  content: 'https://hatespeech.citizenscience.ch'+this.$route.path
               },
               {
                   property: 'og:image',
-                  content: 'https://snakes.citizenscience.ch/img/promo.jpg'
+                  content: 'https://citizenscience.ch/img/citsci-promo.jpg'
               }
+          ],
+          link: [
+              {rel: 'canonical', href: 'https://hatespeech.citizenscience.ch'+this.$route.path}
           ]
       }
   },

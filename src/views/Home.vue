@@ -53,7 +53,7 @@
 
           <div class="col col-10 col-tablet-portrait-8 col-large-6 col-wrapping scroll-effect">
             <div class="extra-padding-h">
-              <img src="img/graphic-intro.png" />
+              <img src="/img/graphic-intro.png" />
             </div>
           </div>
 
@@ -81,7 +81,7 @@
           <div class="col col-10 col-tablet-portrait-8 col-large-6 col-wrapping scroll-effect">
             <div>
               <div class="extra-padding-large-h">
-                <img src="img/graphic-bubbles.png"/>
+                <img src="/img/graphic-bubbles.png"/>
               </div>
             </div>
           </div>
@@ -156,7 +156,13 @@ export default {
   metaInfo: function() {
       return {
           title: this.$t('page-title'),
-          titleTemplate: null
+          titleTemplate: null,
+          meta: [
+              {
+                  property: 'og:title',
+                  content: this.$t('page-title')
+              }
+          ]
       }
   },
   computed: {
