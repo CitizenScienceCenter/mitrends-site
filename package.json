@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "postbuild": "react-snap"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -29,7 +30,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "react-snap": "^1.23.0"
   },
   "eslintConfig": {
     "root": true,
@@ -49,6 +51,20 @@
     "plugins": {
       "autoprefixer": {}
     }
+  },
+  "reactSnap": {
+    "source": "dist",
+    "minifyHtml": {
+      "collapseWhitespace": false,
+      "removeComments": false
+    },
+    "puppeteerArgs": [
+      "--disable-setuid-sandbox",
+      "--no-sandbox"
+    ],
+    "concurrency": 1,
+    "inlineCss": false,
+    "puppeteerExecutablePath": "/usr/bin/chromium-browser"
   },
   "browserslist": [
     "> 1%",
