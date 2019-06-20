@@ -59,11 +59,14 @@ export default {
           ],
           link: [
               {rel: 'canonical', href: 'https://hatespeech.citizenscience.ch'+this.$route.path}
-          ]
+          ],
+          htmlAttrs: {
+              lang: this.language
+          }
       }
   },
   computed: mapState({
-      gdpr: state => state.gdpr.accepted
+      language: state => state.settings.language
   }),
   mounted: function() {
       var app = this.$el;
