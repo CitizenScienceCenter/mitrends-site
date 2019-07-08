@@ -61,7 +61,7 @@
             <div>
               <h2 class="heading centered left-aligned-large">Worum gehts?</h2>
               <p class="">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                Hassausdrücke in den neuen Medien sind im Moment in aller Munde. Doch werden wir auch verwendet in privater Korrespondenz? Das möchten wir herausfinden anhand von WhatsApps Texten, die uns von der Bevölkerung zur Verfügung gestellt wurden.
               </p>
               <div class="button-group centered left-aligned-large">
                 <router-link tag="button" to="/about" class="button button-secondary">Mehr erfahren</router-link>
@@ -90,7 +90,7 @@
             <div>
               <h2 class="heading centered left-aligned-large" id="start-project">Ihre Hilfe ist gefragt</h2>
               <p class="">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                Um unsere Ziele zu erreichen, bitten wir um Ihre Hilfe. In einem ersten Schritt (Identifikation) geht es darum, möglichst viele Texte anzuschauen und nach möglichen geschlechterspezifischen Hassausdrücken zu suchen. Wenn uns möglichst viele Leute dabei helfen, sollte diese Suche einigermassen schnell zu Resultaten führen. Damit nicht alle 750'000 Botschaften gelesen werden müssen, werden wir danach die gefundenen Hassausdrücke auch in den noch nicht gelesenen Botschaften suchen. So sollten wir zu einer stattlichen Anzahl von Belegen kommen.
               </p>
               <div class="button-group centered left-aligned-large">
                 <router-link tag="button" to="/identification" class="button button-primary">Zur Identifikation</router-link>
