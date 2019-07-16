@@ -1,5 +1,4 @@
 {
   "name": "hatespeech",
-  "namespace": "c3s-staging",
   "port": 80
 }
