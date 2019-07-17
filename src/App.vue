@@ -50,15 +50,15 @@ export default {
               },
               {
                   property: 'og:url',
-                  content: 'https://hatespeech.citizenscience.ch'+this.$route.path
+                  content: 'https://hatespeech-staging.citizenscience.ch'+this.$route.path
               },
               {
                   property: 'og:image',
-                  content: 'https://citizenscience.ch/img/citsci-promo.jpg'
+                  content: 'https://hatespeech-staging.ch/img/promo.jpg'
               }
           ],
           link: [
-              {rel: 'canonical', href: 'https://hatespeech.citizenscience.ch'+this.$route.path}
+              {rel: 'canonical', href: 'https://hatespeech-staging.citizenscience.ch'+this.$route.path}
           ],
           htmlAttrs: {
               lang: this.language
