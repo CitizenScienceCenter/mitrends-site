@@ -34,9 +34,8 @@
               </p>
 
               <div :class="{disabled:wrongLanguage}">
-                <div class="speech-bubble reduced-bottom-margin" ref="bubble">
-                  wenn eine bitch bei mir liegt und sowieso nicht fickt, wird sie auf die strasse gesetzt wie pokerchips
-                </div>
+                <div class="speech-bubble reduced-bottom-margin" ref="bubble" v-html="tasks[0].content.text"></div>
+
                 <div class="add-button-group">
                   <div class="button-group right-aligned">
                     <button class="button button-primary" :disabled="!selection" @click="select">Hinzufügen</button>
@@ -189,8 +188,8 @@
         <div class="row row-wrapping row-reverse-large scroll-effect scroll-effect-delayed-2">
           <div class="col col-large-6 col-wrapping">
             <div class="button-group right-aligned">
-              <button class="button button-secondary">Auslassen</button>
-              <button class="button button-primary" :disabled="!complete && !wrongLanguage">Weiter</button>
+              <button class="button button-secondary" @click="next">Überspringen</button>
+              <button class="button button-primary" @click="submit" :disabled="!tasks[0] || !complete && !wrongLanguage">Antworten</button>
             </div>
           </div>
           <div class="col col-large-6 col-wrapping">
@@ -208,6 +207,10 @@
         </div>
       </div>
     </app-content-section>
+
+
+
+
 
 
     <app-content-section color="light-greyish">
@@ -515,13 +518,29 @@ export default {
           selection: null,
           selections: [],
           wrongLanguage: false,
-          complete: false
+          complete: false,
+
+          taskId: undefined,
+          hasSubmissionAlready: false
       }
   },
   computed: {
       ...mapState({
-          user: state => state.c3s.user
-      })
+          language: state => state.settings.language,
+
+          currentUser: state => state.c3s.user.currentUser,
+          activityId: state => state.consts.identificationActivity,
+
+          tasks: state => state.c3s.task.tasks
+      }),
+      answer() {
+          if( this.wrongLanguage ) {
+              return {"info": "wrong language"};
+          }
+          else {
+              return {"selections": this.selections};
+          }
+      }
     },
   mounted() {
       let self = this;
@@ -532,8 +551,192 @@ export default {
             self.selection = window.getSelection().toString();
           }
       });
+
+      // load task with or without id
+      if( this.$route.params.id ) {
+          if( this.$route.params.id.length !== 36 ) {
+              //console.log('invalid id');
+              delete this.$route.params.id;
+              this.$router.replace('/identification');
+              this.taskId = null;
+              this.loadTask();
+          }
+          else {
+              //console.log('load task from id');
+              this.taskId = this.$route.params.id;
+              this.loadTask();
+          }
+      }
+      else {
+          this.taskId = null;
+          //console.log('load without id');
+          this.loadTask();
+      }
   },
   methods: {
+      loadTask() {
+
+          let taskQuery;
+          if( !this.taskId ) {
+              // without id
+              console.log('without id');
+              taskQuery = {
+                  'select': {
+                      'fields': [
+                          '*'
+                      ],
+                      'tables': [
+                          'tasks'
+                      ],
+                      'orderBy': {
+                          'random()': ''
+                      }
+                  },
+                  'where': [
+                      {
+                          "field": 'tasks.activity_id',
+                          'op': 'e',
+                          'val': this.activityId
+                      },
+                      {
+                          'field': 'tasks.id',
+                          'op': 'ni',
+                          'val': "(SELECT task_id FROM submissions WHERE submissions.task_id = tasks.id AND user_id = '" + this.currentUser.id + "')",
+                          'join': 'a',
+                          'type': 'sql'
+                      }/*,
+                    {
+                        'field': 'tasks.info ->> \'difficulty\'',
+                        'op': 'e',
+                        'val': this.difficulty.toString(),
+                        'join': 'a'
+                    }*/
+                  ]
+              };
+
+          }
+          else {
+              // with id
+              console.log('with id');
+              taskQuery = {
+                  'select': {
+                      'fields': [
+                          '*'
+                      ],
+                      'tables': [
+                          'tasks'
+                      ]
+                  },
+                  'where': [
+                      {
+                          "field": 'id',
+                          'op': 'e',
+                          'val': this.taskId
+                      }
+                  ]
+              };
+
+          }
+
+
+          this.$store.dispatch('c3s/task/getTasks', [taskQuery, 1]).then(tasks => {
+
+              //console.log('responded tasks');
+
+              this.hasSubmissionAlready = false;
+
+              if( this.taskId ) {
+                  // loaded with id, check for submissions
+                  console.log('has task id, check for submissions');
+
+                  let query = {
+                      'select': {
+                          'fields': [
+                              '*'
+                          ],
+                          'tables': [
+                              'submissions'
+                          ]
+                      },
+                      'where': [
+                          {
+                              'field': 'task_id',
+                              'op': 'e',
+                              'val': this.taskId
+                          },
+                          {
+                              'field': 'user_id',
+                              'op': 'e',
+                              'val': this.currentUser.id,
+                              'join': 'a'
+                          }
+                      ]
+                  };
+
+                  this.$store.dispatch('c3s/submission/getSubmissions', [query,0] ).then(submissions => {
+
+
+                      if( submissions.body.length > 0 ) {
+                          this.hasSubmissionAlready = true;
+                      }
+                      else {
+                          this.hasSubmissionAlready = false;
+                      }
+
+                      this.taskId = false;
+
+                  });
+
+              }
+
+              if ( this.tasks[0] ) {
+
+                  console.log( 'task loaded');
+                  this.$router.replace('/identification/'+this.tasks[0].id);
+
+                  this.selections = [];
+
+              }
+
+              else {
+
+                  console.log('no more tasks');
+                  this.$router.push('/complete');
+
+              }
+
+
+          });
+
+      },
+      next() {
+          console.log('next');
+          this.loadTask();
+      },
+      submit() {
+          console.log('submit');
+          console.log( this.answer );
+
+          let submissionObject = {
+              "info": {},
+              "content": this.answer,
+              "task_id": this.tasks[0].id,
+              "user_id": this.currentUser.id,
+              "draft": true
+          };
+
+          console.log( submissionObject );
+
+          this.$store.commit('c3s/submission/SET_SUBMISSION', submissionObject );
+
+          this.$store.dispatch('c3s/submission/createSubmission').then(submission => {
+
+              console.log('submission sent');
+
+          });
+
+          this.loadTask();
+      },
       select() {
         this.selections.push( { 'string': this.selection, 'origin': undefined, 'gender': undefined, 'sex': undefined } );
         window.getSelection().removeAllRanges();
@@ -544,7 +747,7 @@ export default {
           this.$refs.wizard.openWizard();
       },
       checkComplete() {
-          console.log('checkc omp');
+          console.log('check complete');
           let complete = true;
           for( let i = 0; i < this.selections.length; i++ ) {
               if( !this.selections[i].origin || !this.selections[i].gender || !this.selections[i].sex ) {

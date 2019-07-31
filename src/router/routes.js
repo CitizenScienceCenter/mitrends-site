@@ -1,4 +1,5 @@
 import Identification from '@/views/Identification';
+import IdentificationComplete from '@/views/IdentificationComplete';
 import Forum from '@/views/Forum';
 
 import Login from '@/views/shared/user/Login';
@@ -44,8 +45,20 @@ export const routes = [
             },
             {
                 path: "identification",
+                meta: {requiresAuth: true, i18n: 'navigation-identification', nav: true},
                 component: Identification,
-                meta: {requiresAuth: true, i18n: 'navigation-identification', nav: true}
+                children: [
+                    {
+                        path: ":id",
+                        component: Identification,
+                        meta: { requiresAuth: true, i18n: 'navigation-identification' }
+                    }
+                ]
+            },
+            {
+                path: "complete",
+                component: IdentificationComplete,
+                meta: {i18n: 'navigation-complete', nav: false}
             },
             {
                 path: "about",
