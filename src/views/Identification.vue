@@ -581,8 +581,13 @@ export default {
           tasks: state => state.c3s.task.tasks
       }),
       bubbleText() {
-          let trimmed = this.tasks[0].content.text.replace(/<br\/><br\/>/g, '<br/>');
-          return trimmed;
+          if( this.tasks[0] ) {
+              let trimmed = this.tasks[0].content.text.replace(/<br\/><br\/>/g, '<br/>');
+              return trimmed;
+          }
+          else {
+              return '';
+          }
       },
       answer() {
           if( this.wrongLanguage ) {
