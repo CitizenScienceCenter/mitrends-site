@@ -19,7 +19,7 @@
 <template>
   <div class="identification-page">
 
-    <app-content-section class="identification">
+    <app-content-section class="content-section-condensed identification">
       <div class="content-wrapper">
 
         <div class="margin-bottom">
@@ -34,7 +34,7 @@
               </p>
 
               <div :class="{disabled:wrongLanguage}">
-                <div class="speech-bubble reduced-bottom-margin" ref="bubble" v-html="tasks[0].content.text"></div>
+                <div class="speech-bubble reduced-bottom-margin" ref="bubble" v-html="bubbleText"></div>
 
                 <div class="add-button-group">
                   <div class="button-group right-aligned">
@@ -59,7 +59,7 @@
                           <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
                         </svg>
                         <template slot="hover">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                          Unter Deutsch verstehen wir auch Nachrichten mit vielen Schreib- und Tippfehlern sowie Schweizerdeutsche Nachrichten. Tipp: Versuchen Sie im Zweifel, den Text laut zu lesen.
                         </template>
                       </inline-hover>
                     </span>
@@ -118,7 +118,7 @@
                             <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
                           </svg>
                           <template slot="hover">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Mögliche Kategorien sind Körperteile (z.B. Schwanz), Tätigkeiten (z.B. Hure oder Wichser) oder Geschlechtszugehörigkeit (z.B. Weib) oder die sexuelle Ausrichtung, (z.B. Homo).
                           </template>
                         </inline-hover>
                       </div>
@@ -144,7 +144,7 @@
                             <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
                           </svg>
                           <template slot="hover">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Geschlecht der Person, die mit dem Hass-Ausdruck bezeichnet wird. Bitte auswählen: Mann, Frau, Divers (Menschen, die sich den Geschlechtern Mann und Frau nicht zuordnen möchten), Unklar (das Geschlecht geht aus dem Text nicht klar hervor)
                           </template>
                         </inline-hover>
                       </div>
@@ -158,7 +158,7 @@
                               <option value="hetereo">Hetereosexuell</option>
                               <option value="homo">Homosexuell</option>
                               <option value="bisexual">Bisexuell</option>
-                              <option value="unknown">Unbekannt</option>
+                              <option value="unclear">Unklar</option>
                             </select>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                               <path d="M127.3,192h257.3c17.8,0,26.7,21.5,14.1,34.1L270.1,354.8c-7.8,7.8-20.5,7.8-28.3,0L113.2,226.1 C100.6,213.5,109.5,192,127.3,192z"/>
@@ -170,7 +170,7 @@
                             <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
                           </svg>
                           <template slot="hover">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Sexuelle Ausrichtung des/r Adressanten/in. Möglich sind hetero- homo-, bi- und asexuell. Die Option "Unklar" wird dann angewendet, wenn das Geschlecht aus dem Text in der Nachricht nicht klar hervorgeht.
                           </template>
                         </inline-hover>
                       </div>
@@ -222,99 +222,146 @@
             <expandable>
               <template slot="header">Wozu verpflichte ich mich?</template>
               <template slot="content">
-                Wenn Sie uns helfen, geschlechtsspezifische Hass-Ausdrücke zu finden, verpflichten Sie sich grundsätzlich zu gar nichts. Ob Sie einen oder 1000 Ausdrücke suchen für uns, Sie helfen uns und wir sind dankbar.
-
-                Eine kleine Verpflichtung mit Bezug auf den Datenschutz gehen Sie jedoch ein. Die Nachrichten, die wir Ihnen hier zeigen, sind echte Gespräche, die von einem Menschen an einen anderen gerichtet wurden. Wir haben uns zwar bemüht, alle Namen zu verändern und auch andere persönliche Daten zu entfernen. Trotzdem kann es sein, dass Sie anhand der gemachten Aussagen erkennen können, wer eine Nachricht geschrieben hat. Aus diesem Grund müssen Sie Sich dazu verpflichten, alle Informationen, die Sie aus unseren Nachrichten herauslesen können, vertraulich zu behandeln. Sie dürfen also nicht mit Drittpersonen über den Inhalt der Texte sprechen. Sollten Sie Personen, die Texte geschrieben haben oder an die Texte gerichtet sind oder über die in Texten geschrieben wird, in unseren Nachrichten erkennen, dürfen diese Personen nicht auf die Nachricht angesprochen werden.
+                <p>
+                  Wenn Sie uns helfen, geschlechtsspezifische Hass-Ausdrücke zu finden, verpflichten Sie sich grundsätzlich zu gar nichts. Ob Sie einen oder 1000 Ausdrücke für uns suchen, Sie helfen uns und wir sind dankbar.
+                </p>
               </template>
             </expandable>
             <expandable>
               <template slot="header">Was sind geschlechtsspezifische Hass-Ausdrücke?</template>
               <template slot="content">
-                Geschlechtsspezifische Hass-Ausdrücke bezeichnen Ausdrücke die:
-
-                sich auf Menschen beziehen.
-                von Ihnen ohne den Zusammenhang zu beachten als negativ/beleidigend/verletzend/diskriminierend klassifiziert werden.
-                einen Bezug zum Geschlecht oder der sexuellen Orientierung des Menschen haben.
-                Beispiele können das klarmachen. Als geschlechtsspezifische Hass-Ausdrücke bezeichnen wir z.B.:
-
-                Schwanz: Kann nur für einen Mann verwendet werden und ist ein geschlechtsspezifischer Körperteil.
-                Weib: Ist despektierlich und kann nur für Frauen verwendet werden.
-                Homo: Hat einen direkten Bezug zur sexuellen Orientierung.
-                Nicht als geschlechtsspezifische Hass-Ausdrücke würden wir bezeichnen:
-
-                Arschloch: Der Ausdruck bezeichnet zwar einen Körperteil, dieser ist aber allen Geschlechtern gleich.
-                Idiot, Blödian, Sauhund: Dies sind alles Beschimpfungen, haben aber keinen Bezug zum Geschlecht oder der sexuellen Ausrichtung.
+                <p class="reduced-bottom-margin">
+                  Geschlechtsspezifische Hass-Ausdrücke bezeichnen Ausdrücke die sich auf Menschen beziehen, von Ihnen ohne den Zusammenhang zu beachten als negativ/beleidigend/verletzend/diskriminierend klassifiziert werden und einen Bezug zum Geschlecht oder der sexuellen Orientierung des Menschen haben. Als geschlechtsspezifische Hass-Ausdrücke bezeichnen wir z.B.:
+                </p>
+                <ul class="reduced-bottom-margin">
+                  <li>
+                    <b>Schwanz:</b> Kann nur für einen Mann verwendet werden und ist ein geschlechtsspezifischer Körperteil.
+                    </p>
+                  </li>
+                  <li>
+                    <b>Weib:</b> Ist despektierlich und kann nur für Frauen verwendet werden.
+                  </li>
+                  <li>
+                    <b>Homo:</b> Hat einen direkten Bezug zur sexuellen Orientierung.
+                  </li>
+                </ul>
+                <p class="reduced-bottom-margin">
+                  <b>Nicht als geschlechtsspezifische Hass-Ausdrücke würden wir bezeichnen:</b>
+                </p>
+                <ul class="reduced-bottom-margin">
+                  <li>
+                    <b>Arschloch:</b> Der Ausdruck bezeichnet zwar einen Körperteil, dieser ist aber allen Geschlechtern gleich.
+                  </li>
+                  <li>
+                    <b>Idiot, Blödian, Sauhund:</b> Dies sind alles Beschimpfungen, haben aber keinen Bezug zum Geschlecht oder der sexuellen Ausrichtung.
+                  </li>
+                </ul>
               </template>
             </expandable>
             <expandable>
               <template slot="header">Wie gehe ich genau vor?</template>
               <template slot="content">
-                In einem ersten Schritt geht es darum, Text-Teile auszuwählen, die als geschlechtsspezifische Hass-Ausdrücke erkennbar sind. Dabei spielt es keine Rolle, ob diese abwertend oder nicht abwertend gemeint sind, sie sollen in einem ersten Schritt nur identifiziert werden.
-
-                Dazu wird im ersten farbigen Feld unten mit dem Titel 1. Identifizieren von geschlechtsspezifischen Hass-Ausdrücken der ganze Ausdruck, den Sie identifiziert haben, mit der Maus angewählt. Wenn Sie jetzt auf den Knopf Markierten Text hinzufügen klicken, wird alles, was Sie angewählt haben, im zweiten farbigen Block in einer Tabelle aufgelistet. Führen Sie diesen Schritt bitte so oft aus, bis alle geschlechtsspezifischen Hass-Ausdrücke in der dargestellten Nachricht in der Tabelle stehen. Fehler sind kein Problem: Ausdrücke in der Tabelle können mit einem Klick auf  jederzeit wieder entfernt werden.
-
-                In einem zweiten Schritt bitten wir Sie, die von Ihnen ausgewählten Ausdrücke in Bezug auf drei Kategorien zu beschreiben. Bei diesen Beurteilungen geht es uns darum, in einer späteren Auswertung analysieren zu können, wie eine Person beleidigt wird und wer beleidigt wird.
-
-                Entsprechend bezieht sich die erste Kategorie auf das Wie, also auf die Wortherkunft des Hass-Ausdrucks, die zwei anderen Kategorien sollen aufzeigen, auf Grund welcher Eigenschaften eine Person mutmasslich beleidigt wird. Für diese Beurteilung benötigen wir die beiden Kategorien Geschlecht und sexuelle Ausrichtung.
-
-                Optionen für die Wortherkunft:
-
-                Anatomie (Körperteile, z.B. Schwanz)
-                Tätigkeiten (z.B. Hure, Wichser)
-                Die Geschlechtszugehörigkeit, wenn also auf die Person gezielt wird (z.B. Weib)
-                Die sexuelle Ausrichtung, auch hier wird auf die Person gezielt (z.B. Homo, wenn es abwertend gebraucht wird)
-                Andere: Wenn keine dieser Optionen passt, wählen Sie bitte Andere an.
-
-                Optionen für das Geschlecht der beleidigten Person. Bitte beachten Sie, dass das Geschlecht wirklich aus dem Zusammenhang des Textes erkennbar sein muss und nicht erraten oder erahnt werden darf.
-
-                Mann
-                Frau
-                Divers: Die Bezeichnung Divers wird in Deutschland verwendet für Menschen, die sich den Geschlechtern Mann und Frau nicht zuordnen möchten.
-                Unbekannt: Oft ist das Geschlecht im Zusammenhang des Textes nicht erkennbar. Wählen Sie in dem Fall bitte die Option Unbekannt.
-
-                Optionen für die sexuelle Ausrichtung. Erneut ist es wichtig, dass diese Orientierung tatsächlich aus dem Text hervorgeht.
-
-                Heterosexuell
-                Homosexuell
-                Bisexuell
-                Asexuell
-                Unklar: Aus dem Zusammenhang des Textes ist die sexuelle Orientierung nicht erkennbar.
-
-                Wenn Sie alles auf dieser Seite korrekt ausgewählt und kategorisiert haben, können Sie Ihre Angaben mit Weiter speichern und zur nächsten Nachricht gelangen.
+                <p class="reduced-bottom-margin">
+                  In einem ersten Schritt geht es darum, Text-Teile auszuwählen, die als geschlechtsspezifische Hass-Ausdrücke erkennbar sind. Dabei spielt es keine Rolle, ob diese abwertend oder nicht abwertend gemeint sind, sie sollen in einem ersten Schritt nur identifiziert werden. Dazu wird im ersten farbigen Feld unten mit dem Titel 1. Identifizieren von geschlechtsspezifischen Hass-Ausdrücken der ganze Ausdruck, den Sie identifiziert haben, mit der Maus angewählt. Wenn Sie jetzt auf den Knopf Markierten Text hinzufügen klicken, wird alles, was Sie angewählt haben, im zweiten farbigen Block in einer Tabelle aufgelistet. Führen Sie diesen Schritt bitte so oft aus, bis alle geschlechtsspezifischen Hass-Ausdrücke in der dargestellten Nachricht in der Tabelle stehen. Fehler sind kein Problem: Ausdrücke in der Tabelle können mit einem Klick auf das X jederzeit wieder entfernt werden.
+                </p>
+                <p class="reduced-bottom-margin">
+                  In einem zweiten Schritt bitten wir Sie, die von Ihnen ausgewählten Ausdrücke in Bezug auf drei Kategorien zu beschreiben. Bei diesen Beurteilungen geht es uns darum, in einer späteren Auswertung analysieren zu können, wie eine Person beleidigt wird und wer beleidigt wird. Entsprechend bezieht sich die erste Kategorie auf das Wie, also auf die Wortherkunft des Hass-Ausdrucks, die zwei anderen Kategorien sollen aufzeigen, auf Grund welcher Eigenschaften eine Person mutmasslich beleidigt wird. Für diese Beurteilung benötigen wir die beiden Kategorien Geschlecht und sexuelle Ausrichtung.
+                </p>
+                <p class="reduced-bottom-margin">
+                  Optionen für die Wortherkunft:
+                </p>
+                <ul class="reduced-bottom-margin">
+                  <li>
+                    Anatomie (Körperteile, z.B. Schwanz)
+                  </li>
+                  <li>
+                    Tätigkeiten (z.B. Hure, Wichser)
+                  </li>
+                  <li>
+                    Die Geschlechtszugehörigkeit, wenn also auf die Person gezielt wird (z.B. Weib)
+                  </li>
+                  <li>
+                    Die sexuelle Ausrichtung, auch hier wird auf die Person gezielt (z.B. Homo, wenn es abwertend gebraucht wird)
+                  </li>
+                  <li>
+                    Andere: Wenn keine dieser Optionen passt, wählen Sie bitte Andere an.
+                  </li>
+                </ul>
+                <p class="reduced-bottom-margin">
+                  Optionen für das Geschlecht der beleidigten Person:
+                </p>
+                <p class="reduced-bottom-margin">
+                  Bitte beachten Sie, dass das Geschlecht wirklich aus dem Zusammenhang des Textes erkennbar sein muss und nicht erraten oder erahnt werden darf.
+                </p>
+                <ul class="reduced-bottom-margin">
+                  <li>
+                    Mann
+                  </li>
+                  <li>
+                    Frau
+                  </li>
+                  <li>
+                    Divers: Die Bezeichnung Divers wird in Deutschland für Menschen verwendet, die sich den Geschlechtern Mann und Frau nicht zuordnen möchten.
+                  </li>
+                  <li>
+                    Unbekannt: Oft ist das Geschlecht im Zusammenhang des Textes nicht erkennbar. Wählen Sie in dem Fall bitte die Option Unbekannt.
+                  </li>
+                </ul>
+                <p class="reduced-bottom-margin">
+                  Optionen für die sexuelle Ausrichtung:
+                </p>
+                <p class="reduced-bottom-margin">
+                  Erneut ist es wichtig, dass diese Orientierung tatsächlich aus dem Text hervorgeht. Heterosexuell
+                </p>
+                <ul class="reduced-bottom-margin">
+                  <li>
+                    Homosexuell
+                  </li>
+                  <li>
+                    Bisexuell
+                  </li>
+                  <li>
+                    Asexuell
+                  </li>
+                  <li>
+                    Unklar: Aus dem Zusammenhang des Textes ist die sexuelle Orientierung nicht erkennbar.
+                  </li>
+                </ul>
+                <p class="reduced-bottom-margin">
+                  Wenn Sie alles auf dieser Seite korrekt ausgewählt und kategorisiert haben, können Sie Ihre Angaben mit Weiter speichern und zur nächsten Nachricht gelangen.
+                </p>
               </template>
             </expandable>
             <expandable>
               <template slot="header">Welchen Teil des Textes muss ich auswählen?</template>
               <template slot="content">
-                Wir interessieren uns für Ausdrücke, in denen eine Person wegen ihres Geschlechts oder ihrer sexuellen Ausrichtung angefeindet wird. Diese Ausdrücke bestehen häufig aus mehr als einem Wort, also z.B. einem Artikelwort (der, die, das, ein, eine, dieser, diese etc.), einem Nomen (Mann, Frau, Typ, Kerl, Homo, Lesbe, Ekel etc.) und weiteren Wörtern dazwischen (huere, netter, blöde, gut ausgebildete). Das ergibt dann z.B.:
-
-                Der doofe Schwanz
-                Der gut ausgebildete Homo
-                Lesbe
-
-                Ausgewählt werden sollte bitte jeweils der ganzen Ausdruck, also alles zwischen dem Artikelwort und dem Nomen, wobei der Artikel fehlen kann wie in Beispiel 3. Ebenso können zwischen dem Artikelwort und dem Nomen noch weitere Wörter stehen, die dann auch mitausgewählt werden sollen.
+                <p class="reduced-bottom-margin">
+                  Wir interessieren uns für Ausdrücke, in denen eine Person wegen ihres Geschlechts oder ihrer sexuellen Ausrichtung angefeindet wird. Diese Ausdrücke bestehen häufig aus mehr als einem Wort, also z.B. einem Artikelwort (der, die, das, ein, eine, dieser, diese etc.), einem Nomen (Mann, Frau, Typ, Kerl, Homo, Lesbe, Ekel etc.) und weiteren Wörtern dazwischen (huere, netter, blöde, gut ausgebildete). Das ergibt dann z.B.: 1. Der doofe Schwanz, 2. Der gut ausgebildete Homo, 3. Lesbe. Ausgewählt werden sollte bitte jeweils der ganzen Ausdruck, also alles zwischen dem Artikelwort und dem Nomen, wobei der Artikel fehlen kann wie in Beispiel 3. Ebenso können zwischen dem Artikelwort und dem Nomen noch weitere Wörter stehen, die dann auch mit ausgewählt werden sollen.
+                </p>
               </template>
             </expandable>
             <expandable>
               <template slot="header">Der Text ist gar nicht Deutsch!</template>
               <template slot="content">
-                Unsere Datensammlung beinhaltet Texte in den drei grösseren Landessprachen. Wir haben menschliche und technologische Hilfe verwendet, um den einzelnen Nachrichten eine Haupt-Sprache zuzuordnen. In vielen Fällen funktioniert das gut, aber nicht immer. Wenn der angezeigte Text nicht Deutsch ist, so können Sie uns das mit einem Klick auf Dieser Text ist nicht Deutsch mitteilen und sich einen nächsten Text anzeigen lassen.
-
-                Bedenken Sie dabei aber, dass wir die Bezeichnung Deutsch wesentlich grosszügiger beurteilen, als dies vielleicht eine Primarlehrperson tun würde. Unter Deutsch verstehen wir auch Nachrichten mit vielen Schreib- und Tippfehlern sowie Schweizerdeutsche Nachrichten, also nicht nur das Hochdeutsch, das Sie in der Schule gelernt haben. Lesen Sie den Text also bitte genau durch, manche Dialekte sind nicht auf Anhieb als Deutsch zu erkennen.
-
-                Tipp: Versuchen Sie im Zweifel, den Text laut zu lesen. So können Sie unter Umständen erkennen, ob etwas dialektal ist und nicht etwa eine Fremdsprache.
+                <p class="reduced-bottom-margin">
+                  Unsere Datensammlung beinhaltet Texte in den drei grösseren Landessprachen. Wir haben menschliche und technologische Hilfe verwendet, um den einzelnen Nachrichten eine Haupt-Sprache zuzuordnen. In vielen Fällen funktioniert das gut, aber nicht immer. Wenn der angezeigte Text nicht Deutsch ist, so können Sie uns das mit einem Klick auf “Dieser Text ist nicht Deutsch” mitteilen und sich einen nächsten Text anzeigen lassen. Bedenken Sie dabei aber, dass wir die Bezeichnung Deutsch wesentlich grosszügiger beurteilen, als dies vielleicht eine Primarlehrperson tun würde. Unter Deutsch verstehen wir auch Nachrichten mit vielen Schreib- und Tippfehlern sowie Schweizerdeutsche Nachrichten, also nicht nur das Hochdeutsch, das Sie in der Schule gelernt haben. Lesen Sie den Text also bitte genau durch, manche Dialekte sind nicht auf Anhieb als Deutsch zu erkennen. Tipp: Versuchen Sie im Zweifel, den Text laut zu lesen. So können Sie unter Umständen erkennen, ob etwas dialektal ist und nicht etwa eine Fremdsprache.
+                </p>
               </template>
             </expandable>
             <expandable>
               <template slot="header">Was passiert, wenn wir alle Texte bearbeitet haben?</template>
               <template slot="content">
-                Wir möchten in diesem ersten Schritt zunächst alle geschlechtsspezifischen Hass-Ausdrücke identifizieren. Das geht am einfachsten, wenn wir Ihnen immer nur eine Nachricht nach der anderen zeigen. Im nächsten Schritt wird es darum gehen, die gefundenen Ausdrücke zu klassifizieren, also zu bestimmen, ob sie wirklich abwertend gebraucht werden oder ob sie sogar freundschaftlich gemeint sind. Um dies bestimmen zu können, muss die Nachricht im Zusammenhang mit der vorhergehenden und der nachfolgenden Nachricht gesehen werden. Wir werden also im zweiten Schritt auch die vorangehende und die folgende Nachricht zeigen und Sie fragen, wie Sie den Ausdruck klassifizieren. Wir würden uns freuen, wenn Sie auch an diesem Schritt wieder mitarbeiten würden.
+                <p class="reduced-bottom-margin">
+                  Wir möchten in diesem ersten Schritt zunächst alle geschlechtsspezifischen Hass-Ausdrücke identifizieren. Das geht am einfachsten, wenn wir Ihnen immer nur eine Nachricht nach der anderen zeigen. Im nächsten Schritt wird es darum gehen, die gefundenen Ausdrücke zu klassifizieren, also zu bestimmen, ob sie wirklich abwertend gebraucht werden oder ob sie sogar freundschaftlich gemeint sind. Um dies bestimmen zu können, muss die Nachricht im Zusammenhang mit der vorhergehenden und der nachfolgenden Nachricht gesehen werden. Wir werden also im zweiten Schritt auch die vorangehende und die folgende Nachricht zeigen und Sie fragen, wie Sie den Ausdruck klassifizieren. Wir würden uns freuen, wenn Sie auch an diesem Schritt wieder mitarbeiten würden.
+                </p>
               </template>
             </expandable>
             <expandable>
               <template slot="header">Ihr sprecht immer von Chats, Nachrichten und Ausdrücken, was ist das genau?</template>
               <template slot="content">
-                Wenn Sie mit jemandem per WhatsApp chatten, dann entsteht ein ganzer Dialog, in dem mal Sie und mal die andere Person(en) etwas schreiben. Dieser Dialog zieht sich oft über ganze Jahre hin und wird von uns als Chat bezeichnet. In diesem Chat gibt es Sprechblasen, die Sie geschrieben haben und solche, die jemand anders geschrieben hat. Jede einzelne Sprachblase bezeichnen wir als Nachricht. Der Ausdruck schliesslich hat eigentlich nichts mit WhatsApp zu tun, sondern ist das, was wir suchen, nämlich den Teil einer Nachricht, in dem geschlechtsspezifischer Hass ausgedrückt wird.
+                <p class="reduced-bottom-margin">
+                  Wenn Sie mit jemandem per WhatsApp chatten, dann entsteht ein ganzer Dialog, in dem mal Sie und mal die andere(n) Person(en) etwas schreiben. Dieser Dialog zieht sich oft über ganze Jahre hin und wird von uns als Chat bezeichnet. In diesem Chat gibt es Sprechblasen, die Sie geschrieben haben und solche, die jemand anders geschrieben hat. Jede einzelne Sprechblase bezeichnen wir als Nachricht. Der Ausdruck schliesslich hat eigentlich nichts mit WhatsApp zu tun, sondern ist das, was wir suchen, nämlich den Teil einer Nachricht, in dem geschlechtsspezifischer Hass ausgedrückt wird
+                </p>
               </template>
             </expandable>
           </div>
@@ -353,7 +400,7 @@
               <div class="col col-large-6 col-wrapping">
 
                 <p class="reduced-bottom-margin">
-                  <b>Beispiele</b>
+                  <b>Beispiele:</b>
                 </p>
                 <p class="reduced-bottom-margin">
                   Geschlechterspezifisch:
@@ -403,7 +450,7 @@
                   <b>Ausgewählt werden sollte bitte jeweils der ganzen Ausdruck.</b>
                 </p>
                 <p class="reduced-bottom-margin">
-                  <b>Beispiele</b>
+                  <b>Beispiele:</b>
                 </p>
                 <ul>
                   <li><b>Der doofe Schwanz</b></li>
@@ -533,6 +580,10 @@ export default {
 
           tasks: state => state.c3s.task.tasks
       }),
+      bubbleText() {
+          let trimmed = this.tasks[0].content.text.replace(/<br\/><br\/>/g, '<br/>');
+          return trimmed;
+      },
       answer() {
           if( this.wrongLanguage ) {
               return {"info": "wrong language"};
@@ -552,26 +603,34 @@ export default {
           }
       });
 
-      // load task with or without id
-      if( this.$route.params.id ) {
-          if( this.$route.params.id.length !== 36 ) {
-              //console.log('invalid id');
-              delete this.$route.params.id;
-              this.$router.replace('/identification');
-              this.taskId = null;
-              this.loadTask();
+
+      this.$store.dispatch("c3s/activity/getActivity", [this.activityId, false]).then(activity => {
+
+          console.log('activity loaded');
+
+          // load task with or without id
+          if( this.$route.params.id ) {
+              if( this.$route.params.id.length !== 36 ) {
+                  //console.log('invalid id');
+                  delete this.$route.params.id;
+                  this.$router.replace('/identification');
+                  this.taskId = null;
+                  this.loadTask();
+              }
+              else {
+                  //console.log('load task from id');
+                  this.taskId = this.$route.params.id;
+                  this.loadTask();
+              }
           }
           else {
-              //console.log('load task from id');
-              this.taskId = this.$route.params.id;
+              this.taskId = null;
+              //console.log('load without id');
               this.loadTask();
           }
-      }
-      else {
-          this.taskId = null;
-          //console.log('load without id');
-          this.loadTask();
-      }
+
+      });
+
   },
   methods: {
       loadTask() {
@@ -695,6 +754,7 @@ export default {
                   this.$router.replace('/identification/'+this.tasks[0].id);
 
                   this.selections = [];
+                  this.wrongLanguage = false;
 
               }
 
@@ -790,6 +850,7 @@ export default {
       padding: $spacing-1 $spacing-2;
       font-size: $font-size-medium;
       font-weight: 700;
+      line-height: 1.4;
       outline: none;
       position: relative;
       border-radius: $border-radius;

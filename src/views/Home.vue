@@ -1,21 +1,24 @@
 <i18n>
 {
 
-  "en": {
-
-  "page-title": "Hate Speech | Citizen Science Center Zurich",
-
-  "cover-heading": "Geschlechter&shy;spezifische Hassausdrücke",
-  "cover-subheading": "Identifizieren und klassifizieren anhand von Whatsapp Texten"
-
-  },
-
   "de": {
 
-  "page-title": "Hate Speech | Citizen Science Center Zürich",
-
   "cover-heading": "Geschlechter&shy;spezifische Hassausdrücke",
-  "cover-subheading": "Identifizieren und klassifizieren anhand von Whatsapp Texten"
+  "cover-subheading": "Identifizieren und klassifizieren anhand von Whatsapp Texten",
+  "cover-button-primary": "Zur Identifikation",
+  "cover-button-secondary": "Über das Projekt",
+
+  "intro-heading": "Worum geht’s?",
+  "intro-text": "Hassausdrücke in den neuen Medien sind im Moment in aller Munde. Doch werden sie auch in privater Korrespondenz verwendet? Das möchten wir anhand von WhatsApps Texten, die uns von der Bevölkerung zur Verfügung gestellt wurden, herausfinden.",
+  "intro-button": "Mehr erfahren",
+
+  "identification-heading": "Ihre Hilfe ist gefragt",
+  "identification-text": "Um unsere Ziele zu erreichen, bitten wir um Ihre Hilfe. In einem ersten Schritt (Identifikation) geht es darum, möglichst viele Texte anzuschauen und nach möglichen geschlechterspezifischen Hassausdrücken zu suchen. Wenn uns möglichst viele Leute dabei helfen, sollte diese Suche einigermassen schnell zu Resultaten führen. Damit nicht alle 750'000 Botschaften gelesen werden müssen, werden wir danach die gefundenen Hassausdrücke auch in den noch nicht gelesenen Botschaften suchen. So sollten wir zu einer stattlichen Anzahl von Belegen kommen.",
+  "identification-button": "Zur Identifikation",
+
+  "sources-heading": "Woher stammen die Texte?",
+  "sources-text": "Die WhatsApp Gespräche, die hier Verwendung finden, wurden uns 2014 von der Schweizer Bevölkerung zur Verfügung gestellt.",
+  "sources-button": "Mehr erfahren"
 
   }
 
@@ -39,8 +42,8 @@
       <div class="row row-centered">
         <div class="col col-large-8">
           <div class="button-group centered scroll-effect scroll-effect-delayed-2">
-            <router-link tag="button" to="/identification" class="button button-primary">Zur Identifikation</router-link>
-            <router-link tag="button" to="/about" class="button button-secondary button-secondary-inverted">Über das Projekt</router-link>
+            <router-link tag="button" to="/identification" class="button button-primary">{{ $t('cover-button-primary') }}</router-link>
+            <router-link tag="button" to="/about" class="button button-secondary button-secondary-inverted">{{ $t('cover-button-secondary') }}</router-link>
           </div>
         </div>
       </div>
@@ -59,12 +62,10 @@
 
           <div class="col col-large-5 col-large-after-1 col-wrapping scroll-effect scroll-effect-delayed-1">
             <div>
-              <h2 class="heading centered left-aligned-large">Worum gehts?</h2>
-              <p class="">
-                Hassausdrücke in den neuen Medien sind im Moment in aller Munde. Doch werden wir auch verwendet in privater Korrespondenz? Das möchten wir herausfinden anhand von WhatsApps Texten, die uns von der Bevölkerung zur Verfügung gestellt wurden.
-              </p>
+              <h2 class="heading centered left-aligned-large">{{ $t('intro-heading') }}</h2>
+              <p v-html="$t('intro-text')"></p>
               <div class="button-group centered left-aligned-large">
-                <router-link tag="button" to="/about" class="button button-secondary">Mehr erfahren</router-link>
+                <router-link tag="button" to="/about" class="button button-secondary">{{ $t('intro-button') }}</router-link>
               </div>
             </div>
           </div>
@@ -88,12 +89,10 @@
 
           <div class="col col-large-5 col-large-before-1 col-wrapping scroll-effect scroll-effect-delayed-1">
             <div>
-              <h2 class="heading centered left-aligned-large" id="start-project">Ihre Hilfe ist gefragt</h2>
-              <p class="">
-                Um unsere Ziele zu erreichen, bitten wir um Ihre Hilfe. In einem ersten Schritt (Identifikation) geht es darum, möglichst viele Texte anzuschauen und nach möglichen geschlechterspezifischen Hassausdrücken zu suchen. Wenn uns möglichst viele Leute dabei helfen, sollte diese Suche einigermassen schnell zu Resultaten führen. Damit nicht alle 750'000 Botschaften gelesen werden müssen, werden wir danach die gefundenen Hassausdrücke auch in den noch nicht gelesenen Botschaften suchen. So sollten wir zu einer stattlichen Anzahl von Belegen kommen.
-              </p>
+              <h2 class="heading centered left-aligned-large">{{ $t('identification-heading') }}</h2>
+              <p v-html="$t('identification-text')"></p>
               <div class="button-group centered left-aligned-large">
-                <router-link tag="button" to="/identification" class="button button-primary">Zur Identifikation</router-link>
+                <router-link tag="button" to="/identification" class="button button-primary">{{ $t('identification-button') }}</router-link>
               </div>
             </div>
           </div>
@@ -114,12 +113,10 @@
 
           <div class="col col-large-5 col-large-after-1 col-wrapping scroll-effect scroll-effect-delayed-1">
             <div>
-              <h2 class="heading centered left-aligned-large">Woher stammen die Texte?</h2>
-              <p class="">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-              </p>
+              <h2 class="heading centered left-aligned-large">{{ $t('sources-heading') }}</h2>
+              <p v-html="$t('sources-text')"></p>
               <div class="button-group centered left-aligned-large">
-                <router-link tag="button" to="/sources" class="button button-secondary">Mehr erfahren</router-link>
+                <router-link tag="button" to="/about" class="button button-secondary">{{ $t('sources-button') }}</router-link>
               </div>
             </div>
           </div>
@@ -155,12 +152,12 @@ export default {
   },
   metaInfo: function() {
       return {
-          title: this.$t('page-title'),
+          title: this.$t('site-title'),
           titleTemplate: null,
           meta: [
               {
                   property: 'og:title',
-                  content: this.$t('page-title')
+                  content: this.$t('site-title')
               }
           ]
       }

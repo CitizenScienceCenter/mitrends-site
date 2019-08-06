@@ -31,42 +31,11 @@ export const i18n = new VueI18n({
   locale: store.state.settings.language,
   silentTranslationWarn: true,
   messages: {
-      'en': {
-          'navigation-homepage': {
-              'link': 'Home'
-          },
-          'navigation-identification': {
-              'link': 'Identification'
-          },
-          'navigation-forum': {
-              'link': 'Forum'
-          },
-          'navigation-about': {
-              'link': 'About the Project'
-          },
-          'navigation-sources': {
-              'link': 'Image Sources'
-          },
-          'navigation-terms': {
-              'link': 'Privacy Policy & Terms of Use'
-          },
-          'navigation-login': {
-              'link': 'Login'
-          },
-          'navigation-register': {
-              'link': 'Register'
-          },
-          'navigation-logout': {
-              'link': 'Logout'
-          },
-          'navigation-reset': {
-              'link': 'Reset Password'
-          },
-          'navigation-profile': {
-              'link': 'Profil'
-          }
-      },
       'de': {
+
+          "site-title": "Hate Speech | Citizen Science Center Zurich",
+          "site-description": "Geschlechterspezfische Hassausdrücke in Whatsapp Texten",
+
           'navigation-homepage': {
               'link': 'Home'
           },
@@ -80,7 +49,7 @@ export const i18n = new VueI18n({
               'link': 'Über das Projekt'
           },
           'navigation-sources': {
-              'link': 'Bildquellen'
+              'link': 'Textquellen'
           },
           'navigation-terms': {
               'link': 'Privacy Policy & Terms of Use'
