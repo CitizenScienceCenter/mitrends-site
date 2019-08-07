@@ -27,6 +27,8 @@ import {mapState} from 'vuex';
 import Header from './components/shared/Header.vue';
 import GDPR from "./components/shared/GDPR";
 
+const url = 'https://hatespeech-staging.citizenscience.ch';
+
 export default {
   name: 'app',
   components: {
@@ -50,15 +52,15 @@ export default {
               },
               {
                   property: 'og:url',
-                  content: 'https://hatespeech-staging.citizenscience.ch'+this.$route.path
+                  content: url+this.$route.path
               },
               {
                   property: 'og:image',
-                  content: 'https://hatespeech-staging.ch/img/promo.jpg'
+                  content: url+'/img/promo.jpg'
               }
           ],
           link: [
-              {rel: 'canonical', href: 'https://hatespeech-staging.citizenscience.ch'+this.$route.path}
+              {rel: 'canonical', href: url+this.$route.path}
           ],
           htmlAttrs: {
               lang: this.language
