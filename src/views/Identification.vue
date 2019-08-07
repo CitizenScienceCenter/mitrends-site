@@ -215,11 +215,11 @@
             <div class="progress">
               <div class="progress-bar">
                 <div class="progress-bar-back">
-                  <div class="progress-bar-fill" :style="{width:(100/265*100)+'%'}"></div>
+                  <div class="progress-bar-fill" :style="{width:(mySubmissionCount/totalTaskCount*100)+'%'}"></div>
                 </div>
               </div>
               <div class="text">
-                Nachricht 100 von 265
+                Fortschritt {{mySubmissionCount}} von {{totalTaskCount}}
               </div>
             </div>
           </div>
@@ -598,7 +598,10 @@ export default {
           currentUser: state => state.c3s.user.currentUser,
           activityId: state => state.consts.identificationActivity,
 
-          tasks: state => state.c3s.task.tasks
+          tasks: state => state.c3s.task.tasks,
+
+          totalTaskCount: state => state.stats.totalTaskCount,
+          mySubmissionCount: state => state.stats.mySubmissionCount
       }),
       bubbleText() {
           if( this.tasks[0] ) {
@@ -631,6 +634,8 @@ export default {
           }
       });
 
+      this.$store.dispatch('stats/updateMySubmissionCount');
+      this.$store.dispatch('stats/updateTotalTaskCount');
 
       this.$store.dispatch("c3s/activity/getActivity", [this.activityId, false]).then(activity => {
 
@@ -821,6 +826,7 @@ export default {
           this.$store.dispatch('c3s/submission/createSubmission').then(submission => {
 
               console.log('submission sent');
+              this.$store.dispatch('stats/increaseMySubmissionCount');
 
           });
 
