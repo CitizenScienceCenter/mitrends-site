@@ -784,7 +784,9 @@ export default {
               if ( this.tasks[0] ) {
 
                   console.log( 'task loaded');
-                  this.$router.replace('/identification/'+this.tasks[0].id);
+                  if( navigator.userAgent !== 'ReactSnap' ) {
+                      this.$router.replace('/identification/' + this.tasks[0].id);
+                  }
 
                   this.selections = [];
                   this.noHateSpeech = false;
