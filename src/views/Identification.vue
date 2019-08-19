@@ -228,10 +228,6 @@
     </app-content-section>
 
 
-
-
-
-
     <app-content-section color="light-greyish">
       <div class="content-wrapper">
         <div class="row row-centered margin-bottom">
@@ -388,6 +384,10 @@
         </div>
       </div>
     </app-content-section>
+
+
+    <section-feedback></section-feedback>
+
 
     <section-newsletter-signup></section-newsletter-signup>
 
@@ -553,11 +553,13 @@ import StepWizard from "@/components/shared/StepWizard";
 import StepWizardStep from "@/components/shared/StepWizardStep";
 import ContentSection from "@/components/shared/ContentSection";
 import InlineHover from "@/components/shared/InlineHover";
+import SectionFeedback from "../components/shared/SectionFeedback";
 
 
 export default {
   name: 'Home',
   components: {
+      SectionFeedback,
       InlineHover,
       ContentSection,
       StepWizardStep,

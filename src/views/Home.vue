@@ -125,11 +125,12 @@
       </div>
     </app-content-section>
 
+    <section-feedback email="hatespeech@citizenscience.ch"></section-feedback>
+
     <section-s-d-g goal="5" color="light-greyish">
       This project is supporting goal no. 15 from the UN Sustainable Development Goals when an unknown printer took a galley of type and scrambled it to make a type specimen book.
     </section-s-d-g>
 
-    <section-feedback email="hatespeech@citizenscience.ch"></section-feedback>
 
     <section-newsletter-signup></section-newsletter-signup>
 
