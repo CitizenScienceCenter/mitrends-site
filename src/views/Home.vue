@@ -119,7 +119,7 @@
               <h2 class="heading centered left-aligned-large">{{ $t('sources-heading') }}</h2>
               <p v-html="$t('sources-text')"></p>
               <div class="button-group centered left-aligned-large">
-                <router-link tag="button" to="/about" class="button button-secondary">{{ $t('sources-button') }}</router-link>
+                <router-link tag="button" to="/sources" class="button button-secondary">{{ $t('sources-button') }}</router-link>
               </div>
             </div>
           </div>
