@@ -636,8 +636,9 @@ export default {
           }
       });
 
-      this.$store.dispatch('stats/updateMySubmissionCount');
       this.$store.dispatch('stats/updateTotalTaskCount');
+      this.$store.dispatch('stats/updateTotalUserAndSubmissionCount');
+      this.$store.dispatch('stats/updateMySubmissionCount');
 
       this.$store.dispatch("c3s/activity/getActivity", [this.activityId, false]).then(activity => {
 
@@ -830,7 +831,9 @@ export default {
           this.$store.dispatch('c3s/submission/createSubmission').then(submission => {
 
               console.log('submission sent');
-              this.$store.dispatch('stats/increaseMySubmissionCount');
+              //this.$store.dispatch('stats/increaseMySubmissionCount');
+              this.$store.dispatch('stats/updateMySubmissionCount');
+              this.$store.dispatch('stats/updateTotalUserAndSubmissionCount');
 
           });
 
