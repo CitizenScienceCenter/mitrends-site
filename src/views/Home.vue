@@ -52,7 +52,7 @@
 
     <section-stats color="greyish" :submissionCount="totalSubmissionCount" :userCount="totalUserCount" :taskCount="totalTaskCount" ></section-stats>
 
-    
+
     <app-content-section>
       <div class="content-wrapper">
         <div class="row row-centered row-middle row-wrapping">
@@ -129,9 +129,9 @@
       </div>
     </app-content-section>
 
-    <section-feedback email="hatespeech@citizenscience.ch"></section-feedback>
+    <section-feedback color="light-greyish" email="hatespeech@citizenscience.ch"></section-feedback>
 
-    <section-s-d-g goal="5" color="light-greyish">
+    <section-s-d-g goal="5" color="greyish">
       This project is supporting goal no. 15 from the UN Sustainable Development Goals when an unknown printer took a galley of type and scrambled it to make a type specimen book.
     </section-s-d-g>
 
