@@ -27,9 +27,9 @@
 
             <div class="col col-large-6 col-wrapping scroll-effect">
 
-              <h2 class="heading small centered left-aligned-large" id="projects">Schritt 1: Selektion</h2>
+              <h2 class="heading small centered left-aligned-large" id="projects">Schritt 1: Identifikation</h2>
               <p>
-                Selektieren Sie in dieser WhatsApp Nachricht jeweils einen geschlechtsspezifischen Hass-Ausdruck und fügen Sie ihn zur List hinzu.<br>
+                Selektieren Sie in dieser WhatsApp Nachricht jeweils einen geschlechtsspezifischen Hass-Ausdruck und fügen Sie ihn zur Liste hinzu.<br>
                 <span class="small"><a href="#" @click.prevent="openWizard">Hilfe anzeigen</a></span>
               </p>
 
@@ -64,7 +64,7 @@
                                   <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
                                 </svg>
                                 <template slot="hover">
-                                  Unter Deutsch verstehen wir auch Nachrichten mit vielen Schreib- und Tippfehlern sowie Schweizerdeutsche Nachrichten. Tipp: Versuchen Sie im Zweifel, den Text laut zu lesen.
+                                  Unter Deutsch verstehen wir auch Nachrichten mit vielen Schreib- und Tippfehlern sowie Schweizerdeutsche Nachrichten. Tipp: Falls die Nachricht unverständlich erscheint, versuchen Sie, sie laut zu lesen.
                                 </template>
                               </inline-hover>
                             </span>
@@ -94,7 +94,7 @@
 
                 <h2 class="heading small centered left-aligned-large" id="projects">Schritt 2: Klassifikation</h2>
                 <p>
-                  Bitte klassifizieren sie die ausgewählten Hass-Ausdrücke:
+                  Bitte klassifizieren Sie die ausgewählten Hass-Ausdrücke:
                 </p>
 
                 <transition name="no-item-fade">
@@ -246,30 +246,30 @@
               <template slot="header">Was sind geschlechtsspezifische Hass-Ausdrücke?</template>
               <template slot="content">
                 <p class="reduced-bottom-margin">
-                  Geschlechtsspezifische Hass-Ausdrücke bezeichnen Ausdrücke die sich auf Menschen beziehen, von Ihnen ohne den Zusammenhang zu beachten als negativ/beleidigend/verletzend/diskriminierend klassifiziert werden und einen Bezug zum Geschlecht oder der sexuellen Orientierung des Menschen haben. Als geschlechtsspezifische Hass-Ausdrücke bezeichnen wir z.B.:
+                  Geschlechtsspezifische Hass-Ausdrücke sind Ausdrücke, die
                 </p>
                 <ul class="reduced-bottom-margin">
-                  <li>
-                    <b>Schwanz:</b> Kann nur für einen Mann verwendet werden und ist ein geschlechtsspezifischer Körperteil.
-                    </p>
-                  </li>
-                  <li>
-                    <b>Weib:</b> Ist despektierlich und kann nur für Frauen verwendet werden.
-                  </li>
-                  <li>
-                    <b>Homo:</b> Hat einen direkten Bezug zur sexuellen Orientierung.
-                  </li>
+                  <li>sich auf Menschen beziehen.</li>
+                  <li>von Ihnen ohne den Zusammenhang zu beachten als negativ / beleidigend / verletzend / diskriminierend klassifiziert werden.</li>
+                  <li>einen Bezug zum Geschlecht oder der sexuellen Orientierung des Menschen haben.</li>
                 </ul>
                 <p class="reduced-bottom-margin">
-                  <b>Nicht als geschlechtsspezifische Hass-Ausdrücke würden wir bezeichnen:</b>
+                  <b>Beispiele:</b>
+                </p>
+                <p class="reduced-bottom-margin">
+                  Geschlechtsspezifisch:
                 </p>
                 <ul class="reduced-bottom-margin">
-                  <li>
-                    <b>Arschloch:</b> Der Ausdruck bezeichnet zwar einen Körperteil, dieser ist aber allen Geschlechtern gleich.
-                  </li>
-                  <li>
-                    <b>Idiot, Blödian, Sauhund:</b> Dies sind alles Beschimpfungen, haben aber keinen Bezug zum Geschlecht oder der sexuellen Ausrichtung.
-                  </li>
+                  <li><b><i>Schwanz: </i></b>Kann nur für einen Mann verwendet werden.</li>
+                  <li><b><i>Weib: </i></b>Kann nur für Frauen verwendet werden.</li>
+                  <li><b><i>Homo: </i></b>Direkten Bezug zur sexuellen Orientierung.</li>
+                </ul>
+                <p class="reduced-bottom-margin">
+                  <b>Nicht</b> geschlechtsspezifisch:
+                </p>
+                <ul class="reduced-bottom-margin">
+                  <li><b><i>Arschloch: </i></b>Ist bei allen Geschlechtern gleich.</li>
+                  <li><b><i>Idiot, Trottel, Sauhund: </i></b>keinen Bezug zum Geschlecht oder der sexuellen Ausrichtung</li>
                 </ul>
               </template>
             </expandable>
@@ -277,26 +277,26 @@
               <template slot="header">Wie gehe ich genau vor?</template>
               <template slot="content">
                 <p class="reduced-bottom-margin">
-                  In einem ersten Schritt geht es darum, Text-Teile auszuwählen, die als geschlechtsspezifische Hass-Ausdrücke erkennbar sind. Dabei spielt es keine Rolle, ob diese abwertend oder nicht abwertend gemeint sind, sie sollen in einem ersten Schritt nur identifiziert werden. Dazu wird im ersten farbigen Feld unten mit dem Titel 1. Identifizieren von geschlechtsspezifischen Hass-Ausdrücken der ganze Ausdruck, den Sie identifiziert haben, mit der Maus angewählt. Wenn Sie jetzt auf den Knopf Markierten Text hinzufügen klicken, wird alles, was Sie angewählt haben, im zweiten farbigen Block in einer Tabelle aufgelistet. Führen Sie diesen Schritt bitte so oft aus, bis alle geschlechtsspezifischen Hass-Ausdrücke in der dargestellten Nachricht in der Tabelle stehen. Fehler sind kein Problem: Ausdrücke in der Tabelle können mit einem Klick auf das X jederzeit wieder entfernt werden.
+                  In einem ersten Schritt geht es darum, Text-Teile auszuwählen, die als geschlechtsspezifische Hass-Ausdrücke erkennbar sind. Dabei spielt es keine Rolle, ob diese abwertend oder nicht abwertend gemeint sind, sie sollen in einem ersten Schritt nur identifiziert werden. Dazu wird im ersten farbigen Feld unten mit dem Titel <i>1. Identifizieren</i> von geschlechtsspezifischen Hass-Ausdrücken der ganze Ausdruck, den Sie identifiziert haben, mit der Maus angewählt. Wenn Sie jetzt auf den Knopf <i>hinzufügen</i> klicken, wird alles, was Sie angewählt haben, im zweiten farbigen Block in einer Tabelle aufgelistet. Führen Sie diesen Schritt bitte so oft aus, bis alle geschlechtsspezifischen Hass-Ausdrücke in der dargestellten Nachricht in der Tabelle stehen. Fehler sind kein Problem: Ausdrücke in der Tabelle können mit einem Klick auf das <i>X</i> jederzeit wieder entfernt werden.
                 </p>
                 <p class="reduced-bottom-margin">
-                  In einem zweiten Schritt bitten wir Sie, die von Ihnen ausgewählten Ausdrücke in Bezug auf drei Kategorien zu beschreiben. Bei diesen Beurteilungen geht es uns darum, in einer späteren Auswertung analysieren zu können, wie eine Person beleidigt wird und wer beleidigt wird. Entsprechend bezieht sich die erste Kategorie auf das Wie, also auf die Wortherkunft des Hass-Ausdrucks, die zwei anderen Kategorien sollen aufzeigen, auf Grund welcher Eigenschaften eine Person mutmasslich beleidigt wird. Für diese Beurteilung benötigen wir die beiden Kategorien Geschlecht und sexuelle Ausrichtung.
+                  In einem weiteren Schritt bitten wir Sie, die von Ihnen ausgewählten Ausdrücke in Bezug auf drei Kategorien zu beschreiben. Bei diesen Beurteilungen geht es uns darum, in einer späteren Auswertung analysieren zu können, wie eine Person beleidigt wird und wer beleidigt wird. Entsprechend bezieht sich die erste Kategorie auf das Wie, also auf die Wortherkunft des Hass-Ausdrucks, die zwei anderen Kategorien sollen aufzeigen, auf Grund welcher Eigenschaften eine Person mutmasslich beleidigt wird. Für diese Beurteilung benötigen wir die beiden Kategorien Geschlecht und sexuelle Ausrichtung.
                 </p>
                 <p class="reduced-bottom-margin">
                   Optionen für die Wortherkunft:
                 </p>
                 <ul class="reduced-bottom-margin">
                   <li>
-                    Anatomie (Körperteile, z.B. Schwanz)
+                    Anatomie (Körperteile, z.B. <i>Schwanz</i>)
                   </li>
                   <li>
-                    Tätigkeiten (z.B. Hure, Wichser)
+                    Tätigkeiten (z.B. <i>Hure</i>, <i>Wichser</i>)
                   </li>
                   <li>
-                    Die Geschlechtszugehörigkeit, wenn also auf die Person gezielt wird (z.B. Weib)
+                    Die Geschlechtszugehörigkeit, wenn also auf die Person gezielt wird (z.B. <i>Weib</i>)
                   </li>
                   <li>
-                    Die sexuelle Ausrichtung, auch hier wird auf die Person gezielt (z.B. Homo, wenn es abwertend gebraucht wird)
+                    Die sexuelle Ausrichtung, auch hier wird auf die Person gezielt (z.B. <i>Homo</i>, wenn es abwertend gebraucht wird)
                   </li>
                   <li>
                     Andere: Wenn keine dieser Optionen passt, wählen Sie bitte Andere an.
@@ -316,7 +316,7 @@
                     Frau
                   </li>
                   <li>
-                    Divers: Die Bezeichnung Divers wird in Deutschland für Menschen verwendet, die sich den Geschlechtern Mann und Frau nicht zuordnen möchten.
+                    Divers: Die Bezeichnung Divers wird in Deutschland für Menschen verwendet, die sich den Geschlechtern Mann und Frau nicht zuordnen.
                   </li>
                   <li>
                     Unbekannt: Oft ist das Geschlecht im Zusammenhang des Textes nicht erkennbar. Wählen Sie in dem Fall bitte die Option Unbekannt.
@@ -326,9 +326,12 @@
                   Optionen für die sexuelle Ausrichtung:
                 </p>
                 <p class="reduced-bottom-margin">
-                  Erneut ist es wichtig, dass diese Orientierung tatsächlich aus dem Text hervorgeht. Heterosexuell
+                  Erneut ist es wichtig, dass diese Orientierung tatsächlich aus dem Text hervorgeht.
                 </p>
                 <ul class="reduced-bottom-margin">
+                  <li>
+                    Heterosexuell
+                  </li>
                   <li>
                     Homosexuell
                   </li>
@@ -351,7 +354,7 @@
               <template slot="header">Welchen Teil des Textes muss ich auswählen?</template>
               <template slot="content">
                 <p class="reduced-bottom-margin">
-                  Wir interessieren uns für Ausdrücke, in denen eine Person wegen ihres Geschlechts oder ihrer sexuellen Ausrichtung angefeindet wird. Diese Ausdrücke bestehen häufig aus mehr als einem Wort, also z.B. einem Artikelwort (der, die, das, ein, eine, dieser, diese etc.), einem Nomen (Mann, Frau, Typ, Kerl, Homo, Lesbe, Ekel etc.) und weiteren Wörtern dazwischen (huere, netter, blöde, gut ausgebildete). Das ergibt dann z.B.: 1. Der doofe Schwanz, 2. Der gut ausgebildete Homo, 3. Lesbe. Ausgewählt werden sollte bitte jeweils der ganzen Ausdruck, also alles zwischen dem Artikelwort und dem Nomen, wobei der Artikel fehlen kann wie in Beispiel 3. Ebenso können zwischen dem Artikelwort und dem Nomen noch weitere Wörter stehen, die dann auch mit ausgewählt werden sollen.
+                  Wir interessieren uns für Ausdrücke, in denen eine Person wegen ihres Geschlechts oder ihrer sexuellen Ausrichtung angefeindet wird. Diese Ausdrücke bestehen häufig aus mehr als einem Wort, also z.B. einem Artikelwort (<i>der</i>, <i>die</i>, <i>das</i>, <i>ein</i>, <i>eine</i>, <i>dieser</i>, <i>diese</i>, etc.), einem Nomen (<i>Mann</i>, <i>Frau</i>, <i>Typ</i>, <i>Kerl</i>, <i>Homo</i>, <i>Lesbe</i>, <i>Ekel</i>, etc.) und weiteren Wörtern dazwischen (<i>huere</i>, <i>netter</i>, <i>blöde</i>, <i>gut ausgebildete</i>). Das ergibt dann z.B.: 1. <i>Der doofe Schwanz</i>, 2. <i>Der gut ausgebildete Homo</i>, 3. <i>Lesbe</i>. Ausgewählt werden sollte bitte jeweils der ganzen Ausdruck, also alles zwischen dem Artikelwort und dem Nomen, wobei der Artikel fehlen kann wie in Beispiel 3. Ebenso können zwischen dem Artikelwort und dem Nomen noch weitere Wörter stehen, die dann auch mit ausgewählt werden sollen.
                 </p>
               </template>
             </expandable>
@@ -359,7 +362,7 @@
               <template slot="header">Der Text ist gar nicht Deutsch!</template>
               <template slot="content">
                 <p class="reduced-bottom-margin">
-                  Unsere Datensammlung beinhaltet Texte in den drei grösseren Landessprachen. Wir haben menschliche und technologische Hilfe verwendet, um den einzelnen Nachrichten eine Haupt-Sprache zuzuordnen. In vielen Fällen funktioniert das gut, aber nicht immer. Wenn der angezeigte Text nicht Deutsch ist, so können Sie uns das mit einem Klick auf “Dieser Text ist nicht Deutsch” mitteilen und sich einen nächsten Text anzeigen lassen. Bedenken Sie dabei aber, dass wir die Bezeichnung Deutsch wesentlich grosszügiger beurteilen, als dies vielleicht eine Primarlehrperson tun würde. Unter Deutsch verstehen wir auch Nachrichten mit vielen Schreib- und Tippfehlern sowie Schweizerdeutsche Nachrichten, also nicht nur das Hochdeutsch, das Sie in der Schule gelernt haben. Lesen Sie den Text also bitte genau durch, manche Dialekte sind nicht auf Anhieb als Deutsch zu erkennen. Tipp: Versuchen Sie im Zweifel, den Text laut zu lesen. So können Sie unter Umständen erkennen, ob etwas dialektal ist und nicht etwa eine Fremdsprache.
+                  Unsere Datensammlung beinhaltet Texte in den drei grösseren Landessprachen. Wir haben menschliche und technologische Hilfe verwendet, um den einzelnen Nachrichten eine Haupt-Sprache zuzuordnen. In vielen Fällen funktioniert das gut, aber nicht immer. Wenn der angezeigte Text nicht Deutsch ist, so können Sie uns das mit einem Klick auf <i>Text ist nicht Deutsch</i> mitteilen und sich einen nächsten Text anzeigen lassen. Bedenken Sie dabei aber, dass wir die Bezeichnung Deutsch wesentlich grosszügiger beurteilen, als dies vielleicht eine Primarlehrperson tun würde. Unter Deutsch verstehen wir auch Nachrichten mit vielen Schreib- und Tippfehlern sowie Schweizerdeutsche Nachrichten, also nicht nur das Hochdeutsch, das Sie in der Schule gelernt haben. Lesen Sie den Text also bitte genau durch, manche Dialekte sind nicht auf Anhieb als Deutsch zu erkennen. Tipp: Versuchen Sie im Zweifel, den Text laut zu lesen. So können Sie unter Umständen erkennen, ob etwas dialektal ist und nicht etwa eine Fremdsprache.
                 </p>
               </template>
             </expandable>
@@ -367,7 +370,7 @@
               <template slot="header">Was passiert, wenn wir alle Texte bearbeitet haben?</template>
               <template slot="content">
                 <p class="reduced-bottom-margin">
-                  Wir möchten in diesem ersten Schritt zunächst alle geschlechtsspezifischen Hass-Ausdrücke identifizieren. Das geht am einfachsten, wenn wir Ihnen immer nur eine Nachricht nach der anderen zeigen. Im nächsten Schritt wird es darum gehen, die gefundenen Ausdrücke zu klassifizieren, also zu bestimmen, ob sie wirklich abwertend gebraucht werden oder ob sie sogar freundschaftlich gemeint sind. Um dies bestimmen zu können, muss die Nachricht im Zusammenhang mit der vorhergehenden und der nachfolgenden Nachricht gesehen werden. Wir werden also im zweiten Schritt auch die vorangehende und die folgende Nachricht zeigen und Sie fragen, wie Sie den Ausdruck klassifizieren. Wir würden uns freuen, wenn Sie auch an diesem Schritt wieder mitarbeiten würden.
+                  Wir möchten in diesem ersten Schritt zunächst alle geschlechtsspezifischen Hass-Ausdrücke identifizieren. Das geht am einfachsten, wenn wir Ihnen immer nur eine Nachricht nach der anderen zeigen. Im nächsten Schritt wird es darum gehen, die gefundenen Ausdrücke zu klassifizieren, also zu bestimmen, ob sie wirklich abwertend gebraucht werden oder ob sie sogar freundschaftlich gemeint sind. Um dies bestimmen zu können, muss die Nachricht im Zusammenhang mit der vorhergehenden und der nachfolgenden Nachricht gesehen werden. Wir werden also im zweiten Schritt auch die vorangehende und die folgende Nachricht zeigen und Sie fragen, wie Sie den Ausdruck klassifizieren. Wir würden uns freuen, wenn Sie auch an diesem Schritt mitarbeiten würden.
                 </p>
               </template>
             </expandable>
@@ -375,7 +378,7 @@
               <template slot="header">Ihr sprecht immer von Chats, Nachrichten und Ausdrücken, was ist das genau?</template>
               <template slot="content">
                 <p class="reduced-bottom-margin">
-                  Wenn Sie mit jemandem per WhatsApp chatten, dann entsteht ein ganzer Dialog, in dem mal Sie und mal die andere(n) Person(en) etwas schreiben. Dieser Dialog zieht sich oft über ganze Jahre hin und wird von uns als Chat bezeichnet. In diesem Chat gibt es Sprechblasen, die Sie geschrieben haben und solche, die jemand anders geschrieben hat. Jede einzelne Sprechblase bezeichnen wir als Nachricht. Der Ausdruck schliesslich hat eigentlich nichts mit WhatsApp zu tun, sondern ist das, was wir suchen, nämlich den Teil einer Nachricht, in dem geschlechtsspezifischer Hass ausgedrückt wird
+                  Wenn Sie mit jemandem per WhatsApp chatten, dann entsteht ein ganzer Dialog, in dem mal Sie und mal die andere(n) Person(en) etwas schreiben. Dieser Dialog zieht sich oft über ganze Jahre hin und wird von uns als Chat bezeichnet. In diesem Chat gibt es Sprechblasen, die Sie geschrieben haben und solche, die jemand anders geschrieben hat. Jede einzelne Sprechblase bezeichnen wir als Nachricht. Der Ausdruck schliesslich hat eigentlich nichts mit WhatsApp zu tun, sondern ist das, was wir suchen, nämlich den Teil einer Nachricht, in dem geschlechtsspezifischer Hass ausgedrückt wird.
                 </p>
               </template>
             </expandable>
@@ -407,7 +410,7 @@
                 </div>
 
                 <p class="reduced-bottom-margin">
-                  Geschlechtsspezifische Hass-Ausdrücke bezeichnen Ausdrücke die:
+                  Geschlechtsspezifische Hass-Ausdrücke sind Ausdrücke, die
                 </p>
                 <ul>
                   <li>sich auf Menschen beziehen.</li>
@@ -422,19 +425,19 @@
                   <b>Beispiele:</b>
                 </p>
                 <p class="reduced-bottom-margin">
-                  Geschlechterspezifisch:
+                  Geschlechtsspezifisch:
                 </p>
                 <ul>
-                  <li><b>Schwanz: </b>Kann nur für einen Mann verwendet werden.</li>
-                  <li><b>Weib: </b>kann nur für Frauen verwendet werden.</li>
-                  <li><b>Homo: </b>Direkten Bezug zur sexuellen Orientierung.</li>
+                  <li><b><i>Schwanz: </i></b>Kann nur für einen Mann verwendet werden.</li>
+                  <li><b><i>Weib: </i></b>Kann nur für Frauen verwendet werden.</li>
+                  <li><b><i>Homo: </i></b>Direkten Bezug zur sexuellen Orientierung.</li>
                 </ul>
                 <p class="reduced-bottom-margin">
-                  <b>Nicht</b> Geschlechterspezifisch:
+                  <b>Nicht</b> geschlechtsspezifisch:
                 </p>
                 <ul>
-                  <li><b>Arschloch: </b>ist bei allen Geschlechtern gleich.</li>
-                  <li><b>Idiot, Trottel, Sauhund: </b>keinen Bezug zum Geschlecht oder der sexuellen Ausrichtung.</li>
+                  <li><b><i>Arschloch: </i></b>Ist bei allen Geschlechtern gleich.</li>
+                  <li><b><i>Idiot, Trottel, Sauhund: </i></b>keinen Bezug zum Geschlecht oder der sexuellen Ausrichtung</li>
                 </ul>
 
               </div>
@@ -455,26 +458,28 @@
                 </div>
 
                 <p class="reduced-bottom-margin">
-                  Wählen Sie Text-Teile aus, die als geschlechtsspezifische Hass-Ausdrücke erkennbar sind.
+                  Wählen Sie mit Ihrer Maus Text-Teile aus, die als geschlechtsspezifische Hass-Ausdrücke erkennbar sind.
                 </p>
-                <p class="reduced-bottom-margin">
-                  <b>Es spielt es keine Rolle, ob die Ausdrücke abwertend oder nicht abwertend gemeint sind.</b>
-                </p>
+                <ul>
+                  <li><b>Es spielt keine Rolle, ob die Ausdrücke abwertend oder nicht abwertend gemeint sind.</b></li>
+                  <li><b>(hier kommt noch ein Satz von Fanny ...)</b></li>
+                </ul>
 
               </div>
               <div class="col col-large-6 col-wrapping">
-
                 <p class="reduced-bottom-margin">
-                  <b>Ausdrücke bestehen häufig aus mehr als einem Wort</b>, also z.B. einem Artikelwort (der, die, das, ein, eine, dieser, diese etc.), einem Nomen (Mann, Frau, Typ, Kerl, Homo, Lesbe, Ekel etc.) und weiteren Wörtern dazwischen (huere, netter, blöde, gut ausgebildete).<br>
-                  <b>Ausgewählt werden sollte bitte jeweils der ganzen Ausdruck.</b>
+                  <b>Ausdrücke bestehen häufig aus mehr als einem Wort</b>, also z.B. einem Artikelwort (<i>der</i>, <i>die</i>, <i>das</i>, <i>ein</i>, <i>eine</i>, <i>dieser</i>, <i>diese</i>, etc.), einem Nomen (<i>Mann</i>, <i>Frau</i>, <i>Typ</i>, <i>Kerl</i>, <i>Homo</i>, <i>Lesbe</i>, <i>Ekel</i>, etc.) und weiteren Wörtern dazwischen (<i>huere</i>, <i>netter</i>, <i>blöde</i>, <i>gut ausgebildete</i>).<br>
+                </p>
+                <p class="reduced-bottom-margin">
+                  <b>Ausgewählt werden sollte bitte jeweils der ganze Ausdruck.</b>
                 </p>
                 <p class="reduced-bottom-margin">
                   <b>Beispiele:</b>
                 </p>
                 <ul>
-                  <li><b>Der doofe Schwanz</b></li>
-                  <li><b>Der gut ausgebildete Homo</b></li>
-                  <li><b>Lesbe</b></li>
+                  <li><b><i>Der doofe Schwanz</i></b></li>
+                  <li><b><i>Der gut ausgebildete Homo</i></b></li>
+                  <li><b><i>Lesbe</i></b></li>
                 </ul>
 
               </div>
@@ -495,16 +500,16 @@
                 </div>
 
                 <p class="reduced-bottom-margin">
-                  In einem zweiten Schritt bitten wir Sie, die von Ihnen ausgewählten Ausdrücke in Bezug auf <b>drei Kategorien</b> zu beschreiben.
+                  Weiter bitten wir Sie, die von Ihnen ausgewählten Ausdrücke in Bezug auf <b>drei Kategorien</b> zu beschreiben.
                 </p>
                 <p class="reduced-bottom-margin">
                   <b>Wortherkunft</b>
                 </p>
                 <ul>
-                  <li><b>Anatomie </b>(Körperteile, z.B. Schwanz)</li>
-                  <li><b>Geschlechtszugehörigkeit </b>(z.B. Weib)</li>
-                  <li><b>Sexuelle Ausrichtung </b>(z.B. Homo)</li>
-                  <li><b>Andere </b>(Wenn keine dieser Optionen passt)</li>
+                  <li><b>Anatomie </b>(Körperteile, z.B. <i>Schwanz</i>)</li>
+                  <li><b>Geschlechtszugehörigkeit </b>(z.B. <i>Weib</i>)</li>
+                  <li><b>Sexuelle Ausrichtung </b>(z.B. <i>Homo</i>)</li>
+                  <li><b>Andere </b>(wenn keine dieser Optionen passt)</li>
                 </ul>
 
               </div>
@@ -516,7 +521,7 @@
                 <ul>
                   <li><b>Mann</b></li>
                   <li><b>Frau</b></li>
-                  <li><b>Divers </b>(für Menschen, die sich den Geschlechtern Mann und Frau nicht zuordnen möchten.)</li>
+                  <li><b>Divers </b>(für Menschen, die sich den Geschlechtern Mann und Frau nicht zuordnen)</li>
                   <li><b>Unbekannt </b>(nicht erkennbar)</li>
                 </ul>
                 <p class="reduced-bottom-margin">

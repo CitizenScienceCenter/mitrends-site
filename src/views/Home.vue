@@ -3,7 +3,7 @@
 
   "de": {
 
-  "cover-heading": "Geschlechter&shy;spezifische Hassausdrücke",
+  "cover-heading": "Geschlechts&shy;spezifische Hassausdrücke",
   "cover-subheading": "Identifizieren und klassifizieren anhand von Whatsapp Texten",
   "cover-button-primary": "Zur Identifikation",
   "cover-button-secondary": "Über das Projekt",
@@ -13,7 +13,7 @@
   "intro-button": "Mehr erfahren",
 
   "identification-heading": "Ihre Hilfe ist gefragt",
-  "identification-text": "Um unsere Ziele zu erreichen, bitten wir um Ihre Hilfe. In einem ersten Schritt (Identifikation) geht es darum, möglichst viele Texte anzuschauen und nach möglichen geschlechterspezifischen Hassausdrücken zu suchen. Wenn uns möglichst viele Leute dabei helfen, sollte diese Suche einigermassen schnell zu Resultaten führen. Damit nicht alle 750'000 Botschaften gelesen werden müssen, werden wir danach die gefundenen Hassausdrücke auch in den noch nicht gelesenen Botschaften suchen. So sollten wir zu einer stattlichen Anzahl von Belegen kommen.",
+  "identification-text": "Um unsere Ziele zu erreichen, bitten wir um Ihre Hilfe. In einem ersten Schritt (Identifikation) geht es darum, möglichst viele Texte anzuschauen und nach möglichen geschlechtsspezifischen Hassausdrücken zu suchen. Wenn uns möglichst viele Leute dabei helfen, sollte diese Suche einigermassen schnell zu Resultaten führen. Damit nicht alle 750'000 Botschaften gelesen werden müssen, werden wir danach die gefundenen Hassausdrücke auch in den noch nicht gelesenen Botschaften suchen. So sollten wir zu einer stattlichen Anzahl von Belegen kommen.",
   "identification-button": "Zur Identifikation",
 
   "sources-heading": "Woher stammen die Texte?",
@@ -50,6 +50,9 @@
     </app-cover>
 
 
+    <section-stats color="greyish" :submissionCount="totalSubmissionCount" :userCount="totalUserCount" :taskCount="totalTaskCount" ></section-stats>
+
+    
     <app-content-section>
       <div class="content-wrapper">
         <div class="row row-centered row-middle row-wrapping">
@@ -101,8 +104,6 @@
       </div>
     </app-content-section>
 
-
-    <section-stats color="greyish" :submissionCount="totalSubmissionCount" :userCount="totalUserCount" :taskCount="totalTaskCount" ></section-stats>
 
     <app-content-section>
       <div class="content-wrapper">
