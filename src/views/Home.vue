@@ -132,7 +132,7 @@
     <section-feedback color="light-greyish" email="hatespeech@citizenscience.ch"></section-feedback>
 
     <section-s-d-g goal="5" color="greyish">
-      This project is supporting goal no. 15 from the UN Sustainable Development Goals when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      This project supports Goal 5: Achieve gender equality and empower all women and girls, and in particular target 5.2 on eliminating all forms of violence against all women in the public sphere.
     </section-s-d-g>
 
 
