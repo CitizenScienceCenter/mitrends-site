@@ -3,7 +3,7 @@
 
   "de": {
 
-  "cover-heading": "Geschlechts&shy;spezifische Hassausdrücke",
+  "cover-heading": "Beschlechts&shy;spezifische Hassausdrücke",
   "cover-subheading": "Identifizieren und klassifizieren anhand von Whatsapp Texten",
   "cover-button-primary": "Zur Identifikation",
   "cover-button-secondary": "Über das Projekt",
