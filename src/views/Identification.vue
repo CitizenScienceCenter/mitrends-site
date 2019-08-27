@@ -29,7 +29,7 @@
 
               <h2 class="heading small centered left-aligned-large" id="projects">Schritt 1: Identifikation</h2>
               <p>
-                Selektieren Sie in dieser WhatsApp Nachricht jeweils einen geschlechtsspezifischen Hass-Ausdruck und fügen Sie ihn zur Liste hinzu.<br>
+                Selektieren Sie in dieser WhatsApp Nachricht, falls vorhanden, jeweils einen geschlechtsspezifischen Hass-Ausdruck und fügen ihn zur Liste hinzu.<br>
                 <span class="small"><a href="#" @click.prevent="openWizard">Hilfe anzeigen</a></span>
               </p>
 
@@ -137,7 +137,7 @@
                             <path d="M504,256c0,137-111,248-248,248S8,393,8,256,119,8,256,8,504,119.08,504,256ZM262.65,90c-54.49,0-89.25,23-116.54,63.76A12,12,0,0,0,148.82,170l34.7,26.31a12,12,0,0,0,16.66-2.13c17.87-22.65,30.12-35.79,57.31-35.79,20.43,0,45.7,13.14,45.7,33,0,15-12.37,22.67-32.54,34C247.13,238.53,216,254.94,216,296v4a12,12,0,0,0,12,12h56a12,12,0,0,0,12-12v-1.33C296,270.2,379.19,269,379.19,192,379.19,134,319,90,262.65,90ZM256,338a46,46,0,1,0,46,46A46.05,46.05,0,0,0,256,338Z"/>
                           </svg>
                           <template slot="hover">
-                            Mögliche Kategorien sind Körperteile (z.B. Schwanz), Tätigkeiten (z.B. Hure oder Wichser) oder Geschlechtszugehörigkeit (z.B. Weib) oder die sexuelle Ausrichtung, (z.B. Homo).
+                            Mögliche Kategorien sind Körperteile (z.B. <i>Schwanz</i>), Tätigkeiten (z.B. <i>Hure</i> oder <i>Wichser</i>) oder Geschlechtszugehörigkeit (z.B. <i>Weib</i>) oder die sexuelle Ausrichtung, (z.B. <i>Homo</i>).
                           </template>
                         </inline-hover>
                       </div>
@@ -262,14 +262,14 @@
                 <ul class="reduced-bottom-margin">
                   <li><b><i>Schwanz: </i></b>Kann nur für einen Mann verwendet werden.</li>
                   <li><b><i>Weib: </i></b>Kann nur für Frauen verwendet werden.</li>
-                  <li><b><i>Homo: </i></b>Direkten Bezug zur sexuellen Orientierung.</li>
+                  <li><b><i>Homo: </i></b>Hat einen direkten Bezug zur sexuellen Orientierung.</li>
                 </ul>
                 <p class="reduced-bottom-margin">
                   <b>Nicht</b> geschlechtsspezifisch:
                 </p>
                 <ul class="reduced-bottom-margin">
                   <li><b><i>Arschloch: </i></b>Ist bei allen Geschlechtern gleich.</li>
-                  <li><b><i>Idiot, Trottel, Sauhund: </i></b>keinen Bezug zum Geschlecht oder der sexuellen Ausrichtung</li>
+                  <li><b><i>Idiot, Trottel, Sauhund: </i></b>Hat keinen Bezug zum Geschlecht oder der sexuellen Ausrichtung.</li>
                 </ul>
               </template>
             </expandable>
@@ -277,7 +277,7 @@
               <template slot="header">Wie gehe ich genau vor?</template>
               <template slot="content">
                 <p class="reduced-bottom-margin">
-                  In einem ersten Schritt geht es darum, Text-Teile auszuwählen, die als geschlechtsspezifische Hass-Ausdrücke erkennbar sind. Dabei spielt es keine Rolle, ob diese abwertend oder nicht abwertend gemeint sind, sie sollen in einem ersten Schritt nur identifiziert werden. Dazu wird im ersten farbigen Feld unten mit dem Titel <i>1. Identifizieren</i> von geschlechtsspezifischen Hass-Ausdrücken der ganze Ausdruck, den Sie identifiziert haben, mit der Maus angewählt. Wenn Sie jetzt auf den Knopf <i>hinzufügen</i> klicken, wird alles, was Sie angewählt haben, im zweiten farbigen Block in einer Tabelle aufgelistet. Führen Sie diesen Schritt bitte so oft aus, bis alle geschlechtsspezifischen Hass-Ausdrücke in der dargestellten Nachricht in der Tabelle stehen. Fehler sind kein Problem: Ausdrücke in der Tabelle können mit einem Klick auf das <i>X</i> jederzeit wieder entfernt werden.
+                  In einem ersten Schritt geht es darum, Text-Teile auszuwählen, die als geschlechtsspezifische Hass-Ausdrücke erkennbar sind. Dabei spielt es keine Rolle, ob diese abwertend oder nicht abwertend gemeint sind, sie sollen in einem ersten Schritt nur identifiziert werden. Dazu wird im grünen Feld links mit dem Titel <i>1. Identifizieren</i> von geschlechtsspezifischen Hass-Ausdrücken der ganze Ausdruck, den Sie identifiziert haben, mit der Maus angewählt. Wenn Sie jetzt auf den Knopf <i>hinzufügen</i> klicken, wird alles, was Sie angewählt haben, unterhalb des Titels <i>2. Klassifikation</i> aufgelistet. Führen Sie diesen Schritt bitte so oft aus, bis alle geschlechtsspezifischen Hass-Ausdrücke in der dargestellten Nachricht in der Tabelle stehen. Fehler sind kein Problem: Ausdrücke in der Tabelle können mit einem Klick auf das <i>X</i> jederzeit wieder entfernt werden.
                 </p>
                 <p class="reduced-bottom-margin">
                   In einem weiteren Schritt bitten wir Sie, die von Ihnen ausgewählten Ausdrücke in Bezug auf drei Kategorien zu beschreiben. Bei diesen Beurteilungen geht es uns darum, in einer späteren Auswertung analysieren zu können, wie eine Person beleidigt wird und wer beleidigt wird. Entsprechend bezieht sich die erste Kategorie auf das Wie, also auf die Wortherkunft des Hass-Ausdrucks, die zwei anderen Kategorien sollen aufzeigen, auf Grund welcher Eigenschaften eine Person mutmasslich beleidigt wird. Für diese Beurteilung benötigen wir die beiden Kategorien Geschlecht und sexuelle Ausrichtung.
@@ -346,7 +346,7 @@
                   </li>
                 </ul>
                 <p class="reduced-bottom-margin">
-                  Wenn Sie alles auf dieser Seite korrekt ausgewählt und kategorisiert haben, können Sie Ihre Angaben mit Weiter speichern und zur nächsten Nachricht gelangen.
+                  Wenn Sie alles auf dieser Seite korrekt ausgewählt und kategorisiert haben, können Sie Ihre Angaben mit <i>antworten</i> speichern und zur nächsten Nachricht gelangen.
                 </p>
               </template>
             </expandable>
@@ -430,14 +430,14 @@
                 <ul>
                   <li><b><i>Schwanz: </i></b>Kann nur für einen Mann verwendet werden.</li>
                   <li><b><i>Weib: </i></b>Kann nur für Frauen verwendet werden.</li>
-                  <li><b><i>Homo: </i></b>Direkten Bezug zur sexuellen Orientierung.</li>
+                  <li><b><i>Homo: </i></b>Hat einen direkten Bezug zur sexuellen Orientierung.</li>
                 </ul>
                 <p class="reduced-bottom-margin">
                   <b>Nicht</b> geschlechtsspezifisch:
                 </p>
                 <ul>
                   <li><b><i>Arschloch: </i></b>Ist bei allen Geschlechtern gleich.</li>
-                  <li><b><i>Idiot, Trottel, Sauhund: </i></b>keinen Bezug zum Geschlecht oder der sexuellen Ausrichtung</li>
+                  <li><b><i>Idiot, Trottel, Sauhund: </i></b>Hat keinen Bezug zum Geschlecht oder der sexuellen Ausrichtung.</li>
                 </ul>
 
               </div>
@@ -462,7 +462,7 @@
                 </p>
                 <ul>
                   <li><b>Es spielt keine Rolle, ob die Ausdrücke abwertend oder nicht abwertend gemeint sind.</b></li>
-                  <li><b>(hier kommt noch ein Satz von Fanny ...)</b></li>
+                  <li><b>Es gibt viele Mitteilungen, in denen KEINE Hassausdrücke vorkommen. Setzen Sie dann bitte ein Häkchen bei <i>keine Hassausdrücke gefunden</i></b></li>
                 </ul>
 
               </div>
