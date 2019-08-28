@@ -34,15 +34,15 @@
               </p>
 
               <div>
-                <div class="speech-bubble reduced-bottom-margin" ref="bubble" v-html="bubbleText" :class="{disabled: wrongLanguage || noHateSpeech }"></div>
-
+                <div v-if="taskLoaded" class="speech-bubble reduced-bottom-margin" ref="bubble" v-html="bubbleText" :class="{disabled: wrongLanguage || noHateSpeech }"></div>
+                <loader v-else class="reduced-bottom-margin"></loader>
 
                 <div class="row row-wrapping">
                   <div class="col col-wrapping col-large-6">
 
                     <div class="form-field form-field-block form-field-language-checkbox">
                       <div class="options">
-                        <label :class="{disabled: wrongLanguage }">
+                        <label :class="{disabled: wrongLanguage || !taskLoaded }">
                           <input type="checkbox" v-model="noHateSpeech">
                           <div class="checkbox">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -51,7 +51,7 @@
                           </div>
                           <span>Keine Hassausdrücke gefunden</span>
                         </label>
-                        <label :class="{disabled: noHateSpeech }">
+                        <label :class="{disabled: noHateSpeech || !taskLoaded }">
                             <input type="checkbox" v-model="wrongLanguage">
                             <div class="checkbox">
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -207,8 +207,8 @@
         <div class="row row-wrapping row-reverse-large scroll-effect scroll-effect-delayed-2">
           <div class="col col-large-6 col-wrapping">
             <div class="button-group right-aligned">
-              <button class="button button-secondary" @click="next">Überspringen</button>
-              <button class="button button-primary" @click="submit" :disabled="!tasks[0] || !complete && !wrongLanguage && !noHateSpeech">Antworten</button>
+              <button class="button button-secondary" @click="next" :disabled="!taskLoaded">Überspringen</button>
+              <button class="button button-primary" @click="submit" :disabled="!taskLoaded || !complete && !wrongLanguage && !noHateSpeech">Antworten</button>
             </div>
           </div>
           <div class="col col-large-6 col-wrapping">
@@ -559,11 +559,13 @@ import StepWizardStep from "@/components/shared/StepWizardStep";
 import ContentSection from "@/components/shared/ContentSection";
 import InlineHover from "@/components/shared/InlineHover";
 import SectionFeedback from "../components/shared/SectionFeedback";
+import Loader from "../components/shared/Loader";
 
 
 export default {
   name: 'Home',
   components: {
+      Loader,
       SectionFeedback,
       InlineHover,
       ContentSection,
@@ -595,7 +597,9 @@ export default {
           complete: false,
 
           taskId: undefined,
-          hasSubmissionAlready: false
+          hasSubmissionAlready: false,
+
+          taskLoaded: false
       }
   },
   computed: {
@@ -676,10 +680,12 @@ export default {
   methods: {
       loadTask() {
 
+          this.taskLoaded = false;
+
           let taskQuery;
           if( !this.taskId ) {
               // without id
-              console.log('without id');
+              console.log('load one without id');
               taskQuery = {
                   'select': {
                       'fields': [
@@ -741,8 +747,6 @@ export default {
 
           this.$store.dispatch('c3s/task/getTasks', [taskQuery, 1]).then(tasks => {
 
-              //console.log('responded tasks');
-
               this.hasSubmissionAlready = false;
 
               if( this.taskId ) {
@@ -796,9 +800,8 @@ export default {
                       this.$router.replace('/identification/' + this.tasks[0].id);
                   }
 
-                  this.selections = [];
-                  this.noHateSpeech = false;
-                  this.wrongLanguage = false;
+
+                  this.taskLoaded = true;
 
               }
 
@@ -836,6 +839,11 @@ export default {
           this.$store.dispatch('c3s/submission/createSubmission').then(submission => {
 
               console.log('submission sent');
+
+              this.selections = [];
+              this.noHateSpeech = false;
+              this.wrongLanguage = false;
+
               //this.$store.dispatch('stats/increaseMySubmissionCount');
               this.$store.dispatch('stats/updateMySubmissionCount');
               this.$store.dispatch('stats/updateTotalUserAndSubmissionCount');
@@ -930,6 +938,10 @@ export default {
           color: $color-primary-shade-20;
         }
       }
+    }
+
+    .loader-wrapper {
+      height: 48px;
     }
 
     .add-button-group {
