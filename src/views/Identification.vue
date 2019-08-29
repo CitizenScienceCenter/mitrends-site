@@ -698,7 +698,7 @@ export default {
                           '*'
                       ],
                       'tables': [
-                          'tasks'
+                          'tasks TABLESAMPLE SYSTEM_ROWS(1)'
                       ],
                       /*
                       'orderBy': {
