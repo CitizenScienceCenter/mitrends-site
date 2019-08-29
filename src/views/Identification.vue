@@ -615,7 +615,7 @@ export default {
           mySubmissionCount: state => state.stats.mySubmissionCount
       }),
       bubbleText() {
-          if( this.tasks[0] ) {
+          if( this.tasks[0] && this.tasks[0].content.text ) {
               let trimmed = this.tasks[0].content.text.replace(/<br\/><br\/>/g, '<br/>');
               return trimmed;
           }
@@ -681,6 +681,12 @@ export default {
       loadTask() {
 
           this.taskLoaded = false;
+
+          this.selection = null;
+          this.selections = [];
+          this.noHateSpeech = false;
+          this.wrongLanguage = false;
+
 
           let taskQuery;
           if( !this.taskId ) {
@@ -818,6 +824,7 @@ export default {
       },
       next() {
           console.log('next');
+
           this.loadTask();
       },
       submit() {
@@ -840,17 +847,13 @@ export default {
 
               console.log('submission sent');
 
-              this.selections = [];
-              this.noHateSpeech = false;
-              this.wrongLanguage = false;
-
               //this.$store.dispatch('stats/increaseMySubmissionCount');
               this.$store.dispatch('stats/updateMySubmissionCount');
               this.$store.dispatch('stats/updateTotalUserAndSubmissionCount');
 
-          });
+              this.loadTask();
 
-          this.loadTask();
+          });
       },
       select() {
         this.selections.push( { 'string': this.selection, 'origin': undefined, 'gender': undefined, 'sex': undefined } );
