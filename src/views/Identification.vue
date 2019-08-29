@@ -700,9 +700,11 @@ export default {
                       'tables': [
                           'tasks'
                       ],
+                      /*
                       'orderBy': {
                           'random()': ''
                       }
+                      */
                   },
                   'where': [
                       {
@@ -755,7 +757,8 @@ export default {
 
               this.hasSubmissionAlready = false;
 
-              if( this.taskId ) {
+              //if( this.taskId ) {
+              if( false ) {
                   // loaded with id, check for submissions
                   console.log('has task id, check for submissions');
 
