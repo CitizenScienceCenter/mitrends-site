@@ -698,7 +698,7 @@ export default {
                           '*'
                       ],
                       'tables': [
-                          'tasks'
+                          'tasks TABLESAMPLE SYSTEM_ROWS(1)'
                       ],
                       /*
                       'orderBy': {
@@ -811,6 +811,7 @@ export default {
 
 
                   this.taskLoaded = true;
+                  this.taskId = undefined;
 
               }
 
@@ -839,7 +840,7 @@ export default {
               "content": this.answer,
               "task_id": this.tasks[0].id,
               "user_id": this.currentUser.id,
-              "draft": true
+              "draft": false
           };
 
           console.log( submissionObject );
