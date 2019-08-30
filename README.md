@@ -1,5 +1,7 @@
 # hatespeech-site
 
+Use `.autodeploy` file to handle deployments through the c3s kubernetes cluster
+
 ## Project setup
 ```
 npm install
