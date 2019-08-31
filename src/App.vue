@@ -27,7 +27,7 @@ import {mapState} from 'vuex';
 import Header from './components/shared/Header.vue';
 import GDPR from "./components/shared/GDPR";
 
-const url = 'https://hatespeech-staging.citizenscience.ch';
+const url = 'https://hatespeech.citizenscience.ch';
 
 export default {
   name: 'app',
