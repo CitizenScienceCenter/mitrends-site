@@ -2,11 +2,11 @@
   {
   "en": {
   "site-title": "Hate Speech | Citizen Science Center Zurich",
-  "site-description": "The Snake Identification Challenge"
+  "site-description": "Geschlechtsspezifische Hassausdrücke"
   },
   "de": {
   "site-title": "Hate Speech | Citizen Science Center Zurich",
-  "site-description": "The Snake Identification Challenge"
+  "site-description": "Geschlechtsspezifische Hassausdrücke"
   }
   }
 </i18n>
