@@ -1,19 +1,19 @@
 <i18n>
   {
   "en": {
-  "site-title": "Hate Speech | Citizen Science Center Zurich",
-  "site-description": "Geschlechtsspezifische Hassausdrücke"
+  "site-title": "The Causes of Health | Citizen Science Center Zurich",
+  "site-description": "Let's Discover the Causes of Health"
   },
   "de": {
-  "site-title": "Hate Speech | Citizen Science Center Zurich",
-  "site-description": "Geschlechtsspezifische Hassausdrücke"
+  "site-title": "The Causes of Health | Citizen Science Center Zurich",
+  "site-description": "Let's Discover the Causes of Health"
   }
   }
 </i18n>
 
 <template>
   <div id="app">
-    <app-header project-name="Hate<br/>Speech" :languages="['de']"></app-header>
+    <app-header project-name="The Causes<br/>of Health" :languages="['de','en']"></app-header>
     <div class="content-area">
       <router-view></router-view>
     </div>
@@ -27,7 +27,7 @@ import {mapState} from 'vuex';
 import Header from './components/shared/Header.vue';
 import GDPR from "./components/shared/GDPR";
 
-const url = 'https://hatespeech.citizenscience.ch';
+const url = 'https://causes-of-health.citizenscience.ch';
 
 export default {
   name: 'app',
