@@ -33,23 +33,23 @@ export const i18n = new VueI18n({
   messages: {
       'de': {
 
-          "site-title": "Hate Speech | Citizen Science Center Zurich",
-          "site-description": "Geschlechterspezfische Hassausdrücke in Whatsapp Texten",
+          "site-title": "The Cause of Health | Citizen Science Center Zurich",
+          "site-description": "Be Part of a Revolutionary Digital Health Community",
 
           'navigation-homepage': {
               'link': 'Home'
           },
-          'navigation-identification': {
-              'link': 'Identifikation'
+          'navigation-registration': {
+              'link': 'Take part'
+          },
+          'navigation-cause-of-health': {
+              'link': 'Causes of Health'
+          },
+          'navigation-swiss-cohcoh': {
+              'link': 'The Swiss COH Cohort'
           },
           'navigation-forum': {
               'link': 'Forum'
-          },
-          'navigation-about': {
-              'link': 'Über das Projekt'
-          },
-          'navigation-sources': {
-              'link': 'Textquellen'
           },
           'navigation-terms': {
               'link': 'Privacy Policy & Terms of Use'
@@ -69,6 +69,48 @@ export const i18n = new VueI18n({
           'navigation-profile': {
               'link': 'Profil'
           }
+
+      },
+
+      'en': {
+
+          "site-title": "The Cause of Health | Citizen Science Center Zurich",
+          "site-description": "Be Part of a Revolutionary Digital Health Community",
+
+          'navigation-homepage': {
+              'link': 'Home'
+          },
+          'navigation-registration': {
+              'link': 'Take part'
+          },
+          'navigation-cause-of-health': {
+              'link': 'Causes of Health'
+          },
+          'navigation-swiss-cohcoh': {
+              'link': 'The Swiss COH Cohort'
+          },
+          'navigation-forum': {
+              'link': 'Forum'
+          },
+          'navigation-terms': {
+              'link': 'Privacy Policy & Terms of Use'
+          },
+          'navigation-login': {
+              'link': 'Anmelden'
+          },
+          'navigation-register': {
+              'link': 'Registrieren'
+          },
+          'navigation-logout': {
+              'link': 'Logout'
+          },
+          'navigation-reset': {
+              'link': 'Passwort zurücksetzen'
+          },
+          'navigation-profile': {
+              'link': 'Profil'
+          }
+
       }
   }
 

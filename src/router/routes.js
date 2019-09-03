@@ -1,3 +1,8 @@
+import Home from '@/views/Home';
+import CauseOfHealth from '@/views/CauseOfHealth';
+import CohCoh from '@/views/CohCoh';
+import Terms from '@/views/shared/static/Terms';
+import Registration from '@/views/Registration';
 import Forum from '@/views/Forum';
 
 import Login from '@/views/shared/user/Login';
@@ -6,27 +11,6 @@ import Profile from '@/views/shared/user/Profile';
 import RequestReset from '@/views/shared/user/RequestReset';
 import Reset from '@/views/shared/user/Reset';
 
-// lazy loading routes
-const Home = resolve => {
-    require.ensure(["@/views/Home.vue"], () => {
-        resolve(require("@/views/Home.vue"));
-    });
-};
-const About = resolve => {
-    require.ensure(["@/views/About.vue"], () => {
-        resolve(require("@/views/About.vue"));
-    });
-};
-const Sources = resolve => {
-    require.ensure(["@/views/Sources.vue"], () => {
-        resolve(require("@/views/Sources.vue"));
-    });
-};
-const Terms = resolve => {
-    require.ensure(["@/views/shared/static/Terms.vue"], () => {
-        resolve(require("@/views/shared/static/Terms.vue"));
-    });
-};
 
 export const routes = [
     {
@@ -43,14 +27,23 @@ export const routes = [
                 }
             },
             {
-                path: "about",
-                component: About,
-                meta: {i18n: 'navigation-about', nav: true}
+                path: "registration",
+                component: Registration,
+                meta: {
+                    requiresAuth: true,
+                    i18n: "navigation-registration",
+                    nav: true
+                }
             },
             {
-                path: "sources",
-                component: Sources,
-                meta: {i18n: 'navigation-sources', nav: true}
+                path: "cause-of-health",
+                component: CauseOfHealth,
+                meta: {i18n: 'navigation-cause-of-health', nav: true}
+            },
+            {
+                path: "swiss-cohcoh",
+                component: CohCoh,
+                meta: {i18n: 'navigation-swiss-cohcoh', nav: true}
             },
             {
                 path: "forum",
