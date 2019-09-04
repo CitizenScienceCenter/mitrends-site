@@ -3,7 +3,6 @@ import CauseOfHealth from '@/views/CauseOfHealth';
 import CohCoh from '@/views/CohCoh';
 import Terms from '@/views/shared/static/Terms';
 import Registration from '@/views/Registration';
-import Forum from '@/views/Forum';
 
 import Login from '@/views/shared/user/Login';
 import Profile from '@/views/shared/user/Profile';
@@ -19,20 +18,12 @@ export const routes = [
             {
                 path: "",
                 component: Home,
-                meta: {
-                    requiresAuth: true,
-                    i18n: "navigation-homepage",
-                    nav: false
-                }
+                meta: {i18n: "navigation-homepage",nav: false}
             },
             {
                 path: "registration",
                 component: Registration,
-                meta: {
-                    requiresAuth: true,
-                    i18n: "navigation-registration",
-                    nav: true
-                }
+                meta: {i18n: "navigation-registration", nav: true}
             },
             {
                 path: "cause-of-health",
@@ -43,12 +34,6 @@ export const routes = [
                 path: "swiss-cohcoh",
                 component: CohCoh,
                 meta: {i18n: 'navigation-swiss-cohcoh', nav: true}
-            },
-            {
-                path: "forum",
-                component: Forum,
-                name: "Forum",
-                meta: {requiresAuth: true, i18n: 'navigation-forum', nav: true},
             },
             {
                 path: "terms",
@@ -78,12 +63,6 @@ export const routes = [
                 name: "UserProfile",
                 component: Profile,
                 meta: {requiresAccount: true, i18n: 'navigation-profile', nav: false}
-            },
-            {
-                path: "error",
-                name: "Error",
-                component: Home.Error,
-                meta: {i18n: 'navigation-profile', nav: false}
             }
         ]
     }

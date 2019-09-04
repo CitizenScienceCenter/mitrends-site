@@ -3,6 +3,13 @@
 
   "de": {
 
+  "page-title": "Take part",
+
+  "registration-heading": "Take part",
+  "registration-text": "Swiss CohCoh only works if it is carried by scientists and citizen scientists who see the need for such a digital health cohort and are willing to take the lead.",
+
+  "registration-existing-account": "<b>Do you already have a citizenscience.ch account?</b>",
+  "registration-create-account": "Create Your citizenscience.ch Account to Take Part"
 
   },
   "en": {

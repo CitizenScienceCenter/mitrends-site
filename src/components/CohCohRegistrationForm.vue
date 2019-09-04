@@ -1,7 +1,7 @@
 <i18n>
     {
 
-    "en": {
+    "de": {
 
     "label-firstname": "First Name",
     "label-lastname": "Last Name",
@@ -34,9 +34,37 @@
     "message-success": "Thank you for your participation"
 
     },
+    "en": {
 
-    "de": {
+    "label-firstname": "First Name",
+    "label-lastname": "Last Name",
+    "label-email": "Email",
+    "label-password": "Password",
+    "label-password-repeat": "Repeat Password",
 
+    "label-why": "Why do you want to sign up?",
+    "placeholder-why": "Tell us about your interest in the project.",
+    "label-interests": "What is your specific interest?",
+    "label-interests-option-ancestry": "Ancestry",
+    "label-interests-option-activity": "Activity",
+    "label-interests-option-sleep": "Sleep",
+    "label-interests-option-nutrition": "Nutrition",
+    "label-interests-option-stress": "Stress",
+    "label-other-interests": "Other interests and ideas",
+    "placeholder-other-interests": "What’s on your mind?",
+
+    "button-register": "Register",
+
+    "error-email-empty": "Enter an email address.",
+    "error-email-inuse": "Email already in use. Please login.",
+    "error-email-format": "No valid email address",
+    "error-username-inuse": "Username already in use.",
+    "error-password-length": "Password needs to be at least 8 characters long.",
+    "error-password-match": "Passwords don't match.",
+
+    "error-server": "Server error occured",
+
+    "message-success": "Thank you for your participation"
 
     }
 
@@ -448,5 +476,5 @@
     @import '@/styles/theme.scss';
     @import '@/styles/shared/variables.scss';
 
-    
+
 </style>
