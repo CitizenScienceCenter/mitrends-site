@@ -181,13 +181,12 @@
       </div>
     </app-content-section>
 
-    <section-s-d-g goal="3" color="light-greyish">
+
+    <section-feedback color="light-greyish" email="causes-of-health@citizenscience.ch"></section-feedback>
+
+    <section-s-d-g goal="3" color="greyish">
       This project supports Goal 3 of the UN SDGs: Ensure healthy lives and promote well-being for all at all ages, by accelerating and innovating in health research and development.
     </section-s-d-g>
-
-
-    <section-feedback color="greyish" email="causes-of-health@citizenscience.ch"></section-feedback>
-
 
     <section-newsletter-signup></section-newsletter-signup>
 

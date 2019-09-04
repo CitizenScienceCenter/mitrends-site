@@ -12,11 +12,11 @@
     "label-why": "Why do you want to sign up?",
     "placeholder-why": "Tell us about your interest in the project.",
     "label-interests": "What is your specific interest?",
-    "label-interests-option-1": "Ancestry",
-    "label-interests-option-2": "Activity",
-    "label-interests-option-3": "Sleep",
-    "label-interests-option-4": "Nutrition",
-    "label-interests-option-5": "Stress",
+    "label-interests-option-ancestry": "Ancestry",
+    "label-interests-option-activity": "Activity",
+    "label-interests-option-sleep": "Sleep",
+    "label-interests-option-nutrition": "Nutrition",
+    "label-interests-option-stress": "Stress",
     "label-other-interests": "Other interests and ideas",
     "placeholder-other-interests": "What’s on your mind?",
 
@@ -31,9 +31,7 @@
 
     "error-server": "Server error occured",
 
-    "notifications-label": "Notifications",
-    "notifications-option-1": "I want to receive information about the Citizen Science Center Zurich.",
-    "notifications-option-2": "I want to receive information about this project."
+    "message-success": "Thank you for your participation"
 
     },
 
@@ -48,7 +46,8 @@
 
 <template>
 
-    <div>
+    <div v-if="!user.currentUser.info.cohcohInfo">
+
         <form @submit.prevent="register">
 
             <div class="margin-bottom">
@@ -58,22 +57,22 @@
                     <div class="col col-wrapping col-large-6">
                         <div class="form-field form-field-block">
                             <label for="reg-firstname">{{ $t("label-firstname") }}</label>
-                            <input type="email" id="reg-firstname" autocomplete="new-password" />
+                            <input v-model="firstname" id="reg-firstname" />
                         </div>
                     </div>
 
                     <div class="col col-wrapping col-large-6">
                         <div class="form-field form-field-block">
                             <label for="reg-lastname">{{ $t("label-lastname") }}</label>
-                            <input type="email" id="reg-lastname" autocomplete="new-password" />
+                            <input v-model="lastname" id="reg-lastname" />
                         </div>
                     </div>
 
+                    <template v-if="user.isAnon">
                     <div class="col col-wrapping col-large-6">
                         <div class="form-field form-field-block">
                             <label for="reg-email">{{ $t("label-email") }}</label>
                             <input v-model="email" type="email" id="reg-email" name="reg-email" autocomplete="new-password" />
-                            <span class="message error" v-if="errors.emailEmpty">{{ $t("error-email-empty") }}</span>
                             <span class="message error" v-if="errors.emailFormat">{{ $t("error-email-format") }}</span>
                             <span class="message error" v-if="errors.emailInUse">{{ $t("error-email-inuse") }}</span>
                         </div>
@@ -102,6 +101,7 @@
                             <span class="message error" v-if="errors.passwordMatch">{{ $t("error-password-match") }}</span>
                         </div>
                     </div>
+                    </template>
 
                 </div>
 
@@ -113,7 +113,7 @@
 
                     <div class="form-field form-field-block">
                         <label>{{ $t("label-why") }}</label>
-                        <growing-textarea :placeholder="$t('placeholder-why')"></growing-textarea>
+                        <growing-textarea v-model="why" :placeholder="$t('placeholder-why')"></growing-textarea>
                     </div>
 
                     <div class="form-field form-field-block">
@@ -124,65 +124,65 @@
                                 <div class="col col-6 col-large-4">
 
                                     <label>
-                                        <input type="checkbox" v-model="checkbox1">
+                                        <input type="checkbox" v-model="checkboxAncestry">
                                         <div class="checkbox">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
                                             </svg>
                                         </div>
-                                        <span>{{ $t("label-interests-option-1") }}</span>
+                                        <span>{{ $t("label-interests-option-ancestry") }}</span>
                                     </label>
 
                                 </div>
                                 <div class="col col-6 col-large-4">
 
-                                    <label v-if="projectId">
-                                        <input type="checkbox" v-model="checkbox2">
+                                    <label>
+                                        <input type="checkbox" v-model="checkboxActivity">
                                         <div class="checkbox">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
                                             </svg>
                                         </div>
-                                        <span>{{ $t("label-interests-option-2") }}</span>
+                                        <span>{{ $t("label-interests-option-activity") }}</span>
                                     </label>
 
                                 </div>
                                 <div class="col col-6 col-large-4">
 
-                                    <label v-if="projectId">
-                                        <input type="checkbox" v-model="checkbox3">
+                                    <label>
+                                        <input type="checkbox" v-model="checkboxSleep">
                                         <div class="checkbox">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
                                             </svg>
                                         </div>
-                                        <span>{{ $t("label-interests-option-3") }}</span>
+                                        <span>{{ $t("label-interests-option-sleep") }}</span>
                                     </label>
 
                                 </div>
                                 <div class="col col-6 col-large-4">
 
-                                    <label v-if="projectId">
-                                        <input type="checkbox" v-model="checkbox4">
+                                    <label>
+                                        <input type="checkbox" v-model="checkboxNutrition">
                                         <div class="checkbox">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
                                             </svg>
                                         </div>
-                                        <span>{{ $t("label-interests-option-4") }}</span>
+                                        <span>{{ $t("label-interests-option-nutrition") }}</span>
                                     </label>
 
                                 </div>
                                 <div class="col col-6 col-large-4">
 
-                                    <label v-if="projectId">
-                                        <input type="checkbox" v-model="checkbox5">
+                                    <label>
+                                        <input type="checkbox" v-model="checkboxStress">
                                         <div class="checkbox">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                 <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
                                             </svg>
                                         </div>
-                                        <span>{{ $t("label-interests-option-5") }}</span>
+                                        <span>{{ $t("label-interests-option-stress") }}</span>
                                     </label>
 
                                 </div>
@@ -193,11 +193,21 @@
 
                     <div class="form-field form-field-block">
                         <label>{{ $t("label-other-interests") }}</label>
-                        <growing-textarea :placeholder="$t('placeholder-other-interests')"></growing-textarea>
+                        <growing-textarea v-model="otherInterests" :placeholder="$t('placeholder-other-interests')"></growing-textarea>
                     </div>
 
+                    <!--
+                    emailFormat: false,
+                    emailInUse: false,
+                    usernameInUse: false,
+                    passwordMatch: false,
+                    passwordLength: false,
+                    server: false
+                    -->
+
                     <div class="button-group right-aligned">
-                        <button :disabled="loading || !email || !password || errors.emailEmpty || errors.emailInUse || errors.passwordLength || errors.passwordMatch || errors.usernameInUse" type="submit" class="button button-primary">{{ $t("button-register") }}</button>
+                        <button v-if="user.isAnon" :disabled="!firstname || !lastname || !email || !password || errors.emailInUse || errors.emailInUse || errors.usernameInUse || errors.passwordLength || errors.passwordMatch" type="submit" class="button button-primary">{{ $t("button-register") }}</button>
+                        <button v-else :disabled="!firstname || !lastname" type="submit" class="button button-primary">{{ $t("button-register") }}</button>
                     </div>
 
                     <div class="form-message form-message-error" v-if="errors.server">
@@ -214,6 +224,14 @@
 
         </form>
     </div>
+    <div v-else>
+        <div class="form-message form-message-success">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+            </div>
+            <span class="text">{{ $t("message-success") }}</span>
+        </div>
+    </div>
 
 </template>
 
@@ -226,30 +244,57 @@
         components: {GrowingTextarea},
         data() {
             return {
+                firstname: "",
+                lastname: "",
                 email: "",
                 username: '',
                 password: "",
                 confPassword: "",
-                checkbox1: true,
-                checkbox2: true,
-                userSaved: false,
+
+                why: '',
+
+                checkboxAncestry: false,
+                checkboxActivity: false,
+                checkboxSleep: false,
+                checkboxNutrition: false,
+                checkboxStress: false,
+
+                otherInterests: '',
+
                 errors: {
-                    emailEmpty: false,
                     emailFormat: false,
                     emailInUse: false,
                     usernameInUse: false,
-                    match: false,
+                    passwordMatch: false,
                     passwordLength: false,
                     server: false
                 },
+
                 emailCheckTimeout: undefined,
                 usernameCheckTimeout: undefined
             };
         },
-        computed: mapState({
-            loading: state => state.settings.loading,
-            projectId: state => state.consts.projectId
-        }),
+        computed: {
+            ...mapState({
+                user: state => state.c3s.user
+            }),
+            cohcohInfo() {
+
+                return {
+                    'firstname': this.firstname,
+                    'lastname': this.lastname,
+                    'why': this.why,
+                    'interests': {
+                        'ancestry': this.checkboxAncestry,
+                        'activity': this.checkboxActivity,
+                        'sleep': this.checkboxSleep,
+                        'nutrition': this.checkboxNutrition,
+                        'stress': this.checkboxStress
+                    },
+                    'otherInterests': this.otherInterests
+                };
+            }
+        },
         watch: {
             email() {
                 this.username = this.email.split('@')[0];
@@ -276,6 +321,13 @@
                 }
                 else {
                     this.errors.passwordLength = false;
+                }
+
+                if( this.confPassword !== this.password ) {
+                    this.errors.passwordMatch = true;
+                }
+                else {
+                    this.errors.passwordMatch = false;
                 }
             },
             confPassword() {
@@ -311,8 +363,6 @@
                         // email already registered
                         this.errors.usernameInUse = true;
                     }
-
-                    //this.$store.commit('c3s/user/SET_ANON', true);
                 });
             },
             checkEmailFormat() {
@@ -349,33 +399,44 @@
                     }
                 });
             },
+
             register() {
                 this.errors.server = false;
-                this.errors.username = false;
 
-                const user = {
-                    email: this.email,
-                    username: this.username,
-                    pwd: this.password,
-                    info: {
-                        'anonymous': false,
-                        'center-notifications': this.checkbox1
-                    }
-                };
+                if( this.user.isAnon ) {
 
-                if( this.projectId && this.checkbox2 ) {
-                    user.info['project-notifications'] = [ this.projectId ];
+                    // register a new user
+
+                    const user = {
+                        email: this.email,
+                        username: this.username,
+                        pwd: this.password,
+                        info: {
+                            'anonymous': false,
+                            'cohcohInfo': this.cohcohInfo
+                        }
+                    };
+                    this.$store.dispatch('c3s/user/register', user).then(r => {
+
+                        if (r.ok === true) {
+                            //this.$router.push('/');
+                        }
+                        else {
+                            this.errors.server = true;
+                        }
+                    });
+
                 }
+                else {
 
-                this.$store.dispatch('c3s/user/register', user).then(r => {
+                    // update an existing user
+                    let info = user.currentUser.info;
+                    info['cohcohInfo'] = this.cohcohInfo;
+                    this.$store.dispatch('c3s/user/update', [ user.currentUser.id, info ]).then(r => {
 
-                    if (r.ok === true) {
-                        this.$router.push('/');
-                    }
-                    else {
-                        this.errors.server = true;
-                    }
-                });
+                    });
+
+                }
             }
         }
     };
@@ -387,8 +448,5 @@
     @import '@/styles/theme.scss';
     @import '@/styles/shared/variables.scss';
 
-    .error {
-        color: $color-error;
-    }
-
+    
 </style>
