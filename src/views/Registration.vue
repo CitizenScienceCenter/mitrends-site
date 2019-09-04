@@ -3,16 +3,14 @@
 
   "de": {
 
-  "page-title": "Take part",
-
-  "page-heading": "Take part"
 
   },
   "en": {
 
   "page-title": "Take part",
 
-  "page-heading": "Take part"
+  "registration-heading": "Take part",
+  "registration-text": "Swiss CohCoh only works if it is carried by scientists and citizen scientists who see the need for such a digital health cohort and are willing to take the lead."
 
   }
 
@@ -22,23 +20,26 @@
 <template>
   <div>
 
-    <app-content-section class="overflow-hidden">
-      <div class="background-wrapper background-wrapper-move-left scroll-effect scroll-effect-delayed-1">
-        <div class="content-wrapper">
-          <div class="row row-centered row-in-background">
-            <div class="col col-tablet-portrait-10 col-large-7 col-large-after-1 col-wrapping col-large-no-bottom-margin">
-              <img src="/img/graphic-intro.png" />
+    <app-content-section>
+      <div class="content-wrapper">
+
+        <div class="content-subsection">
+          <div class="row row-centered">
+            <div class="col col-large-6 scroll-effect">
+              <h2 class="heading centered">{{ $t('registration-heading') }}</h2>
+              <p v-html="$t('registration-text')"></p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="content-wrapper">
-        <div class="row row-reverse-large">
-          <div class="col col-tablet-portrait-7 col-large-6 col-large-after-1 col-wrapping scroll-effect">
-            <h2 class="heading centered left-aligned-large">{{ $t('page-heading') }}</h2>
-          </div>
 
+        <div class="content-subsection">
+          <div class="row row-centered">
+            <div class="col col-large-8 scroll-effect">
+              <coh-coh-registration-form></coh-coh-registration-form>
+            </div>
+          </div>
         </div>
+
       </div>
     </app-content-section>
 
@@ -54,6 +55,7 @@
 import {mapState} from 'vuex'
 
 import ContentSection from '@/components/shared/ContentSection.vue';
+import CohCohRegistrationForm from "@/components/CohCohRegistrationForm";
 import Footer from '@/components/shared/Footer.vue';
 import SectionNewsletterSignup from "@/components/shared/SectionNewsletterSignup";
 import SectionFeedback from "../components/shared/SectionFeedback";
@@ -61,6 +63,7 @@ import SectionFeedback from "../components/shared/SectionFeedback";
 export default {
   components: {
       SectionFeedback,
+      CohCohRegistrationForm,
       SectionNewsletterSignup,
     'app-content-section': ContentSection,
     'app-footer': Footer

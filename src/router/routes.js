@@ -6,7 +6,6 @@ import Registration from '@/views/Registration';
 import Forum from '@/views/Forum';
 
 import Login from '@/views/shared/user/Login';
-import Register from '@/views/shared/user/Register';
 import Profile from '@/views/shared/user/Profile';
 import RequestReset from '@/views/shared/user/RequestReset';
 import Reset from '@/views/shared/user/Reset';
@@ -61,12 +60,6 @@ export const routes = [
                 name: "Login",
                 component: Login,
                 meta: {i18n: 'navigation-login', nav: false}
-            },
-            {
-                path: "register",
-                name: "Register",
-                component: Register,
-                meta: {i18n: 'navigation-register', nav: false}
             },
             {
                 path: "reset",

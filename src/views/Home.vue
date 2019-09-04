@@ -3,44 +3,48 @@
 
   "de": {
 
-  "cover-heading": "Let's Discover<br/>the Cause of Health",
-  "cover-subheading": "Be Part of a Revolutionary<br/>Digital Health Community.",
+  "cover-heading": "Let's Discover <br/>the Cause of Health",
+  "cover-subheading": "Be Part of a Revolutionary <br/>Digital Health Community.",
   "cover-button-primary": "Take Part",
   "cover-button-secondary": "Learn more",
 
-  "intro-heading": "... The Cause of Health?",
-  "intro-text-1": "In fact, we know very little! We know more about the causes of diseases than about the cause of health, as we mostly wait to turn ill before we start to record data.",
-  "intro-text-2": "The health of an individual is determined by the “Health Triangle”, the complex interaction between a unique individual (genome), the environment, and the individual’s behaviour in the environment.",
-  "intro-button": "Learn more",
+  "cause-of-health-heading": "What is the Cause of Health?",
+  "cause-of-health-text-1": "In fact we do not know since medical research has mainly focused on curing disease. We mostly wait to turn ill before we start to collect data.",
+  "cause-of-health-text-2": "Health and wellbeing are different in each individual and depends on the genome, the environment and behavior of each individual (Health Triangle). In order to understand the causes of health we need large sets of health-relevant data from a large number of people.",
+  "cause-of-health-button": "Learn more",
 
-  "identification-heading": "Ihre Hilfe ist gefragt",
-  "identification-text": "Um unsere Ziele zu erreichen, bitten wir um Ihre Hilfe. In einem ersten Schritt (Identifikation) geht es darum, möglichst viele Texte anzuschauen und nach möglichen geschlechtsspezifischen Hassausdrücken zu suchen. Wenn uns möglichst viele Leute dabei helfen, sollte diese Suche einigermassen schnell zu Resultaten führen. Damit nicht alle 750'000 Botschaften gelesen werden müssen, werden wir danach die gefundenen Hassausdrücke auch in den noch nicht gelesenen Botschaften suchen. So sollten wir zu einer stattlichen Anzahl von Belegen kommen.",
-  "identification-button": "Zur Identifikation",
+  "cohcoh-heading": "The Swiss «Cause of Health» Cohort",
+  "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled MIDATA cooperative) allows individuals to control their own data.",
+  "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
+  "cohcoh-button": "Learn more",
 
-  "sources-heading": "Woher stammen die Texte?",
-  "sources-text": "Die WhatsApp Gespräche, die hier Verwendung finden, wurden uns 2014 von der Schweizer Bevölkerung zur Verfügung gestellt.",
-  "sources-button": "Mehr erfahren"
+  "participate-heading": "Who can Participate?",
+  "participate-text-1": "Researchers from the ETH Zurich and the University of Zurich recognized and promoted the concept of sharing personal data for research. They initiate and participate in the “Swiss Cause of Health Cohort”, and encourage everybody in Switzerland to do the same.",
+  "participate-text-2": "Are you interested? Fill the form to be updated on the advancements of the CohCoh projects.",
+  "participate-button": "Take part"
 
   },
   "en": {
 
-  "cover-heading": "Let's Discover the Cause of Health",
-  "cover-subheading": "Be Part of a Revolutionary Digital Health Community.",
+  "cover-heading": "Let's Discover <br/>the Cause of Health",
+  "cover-subheading": "Be Part of a Revolutionary <br/>Digital Health Community.",
   "cover-button-primary": "Take Part",
   "cover-button-secondary": "Learn more",
 
-  "intro-heading": "... The Cause of Health?",
-  "intro-text-1": "In fact, we know very little! We know more about the causes of diseases than about the cause of health, as we mostly wait to turn ill before we start to record data.",
-  "intro-text-2": "The health of an individual is determined by the “Health Triangle”, the complex interaction between a unique individual (genome), the environment, and the individual’s behaviour in the environment.",
-  "intro-button": "Learn more",
+  "cause-of-health-heading": "What is the Cause of Health?",
+  "cause-of-health-text-1": "In fact we do not know since medical research has mainly focused on curing disease. We mostly wait to turn ill before we start to collect data.",
+  "cause-of-health-text-2": "Health and wellbeing are different in each individual and depends on the genome, the environment and behavior of each individual (Health Triangle). In order to understand the causes of health we need large sets of health-relevant data from a large number of people.",
+  "cause-of-health-button": "Learn more",
 
-  "identification-heading": "Ihre Hilfe ist gefragt",
-  "identification-text": "Um unsere Ziele zu erreichen, bitten wir um Ihre Hilfe. In einem ersten Schritt (Identifikation) geht es darum, möglichst viele Texte anzuschauen und nach möglichen geschlechtsspezifischen Hassausdrücken zu suchen. Wenn uns möglichst viele Leute dabei helfen, sollte diese Suche einigermassen schnell zu Resultaten führen. Damit nicht alle 750'000 Botschaften gelesen werden müssen, werden wir danach die gefundenen Hassausdrücke auch in den noch nicht gelesenen Botschaften suchen. So sollten wir zu einer stattlichen Anzahl von Belegen kommen.",
-  "identification-button": "Zur Identifikation",
+  "cohcoh-heading": "The Swiss «Cause of Health» Cohort",
+  "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled MIDATA cooperative) allows individuals to control their own data.",
+  "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
+  "cohcoh-button": "Learn more",
 
-  "sources-heading": "Woher stammen die Texte?",
-  "sources-text": "Die WhatsApp Gespräche, die hier Verwendung finden, wurden uns 2014 von der Schweizer Bevölkerung zur Verfügung gestellt.",
-  "sources-button": "Mehr erfahren"
+  "participate-heading": "Who can Participate?",
+  "participate-text-1": "Researchers from the ETH Zurich and the University of Zurich recognized and promoted the concept of sharing personal data for research. They initiate and participate in the “Swiss Cause of Health Cohort”, and encourage everybody in Switzerland to do the same.",
+  "participate-text-2": "Are you interested? Fill the form to be updated on the advancements of the CohCoh projects.",
+  "participate-button": "Take part"
 
   }
 
@@ -83,11 +87,11 @@
 
           <div class="col col-large-5 col-large-after-1 col-wrapping scroll-effect scroll-effect-delayed-1">
             <div>
-              <h2 class="heading centered left-aligned-large">{{ $t('intro-heading') }}</h2>
-              <p v-html="$t('intro-text-1')" class="reduced-bottom-margin"></p>
-              <p v-html="$t('intro-text-2')" class="reduced-bottom-margin"></p>
+              <h2 class="heading centered left-aligned-large">{{ $t('cause-of-health-heading') }}</h2>
+              <p v-html="$t('cause-of-health-text-1')" class="reduced-bottom-margin"></p>
+              <p v-html="$t('cause-of-health-text-2')" class="reduced-bottom-margin"></p>
               <div class="button-group centered left-aligned-large">
-                <router-link tag="button" to="/cause-of-health" class="button button-secondary">{{ $t('intro-button') }}</router-link>
+                <router-link tag="button" to="/cause-of-health" class="button button-secondary">{{ $t('cause-of-health-button') }}</router-link>
               </div>
             </div>
           </div>
@@ -111,10 +115,11 @@
 
           <div class="col col-large-5 col-large-before-1 col-wrapping scroll-effect scroll-effect-delayed-1">
             <div>
-              <h2 class="heading centered left-aligned-large">{{ $t('identification-heading') }}</h2>
-              <p v-html="$t('identification-text')"></p>
+              <h2 class="heading centered left-aligned-large">{{ $t('cohcoh-heading') }}</h2>
+              <p v-html="$t('cohcoh-text-1')" class="reduced-bottom-margin"></p>
+              <p v-html="$t('cohcoh-text-2')" class="reduced-bottom-margin"></p>
               <div class="button-group centered left-aligned-large">
-                <router-link tag="button" to="/identification" class="button button-primary">{{ $t('identification-button') }}</router-link>
+                <router-link tag="button" to="/swiss-cohcoh" class="button button-secondary">{{ $t('cohcoh-button') }}</router-link>
               </div>
             </div>
           </div>
@@ -123,23 +128,24 @@
       </div>
     </app-content-section>
 
-
+    <!--
     <app-content-section>
       <div class="content-wrapper">
         <div class="row row-centered row-middle row-wrapping">
 
           <div class="col col-10 col-tablet-portrait-8 col-large-6 col-wrapping scroll-effect">
             <div class="extra-padding-h">
-              <img src="/img/people-with-phones.jpg" style="border-radius:50%"/>
+              <img src="/img/image-participate.jpg" style="border-radius:50%"/>
             </div>
           </div>
 
           <div class="col col-large-5 col-large-after-1 col-wrapping scroll-effect scroll-effect-delayed-1">
             <div>
-              <h2 class="heading centered left-aligned-large">{{ $t('sources-heading') }}</h2>
-              <p v-html="$t('sources-text')"></p>
+              <h2 class="heading centered left-aligned-large">{{ $t('participate-heading') }}</h2>
+              <p v-html="$t('participate-text-1')" class="reduced-bottom-margin"></p>
+              <p v-html="$t('participate-text-2')" class="reduced-bottom-margin"></p>
               <div class="button-group centered left-aligned-large">
-                <router-link tag="button" to="/sources" class="button button-secondary">{{ $t('sources-button') }}</router-link>
+                <router-link tag="button" to="/registration" class="button button-primary">{{ $t('participate-button') }}</router-link>
               </div>
             </div>
           </div>
@@ -147,12 +153,40 @@
         </div>
       </div>
     </app-content-section>
+    -->
 
-    <section-feedback color="light-greyish" email="causes-of-health@citizenscience.ch"></section-feedback>
+    <app-content-section class="overflow-hidden">
+      <div class="background-wrapper background-wrapper-move-left scroll-effect scroll-effect-delayed-1">
+        <div class="content-wrapper">
+          <div class="row row-centered">
+            <div class="col col-tablet-portrait-10 col-large-6 col-wrapping">
+              <div class="extra-padding">
+                <img src="/img/image-participate.jpg" style="border-radius: 50%" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <div class="row row-wrapping">
+          <div class="col col-tablet-portrait-7 col-large-6 col-large-before-5 col-wrapping scroll-effect">
+            <h2 class="heading centered left-aligned-large">{{ $t('participate-heading') }}</h2>
+            <p v-html="$t('participate-text-1')" class="reduced-bottom-margin"></p>
+            <p v-html="$t('participate-text-2')" class="reduced-bottom-margin"></p>
+            <div class="button-group centered left-aligned-large">
+              <router-link tag="button" to="/registration" class="button button-primary">{{ $t('participate-button') }}</router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </app-content-section>
 
-    <section-s-d-g goal="3" color="greyish">
+    <section-s-d-g goal="3" color="light-greyish">
       This project supports Goal 3 of the UN SDGs: Ensure healthy lives and promote well-being for all at all ages, by accelerating and innovating in health research and development.
     </section-s-d-g>
+
+
+    <section-feedback color="greyish" email="causes-of-health@citizenscience.ch"></section-feedback>
 
 
     <section-newsletter-signup></section-newsletter-signup>
