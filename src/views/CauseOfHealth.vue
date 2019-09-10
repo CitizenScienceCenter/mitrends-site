@@ -6,7 +6,7 @@
   "page-title": "The Cause of Health",
 
   "health-heading": "What is Health?",
-  "health-text-1": "The UN World Health Organization notes in its <a href='' target='_blank'>constitution</a> that “Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity”. Health is hence much more than just a biomedical condition.",
+  "health-text-1": "The UN World Health Organization notes in its <a href='https://www.who.int/about/who-we-are/constitution' target='_blank'>constitution</a> that “Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity”. Health is hence much more than just a biomedical condition.",
   "health-subheading": "The «Cause of Health»",
   "health-text-2": "The Swiss Cause of Health Cohort initiative is built on the premise that an individual's health is determined by the Health Triangle, a complex interplay between a unique individual (genome), the environment, and the individual’s behaviour in the environment.",
   "health-text-3": "To understand this complexity we need standardized longitudinal sets of health data from millions of people. Such data sets form the basis of precision health or P4 (personalized, predictive, preventive and participatory) health.",
@@ -27,7 +27,7 @@
   "page-title": "The Cause of Health",
 
   "health-heading": "What is Health?",
-  "health-text-1": "The UN World Health Organization notes in its <a href='' target='_blank'>constitution</a> that “Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity”. Health is hence much more than just a biomedical condition.",
+  "health-text-1": "The UN World Health Organization notes in its <a href='https://www.who.int/about/who-we-are/constitution' target='_blank'>constitution</a> that “Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity”. Health is hence much more than just a biomedical condition.",
   "health-subheading": "The «Cause of Health»",
   "health-text-2": "The Swiss Cause of Health Cohort initiative is built on the premise that an individual's health is determined by the Health Triangle, a complex interplay between a unique individual (genome), the environment, and the individual’s behaviour in the environment.",
   "health-text-3": "To understand this complexity we need standardized longitudinal sets of health data from millions of people. Such data sets form the basis of precision health or P4 (personalized, predictive, preventive and participatory) health.",
