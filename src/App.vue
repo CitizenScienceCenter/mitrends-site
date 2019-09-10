@@ -9,7 +9,7 @@
 
 <template>
   <div id="app">
-    <app-header project-name="The Cause<br/>of Health" :languages="['de','en']"></app-header>
+    <app-header project-name="The Cause<br/>of Health" :languages="['en']"></app-header>
     <div class="content-area">
       <router-view></router-view>
     </div>

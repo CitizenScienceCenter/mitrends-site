@@ -15,13 +15,13 @@ if( !store.state.settings.language ) {
     language = language.substr(0,2);
 
     // check if valid
-    if( language !== 'de' && language !== 'fr' && language !== 'it' ) {
-        language = "de";
+    if( language !== 'en' ) {
+        language = "en";
     }
 
     // language for prerendering default routes
     if( navigator.userAgent === 'ReactSnap' ) {
-        language = "de";
+        language = "en";
     }
 
     store.dispatch("settings/setLanguage", language );
