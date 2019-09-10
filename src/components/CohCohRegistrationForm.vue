@@ -3,6 +3,9 @@
 
     "de": {
 
+    "registration-create-account": "Create Your CitizenScience.ch Account to Take Part in the Project",
+    "registration-take-part": "Tell us more about you",
+
     "label-firstname": "First Name",
     "label-lastname": "Last Name",
     "label-email": "Email",
@@ -30,12 +33,18 @@
     "error-password-match": "Passwords don't match.",
 
     "error-server": "Server error occured",
+
+    "notifications-label": "Notifications",
+    "notifications-option-1": "I want to receive information about the Citizen Science Center Zurich.",
 
     "message-success": "Thank you for your participation"
 
     },
     "en": {
 
+    "registration-create-account": "Create Your CitizenScience.ch Account to Take Part in the Project",
+    "registration-take-part": "Tell us more about you",
+
     "label-firstname": "First Name",
     "label-lastname": "Last Name",
     "label-email": "Email",
@@ -63,6 +72,9 @@
     "error-password-match": "Passwords don't match.",
 
     "error-server": "Server error occured",
+
+    "notifications-label": "Notifications",
+    "notifications-option-1": "I want to receive information about the Citizen Science Center Zurich.",
 
     "message-success": "Thank you for your participation"
 
@@ -74,7 +86,10 @@
 
 <template>
 
-    <div v-if="!user.currentUser.info.cohcohInfo">
+    <div v-if="!isAlreadyRegistred">
+
+        <h3 v-if="!user.currentUser || user.isAnon" class="subheading centered" v-html="$t('registration-create-account')"></h3>
+        <h3 v-else class="subheading centered" v-html="$t('registration-take-part')"></h3>
 
         <form @submit.prevent="register">
 
@@ -96,7 +111,7 @@
                         </div>
                     </div>
 
-                    <template v-if="user.isAnon">
+                    <template v-if="!user.currentUser || user.isAnon">
                     <div class="col col-wrapping col-large-6">
                         <div class="form-field form-field-block">
                             <label for="reg-email">{{ $t("label-email") }}</label>
@@ -224,14 +239,24 @@
                         <growing-textarea v-model="otherInterests" :placeholder="$t('placeholder-other-interests')"></growing-textarea>
                     </div>
 
-                    <!--
-                    emailFormat: false,
-                    emailInUse: false,
-                    usernameInUse: false,
-                    passwordMatch: false,
-                    passwordLength: false,
-                    server: false
-                    -->
+                    <template v-if="!user.currentUser || user.isAnon">
+                    <div class="form-field form-field-block">
+                        <label for="notification-options">{{ $t("notifications-label") }}</label>
+                        <div class="options" id="notification-options">
+
+                            <label>
+                                <input type="checkbox" v-model="centerNotification">
+                                <div class="checkbox">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+                                    </svg>
+                                </div>
+                                <span>{{ $t("notifications-option-1") }}</span>
+                            </label>
+
+                        </div>
+                    </div>
+                    </template>
 
                     <div class="button-group right-aligned">
                         <button v-if="user.isAnon" :disabled="!firstname || !lastname || !email || !password || errors.emailInUse || errors.emailInUse || errors.usernameInUse || errors.passwordLength || errors.passwordMatch" type="submit" class="button button-primary">{{ $t("button-register") }}</button>
@@ -253,13 +278,14 @@
         </form>
     </div>
     <div v-else>
-        <div class="form-message form-message-success">
+        <div class="form-message form-message-centered form-message-success">
             <div class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
             </div>
             <span class="text">{{ $t("message-success") }}</span>
         </div>
     </div>
+
 
 </template>
 
@@ -289,6 +315,8 @@
 
                 otherInterests: '',
 
+                centerNotification: false,
+
                 errors: {
                     emailFormat: false,
                     emailInUse: false,
@@ -304,23 +332,64 @@
         },
         computed: {
             ...mapState({
+                projectId: state => state.consts.projectId,
+
                 user: state => state.c3s.user
             }),
-            cohcohInfo() {
-
+            newUserInfo() {
                 return {
+                    'anonymous': false,
                     'firstname': this.firstname,
                     'lastname': this.lastname,
-                    'why': this.why,
-                    'interests': {
-                        'ancestry': this.checkboxAncestry,
-                        'activity': this.checkboxActivity,
-                        'sleep': this.checkboxSleep,
-                        'nutrition': this.checkboxNutrition,
-                        'stress': this.checkboxStress
-                    },
-                    'otherInterests': this.otherInterests
+                    'center-notifications': this.centerNotification,
+                    'project-notifications': [
+                        this.projectId
+                    ],
+                    'project-information': {
+                        [this.projectId]: {
+                            'why': this.why,
+                            'interests': {
+                                'ancestry': this.checkboxAncestry,
+                                'activity': this.checkboxActivity,
+                                'sleep': this.checkboxSleep,
+                                'nutrition': this.checkboxNutrition,
+                                'stress': this.checkboxStress,
+                            },
+                            'other-interests': this.otherInterests
+                        }
+                    }
                 };
+            },
+            existingUserInfo() {
+                return {
+                    'anonymous': false,
+                    'firstname': this.firstname,
+                    'lastname': this.lastname,
+                    'project-notifications': [
+                        this.projectId
+                    ],
+                    'project-information': {
+                        [this.projectId]: {
+                            'why': this.why,
+                            'interests': {
+                                'ancestry': this.checkboxAncestry,
+                                'activity': this.checkboxActivity,
+                                'sleep': this.checkboxSleep,
+                                'nutrition': this.checkboxNutrition,
+                                'stress': this.checkboxStress,
+                            },
+                            'other-interests': this.otherInterests
+                        }
+                    }
+                };
+            },
+            isAlreadyRegistred() {
+                if( this.user.currentUser.info && this.user.currentUser.info['project-information'] && this.user.currentUser.info['project-information'][this.projectId] ) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
             }
         },
         watch: {
@@ -365,6 +434,10 @@
                 else {
                     this.errors.passwordMatch = false;
                 }
+            },
+            user() {
+                console.log('user changed');
+                console.log( this.user );
             }
         },
         methods: {
@@ -387,7 +460,7 @@
                     ]
                 };
                 this.$store.dispatch('c3s/submission/getSubmissions', [query, 1] ).then(res => {
-                    if( res.body.length > 0 ) {
+                    if( res.body && res.body.length > 0 ) {
                         // email already registered
                         this.errors.usernameInUse = true;
                     }
@@ -431,7 +504,9 @@
             register() {
                 this.errors.server = false;
 
-                if( this.user.isAnon ) {
+                console.log('register');
+
+                if( !this.user.currentUser || this.user.isAnon ) {
 
                     // register a new user
 
@@ -439,14 +514,13 @@
                         email: this.email,
                         username: this.username,
                         pwd: this.password,
-                        info: {
-                            'anonymous': false,
-                            'cohcohInfo': this.cohcohInfo
-                        }
+                        info: this.newUserInfo
                     };
-                    this.$store.dispatch('c3s/user/register', user).then(r => {
 
+                    console.log( 'user is Anon' );
+                    this.$store.dispatch('c3s/user/register', user).then(r => {
                         if (r.ok === true) {
+                            console.log('registration successful');
                             //this.$router.push('/');
                         }
                         else {
@@ -457,12 +531,36 @@
                 }
                 else {
 
-                    // update an existing user
-                    let info = user.currentUser.info;
-                    info['cohcohInfo'] = this.cohcohInfo;
-                    this.$store.dispatch('c3s/user/update', [ user.currentUser.id, info ]).then(r => {
+                    console.log( 'user is not Anon' );
 
+                    // update an existing user
+                    const info = JSON.parse(JSON.stringify(this.user.currentUser.info));
+
+                    info['firstname'] = this.existingUserInfo['firstname'];
+                    info['lastname'] = this.existingUserInfo['lastname'];
+
+
+                    if( !Array.isArray( info['project-notifications'] ) ) {
+                        // for snake notification users (where value "true")
+                        info['project-notifications'] = ['b04bc186-1e0e-4fd3-87b8-a25262c1c79f'];
+                    }
+
+                    // add notification
+                    if( !info['project-notifications'].includes( this.projectId ) ) {
+                        info['project-notifications'].push( this.projectId );
+                    }
+
+                    // add information
+                    if( !info['project-information'] ) {
+                        info['project-information'] = {};
+                    }
+                    info['project-information'][this.projectId] = this.existingUserInfo['project-information'][this.projectId];
+
+
+                    this.$store.dispatch('c3s/user/updateUser', [ this.user.currentUser.id, {'info':info} ] ).then(r => {
+                        console.log('user updated');
                     });
+
 
                 }
             }

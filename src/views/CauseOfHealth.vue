@@ -13,7 +13,12 @@
 
   "understanding-heading": "Understanding the «Cause of Health» with Citizen Science",
   "understanding-text-1": "Switzerland has a long tradition in classical health cohorts (CoLaus, Sapladia, AIDS, Swiss Transplant). However, these cohorts are small (< 10’000 participants) and solely based on examinations in hospitals, thus expensive to maintain.",
-  "understanding-text-2": "The development of smartphone-based sensors, the increasing uptake of health related app and wearables, and the rapidly decreasing costs in genome sequencing, give hope for the establishment of much larger digital health cohorts (>100’000), that rely on the active participation of citizens (citizen science)."
+  "understanding-text-2": "The development of smartphone-based sensors, the increasing uptake of health related app and wearables, and the rapidly decreasing costs in genome sequencing, give hope for the establishment of much larger digital health cohorts (>100’000), that rely on the active participation of citizens (citizen science).",
+
+  "cohcoh-heading": "The Swiss «Cause of Health» Cohort",
+  "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled MIDATA cooperative) allows individuals to control their own data.",
+  "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
+  "cohcoh-button": "Learn more"
 
 
   },
@@ -29,7 +34,12 @@
 
   "understanding-heading": "Understanding the «Cause of Health» with Citizen Science",
   "understanding-text-1": "Switzerland has a long tradition in classical health cohorts (CoLaus, Sapladia, AIDS, Swiss Transplant). However, these cohorts are small (< 10’000 participants) and solely based on examinations in hospitals, thus expensive to maintain.",
-  "understanding-text-2": "The development of smartphone-based sensors, the increasing uptake of health related app and wearables, and the rapidly decreasing costs in genome sequencing, give hope for the establishment of much larger digital health cohorts (>100’000), that rely on the active participation of citizens (citizen science)."
+  "understanding-text-2": "The development of smartphone-based sensors, the increasing uptake of health related app and wearables, and the rapidly decreasing costs in genome sequencing, give hope for the establishment of much larger digital health cohorts (>100’000), that rely on the active participation of citizens (citizen science).",
+
+  "cohcoh-heading": "The Swiss «Cause of Health» Cohort",
+  "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled MIDATA cooperative) allows individuals to control their own data.",
+  "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
+  "cohcoh-button": "Learn more"
 
   }
 
@@ -87,7 +97,34 @@
       </div>
     </app-content-section>
 
-    <section-feedback email="causes-of-health@citizenscience.ch"></section-feedback>
+    <app-content-section>
+      <div class="content-wrapper">
+        <div class="row row-centered row-middle row-reverse-large row-wrapping">
+
+          <div class="col col-10 col-tablet-portrait-8 col-large-6 col-wrapping scroll-effect">
+            <div>
+              <div class="extra-padding-large-h">
+                <img src="/img/graphic-cohcoh.png"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-large-5 col-large-before-1 col-wrapping scroll-effect scroll-effect-delayed-1">
+            <div>
+              <h2 class="heading centered left-aligned-large">{{ $t('cohcoh-heading') }}</h2>
+              <p v-html="$t('cohcoh-text-1')" class="reduced-bottom-margin"></p>
+              <p v-html="$t('cohcoh-text-2')" class="reduced-bottom-margin"></p>
+              <div class="button-group centered left-aligned-large">
+                <router-link tag="button" to="/swiss-cohcoh" class="button button-secondary">{{ $t('cohcoh-button') }}</router-link>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </app-content-section>
+
+    <section-feedback email="causes-of-health@citizenscience.ch" color="light-greyish" ></section-feedback>
 
     <app-footer></app-footer>
 

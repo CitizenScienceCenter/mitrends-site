@@ -4,7 +4,7 @@ import CohCoh from '@/views/CohCoh';
 import Terms from '@/views/shared/static/Terms';
 import Registration from '@/views/Registration';
 
-import Login from '@/views/shared/user/Login';
+import Login from '@/views/Login';
 import Profile from '@/views/shared/user/Profile';
 import RequestReset from '@/views/shared/user/RequestReset';
 import Reset from '@/views/shared/user/Reset';
@@ -23,7 +23,7 @@ export const routes = [
             {
                 path: "registration",
                 component: Registration,
-                meta: {i18n: "navigation-registration", nav: true}
+                meta: {requiresAuth: true, i18n: "navigation-registration", nav: true}
             },
             {
                 path: "cause-of-health",
@@ -44,7 +44,7 @@ export const routes = [
                 path: "login",
                 name: "Login",
                 component: Login,
-                meta: {i18n: 'navigation-login', nav: false}
+                meta: {requiresAuth: true, i18n: 'navigation-login', nav: false}
             },
             {
                 path: "reset",

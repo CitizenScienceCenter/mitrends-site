@@ -8,8 +8,11 @@
   "registration-heading": "Take part",
   "registration-text": "Swiss CohCoh only works if it is carried by scientists and citizen scientists who see the need for such a digital health cohort and are willing to take the lead.",
 
-  "registration-existing-account": "<b>Do you already have a citizenscience.ch account?</b>",
-  "registration-create-account": "Create Your citizenscience.ch Account to Take Part"
+  "existing-account": "<b>Do you already have a CitizenScience.ch account?</b>",
+  "existing-account-button": "Login",
+
+  "registration-create-account": "Create Your CitizenScience.ch Account to Take Part in the Project",
+  "registration-take-part": "Tell us about your Interests"
 
   },
   "en": {
@@ -19,8 +22,11 @@
   "registration-heading": "Take part",
   "registration-text": "Swiss CohCoh only works if it is carried by scientists and citizen scientists who see the need for such a digital health cohort and are willing to take the lead.",
 
-  "registration-existing-account": "<b>Do you already have a citizenscience.ch account?</b>",
-  "registration-create-account": "Create Your citizenscience.ch Account to Take Part"
+  "existing-account": "<b>Do you already have a CitizenScience.ch account?</b>",
+  "existing-account-button": "Login",
+
+  "registration-create-account": "Create Your CitizenScience.ch Account to Take Part in the Project",
+  "registration-take-part": "Tell us about your Interests"
 
   }
 
@@ -39,9 +45,9 @@
               <h2 class="heading centered">{{ $t('registration-heading') }}</h2>
 
               <div class="login-reminder-box margin-bottom" v-if="user.isAnon">
-                <p class="centered reduced-bottom-margin" v-html="$t('registration-existing-account')"></p>
+                <p class="centered reduced-bottom-margin" v-html="$t('existing-account')"></p>
                 <div class="button-group centered">
-                  <router-link tag="button" to="/login" class="button button-secondary button-secondary-naked">Login</router-link>
+                  <router-link tag="button" to="/login" class="button button-secondary button-secondary-naked">{{$t('existing-account-button')}}</router-link>
                 </div>
               </div>
 
@@ -54,8 +60,9 @@
         <div class="content-subsection">
           <div class="row row-centered">
             <div class="col col-large-8 scroll-effect">
-              <h3 class="subheading centered">{{ $t('registration-create-account') }}</h3>
+
               <coh-coh-registration-form></coh-coh-registration-form>
+
             </div>
           </div>
         </div>
