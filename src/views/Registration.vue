@@ -71,7 +71,7 @@
       </div>
     </app-content-section>
 
-    <app-content-section color="light-greyish">
+    <app-content-section>
       <div class="content-wrapper">
 
         <div class="row row-centered">
@@ -84,7 +84,7 @@
       </div>
     </app-content-section>
 
-    <section-feedback email="cause-of-health@citizenscience.ch"></section-feedback>
+    <section-feedback email="cause-of-health@citizenscience.ch" color="light-greyish"></section-feedback>
 
     <app-footer></app-footer>
 
