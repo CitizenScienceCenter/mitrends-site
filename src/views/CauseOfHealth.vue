@@ -124,7 +124,7 @@
       </div>
     </app-content-section>
 
-    <section-feedback email="causes-of-health@citizenscience.ch" color="light-greyish" ></section-feedback>
+    <section-feedback email="cause-of-health@citizenscience.ch" color="light-greyish" ></section-feedback>
 
     <app-footer></app-footer>
 
