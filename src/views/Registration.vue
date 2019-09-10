@@ -11,8 +11,9 @@
   "existing-account": "<b>Do you already have a CitizenScience.ch account?</b>",
   "existing-account-button": "Login",
 
-  "registration-create-account": "Create Your CitizenScience.ch Account to Take Part in the Project",
-  "registration-take-part": "Tell us about your Interests"
+  "legal-heading": "Ethical and Legal Considerations",
+  "legal-text": "Any scientific study involving human participants requires ethical approval from the cantonal ethics commission. Novel participatory studies such as the Swiss CohCoh require novel approaches to ethical oversight and ethical approach. This is in itself a research project running within the Swiss CohCoh.  The specific law on genetic analysis in humans (GUMG) that is currently in revision provides the boundary conditions for this project. Naturally, this project will also generate interesting legal scientific questions."
+
 
   },
   "en": {
@@ -25,8 +26,8 @@
   "existing-account": "<b>Do you already have a CitizenScience.ch account?</b>",
   "existing-account-button": "Login",
 
-  "registration-create-account": "Create Your CitizenScience.ch Account to Take Part in the Project",
-  "registration-take-part": "Tell us about your Interests"
+  "legal-heading": "Ethical and Legal Considerations",
+  "legal-text": "Any scientific study involving human participants requires ethical approval from the cantonal ethics commission. Novel participatory studies such as the Swiss CohCoh require novel approaches to ethical oversight and ethical approach. This is in itself a research project running within the Swiss CohCoh.  The specific law on genetic analysis in humans (GUMG) that is currently in revision provides the boundary conditions for this project. Naturally, this project will also generate interesting legal scientific questions."
 
   }
 
@@ -70,7 +71,20 @@
       </div>
     </app-content-section>
 
-    <section-feedback email="cause-of-health@citizenscience.ch" color="light-greyish"></section-feedback>
+    <app-content-section color="light-greyish">
+      <div class="content-wrapper">
+
+        <div class="row row-centered">
+          <div class="col col-large-6 scroll-effect">
+            <h2 class="heading centered">{{ $t('legal-heading') }}</h2>
+            <p v-html="$t('legal-text')"></p>
+          </div>
+        </div>
+
+      </div>
+    </app-content-section>
+
+    <section-feedback email="cause-of-health@citizenscience.ch"></section-feedback>
 
     <app-footer></app-footer>
 

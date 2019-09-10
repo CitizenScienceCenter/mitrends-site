@@ -128,7 +128,7 @@
 
         <div class="content-subsection">
           <div class="row row-centered">
-            <div class="col col-large-6">
+            <div class="col col-large-6 scroll-effect">
               <h2 class="heading centered" id="projects">{{ $t('examples-heading') }}</h2>
               <p v-html="$t('examples-text')"></p>
             </div>
@@ -138,26 +138,26 @@
         <div class="content-subsection">
           <div class="row row-centered row-wrapping row-middle">
 
-            <div class="col col-wrapping col-4 col-large-3 col-large-before-1">
+            <div class="col col-wrapping col-4 col-large-3 col-large-before-1 scroll-effect">
               <img src="/img/graphic-genetic-landscape.png" />
             </div>
-            <div class="col col-wrapping col-large-6 col-large-after-2">
+            <div class="col col-wrapping col-large-6 col-large-after-2 scroll-effect">
               <h3 class="subheading centered left-aligned-large">{{ $t('example-1-heading') }}</h3>
               <p v-html="$t('example-1-text')"></p>
             </div>
 
-            <div class="col col-wrapping col-4 col-large-3 col-large-before-1">
+            <div class="col col-wrapping col-4 col-large-3 col-large-before-1 scroll-effect">
               <img src="/img/graphic-nutrition.png" />
             </div>
-            <div class="col col-wrapping col-large-6 col-large-after-2">
+            <div class="col col-wrapping col-large-6 col-large-after-2 scroll-effect">
               <h3 class="subheading centered left-aligned-large">{{ $t('example-2-heading') }}</h3>
               <p v-html="$t('example-2-text')"></p>
             </div>
 
-            <div class="col col-wrapping col-4 col-large-3 col-large-before-1">
+            <div class="col col-wrapping col-4 col-large-3 col-large-before-1 scroll-effect">
               <img src="/img/graphic-activity.png" />
             </div>
-            <div class="col col-wrapping col-large-6 col-large-after-2">
+            <div class="col col-wrapping col-large-6 col-large-after-2 scroll-effect">
               <h3 class="subheading centered left-aligned-large">{{ $t('example-3-heading') }}</h3>
               <p v-html="$t('example-3-text')"></p>
             </div>
@@ -167,7 +167,7 @@
 
         <div class="content-subsection">
           <div class="row row-centered">
-            <div class="col col-large-6">
+            <div class="col col-large-6 scroll-effect">
               <p v-html="$t('examples-text-2')"></p>
             </div>
           </div>
