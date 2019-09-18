@@ -9,7 +9,7 @@
   "cohcoh-text-1": "Swiss CohCoh is a novel and unique type of health data cohort where participants, mainly scientists but also any interested citizen scientist, “walk the talk” by taking the lead of the health data sharing movement in Switzerland.",
   "cohcoh-list-intro": "Participants joining the Swiss Cohort:",
   "cohcoh-list-item-1": "Pay for their own analysis (e.g. genome analysis, medical analysis)",
-  "cohcoh-list-item-2": "Store their data in a personal account on the MIDATA platform, which provides the highest level of security and privacy, and full control over who can access the data.",
+  "cohcoh-list-item-2": "Store their data in a personal account on the <a href='https://www.midata.coop' target='_blank'>MIDATA</a> platform, which provides the highest level of security and privacy, and full control over who can access the data.",
   "cohcoh-list-item-3": "Benefit from new data analyses and they can decide which personal feedback to receive (e.g. on their response to drugs - pharmacogenomics, ancestry, food-glucose patterns, etc.).",
   "cohcoh-list-item-4": "Decide themselves how to get involved. They may decide to receive as much information as possible, or to take a more passive role and simply contribute data to advance science.",
   "cohcoh-list-item-5": "Propose and initiate subprojects.",
@@ -20,11 +20,11 @@
   "participate-button": "Take part",
 
   "examples-heading": "Project Examples",
-  "examples-text": "Participants in the Swiss CohCoh will also help shaping the research process within the by selecting (or proposing) studies and projects for the platform. Here some examples of proposed projects:",
+  "examples-text": "Participants in the Swiss CohCoh will also help shaping the research process by selecting (or proposing) studies and projects for the platform. Here some examples of proposed projects:",
   "example-1-heading": "Swiss Genetic Landscape",
-  "example-1-text": "We all know that we react differently to the intake of food and drink. These differences are due to the complex and poorly understood connection between blood glucose levels, food intake and gut microbiome, and new data will help understand this particular aspect of the health triangle.",
+  "example-1-text": "DNA analysis can be used to determine the historical origins of individuals and populations. For health, small genetic differences in population can contribute, for instance, to different sensitivities to medications and adverse drug reactions. A fine structure map of the Swiss population would help to better predict the efficacy and adverse side effects of drugs.",
   "example-2-heading": "Nutrition",
-  "example-2-text": "DNA analysis can be used to determine the historical origins of individuals and populations. For health, small genetic differences in population can contribute, for instance, to different sensitivities to medications and adverse drug reactions. A fine structure map of the Swiss population would help to better predict the efficacy and adverse side effects of drugs.",
+  "example-2-text": "We all know that we react differently to the intake of food and drink. These differences are due to the complex and poorly understood connection between blood glucose levels, food intake and gut microbiome, and new data will help understand this particular aspect of the health triangle.",
   "example-3-heading": "Activity, Food, Blood Glucose, Sleep and Stress",
   "example-3-text": "There is little evidence on how our physiology (e.g. blood glucose levels) responds to exercise, sleep and stress. But now we can record our activities constantly via our smartphone (steps, sleep patterns, etc.)  and measure our blood glucose levels with using inexpensive sensors, making it possible to learn more about our wellbeing.",
   "examples-text-2": "Do you have your own idea for a digital health study? You will be able to do it yourself and recruit your participants through the Swiss CohCoh platform. Swiss CohCoh and the Citizen Science Center Zürich will assist you in developing and setting up the study."
@@ -38,7 +38,7 @@
   "cohcoh-text-1": "Swiss CohCoh is a novel and unique type of health data cohort where participants, mainly scientists but also any interested citizen scientist, “walk the talk” by taking the lead of the health data sharing movement in Switzerland.",
   "cohcoh-list-intro": "Participants joining the Swiss Cohort:",
   "cohcoh-list-item-1": "Pay for their own analysis (e.g. genome analysis, medical analysis)",
-  "cohcoh-list-item-2": "Store their data in a personal account on the MIDATA platform, which provides the highest level of security and privacy, and full control over who can access the data.",
+  "cohcoh-list-item-2": "Store their data in a personal account on the <a href='https://www.midata.coop' target='_blank'>MIDATA</a> platform, which provides the highest level of security and privacy, and full control over who can access the data.",
   "cohcoh-list-item-3": "Benefit from new data analyses and they can decide which personal feedback to receive (e.g. on their response to drugs - pharmacogenomics, ancestry, food-glucose patterns, etc.).",
   "cohcoh-list-item-4": "Decide themselves how to get involved. They may decide to receive as much information as possible, or to take a more passive role and simply contribute data to advance science.",
   "cohcoh-list-item-5": "Propose and initiate subprojects.",
@@ -49,11 +49,11 @@
   "participate-button": "Take part",
 
   "examples-heading": "Project Examples",
-  "examples-text": "Participants in the Swiss CohCoh will also help shaping the research process within the by selecting (or proposing) studies and projects for the platform. Here some examples of proposed projects:",
+  "examples-text": "Participants in the Swiss CohCoh will also help shaping the research process by selecting (or proposing) studies and projects for the platform. Here some examples of proposed projects:",
   "example-1-heading": "Swiss Genetic Landscape",
-  "example-1-text": "We all know that we react differently to the intake of food and drink. These differences are due to the complex and poorly understood connection between blood glucose levels, food intake and gut microbiome, and new data will help understand this particular aspect of the health triangle.",
+  "example-1-text": "DNA analysis can be used to determine the historical origins of individuals and populations. For health, small genetic differences in population can contribute, for instance, to different sensitivities to medications and adverse drug reactions. A fine structure map of the Swiss population would help to better predict the efficacy and adverse side effects of drugs.",
   "example-2-heading": "Nutrition",
-  "example-2-text": "DNA analysis can be used to determine the historical origins of individuals and populations. For health, small genetic differences in population can contribute, for instance, to different sensitivities to medications and adverse drug reactions. A fine structure map of the Swiss population would help to better predict the efficacy and adverse side effects of drugs.",
+  "example-2-text": "We all know that we react differently to the intake of food and drink. These differences are due to the complex and poorly understood connection between blood glucose levels, food intake and gut microbiome, and new data will help understand this particular aspect of the health triangle.",
   "example-3-heading": "Activity, Food, Blood Glucose, Sleep and Stress",
   "example-3-text": "There is little evidence on how our physiology (e.g. blood glucose levels) responds to exercise, sleep and stress. But now we can record our activities constantly via our smartphone (steps, sleep patterns, etc.)  and measure our blood glucose levels with using inexpensive sensors, making it possible to learn more about our wellbeing.",
   "examples-text-2": "Do you have your own idea for a digital health study? You will be able to do it yourself and recruit your participants through the Swiss CohCoh platform. Swiss CohCoh and the Citizen Science Center Zürich will assist you in developing and setting up the study."
@@ -176,7 +176,7 @@
       </div>
     </app-content-section>
 
-    <section-feedback email="cause-of-health@citizenscience.ch" color="light-greyish"></section-feedback>
+    <section-feedback email="cohco@citizenscience.ch" color="light-greyish"></section-feedback>
 
     <app-footer></app-footer>
 

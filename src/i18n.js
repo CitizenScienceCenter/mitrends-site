@@ -33,7 +33,7 @@ export const i18n = new VueI18n({
   messages: {
       'de': {
 
-          "site-title": "The Cause of Health | Citizen Science Center Zurich",
+          "site-title": "Cause of Health | Citizen Science Center Zurich",
           "site-description": "Be Part of a Revolutionary Digital Health Community.",
 
           'navigation-homepage': {
@@ -74,7 +74,7 @@ export const i18n = new VueI18n({
 
       'en': {
 
-          "site-title": "The Cause of Health | Citizen Science Center Zurich",
+          "site-title": "Cause of Health | Citizen Science Center Zurich",
           "site-description": "Be Part of a Revolutionary Digital Health Community.",
 
           'navigation-homepage': {

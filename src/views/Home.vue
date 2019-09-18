@@ -4,7 +4,7 @@
   "de": {
 
   "cover-heading": "Let's Discover <br/>the Cause of Health",
-  "cover-subheading": "Be Part of a Revolutionary <br/>Digital Health Community.",
+  "cover-subheading": "Be Part of a Revolutionary <br/>Digital Health Community",
   "cover-button-primary": "Take Part",
   "cover-button-secondary": "Learn more",
 
@@ -13,8 +13,8 @@
   "cause-of-health-text-2": "Health and wellbeing are different in each individual and depends on the genome, the environment and behavior of each individual (Health Triangle). In order to understand the causes of health we need large sets of health-relevant data from a large number of people.",
   "cause-of-health-button": "Learn more",
 
-  "cohcoh-heading": "The Swiss «Cause of Health» Cohort",
-  "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled MIDATA cooperative) allows individuals to control their own data.",
+  "cohcoh-heading": "The Swiss «Cause of Health» Cohort (CoHCo)",
+  "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled <a href='https://www.midata.coop' target='_blank'>MIDATA cooperative<a/>) allows individuals to control their own data.",
   "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
   "cohcoh-button": "Learn more",
 
@@ -27,7 +27,7 @@
   "en": {
 
   "cover-heading": "Let's Discover <br/>the Cause of Health",
-  "cover-subheading": "Be Part of a Revolutionary <br/>Digital Health Community.",
+  "cover-subheading": "Be Part of a Revolutionary <br/>Digital Health Community",
   "cover-button-primary": "Take Part",
   "cover-button-secondary": "Learn more",
 
@@ -36,8 +36,8 @@
   "cause-of-health-text-2": "Health and wellbeing are different in each individual and depends on the genome, the environment and behavior of each individual (Health Triangle). In order to understand the causes of health we need large sets of health-relevant data from a large number of people.",
   "cause-of-health-button": "Learn more",
 
-  "cohcoh-heading": "The Swiss «Cause of Health» Cohort",
-  "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled MIDATA cooperative) allows individuals to control their own data.",
+  "cohcoh-heading": "The Swiss «Cause of Health» Cohort (CoHCo)",
+  "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled <a href='https://www.midata.coop' target='_blank'>MIDATA cooperative</a>) allows individuals to control their own data.",
   "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
   "cohcoh-button": "Learn more",
 
@@ -182,7 +182,7 @@
     </app-content-section>
 
 
-    <section-feedback color="light-greyish" email="cause-of-health@citizenscience.ch"></section-feedback>
+    <section-feedback color="light-greyish" email="cohco@citizenscience.ch"></section-feedback>
 
     <section-s-d-g goal="3" color="greyish">
       This project supports Goal 3 of the UN SDGs: Ensure healthy lives and promote well-being for all at all ages, by accelerating and innovating in health research and development.

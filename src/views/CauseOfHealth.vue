@@ -13,9 +13,9 @@
 
   "understanding-heading": "Understanding the «Cause of Health» with Citizen Science",
   "understanding-text-1": "Switzerland has a long tradition in classical health cohorts (CoLaus, Sapladia, AIDS, Swiss Transplant). However, these cohorts are small (< 10’000 participants) and solely based on examinations in hospitals, thus expensive to maintain.",
-  "understanding-text-2": "The development of smartphone-based sensors, the increasing uptake of health related app and wearables, and the rapidly decreasing costs in genome sequencing, give hope for the establishment of much larger digital health cohorts (>100’000), that rely on the active participation of citizens (citizen science).",
+  "understanding-text-2": "The development of smartphone-based sensors, the increasing use of health related apps and wearables, and the rapidly decreasing costs in genome sequencing, give hope for the establishment of much larger digital health cohorts (>100’000), that rely on the active participation of citizens (citizen science).",
 
-  "cohcoh-heading": "The Swiss «Cause of Health» Cohort",
+  "cohcoh-heading": "The Swiss «Cause of Health» Cohort (CoHCo)",
   "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled MIDATA cooperative) allows individuals to control their own data.",
   "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
   "cohcoh-button": "Learn more"
@@ -34,9 +34,9 @@
 
   "understanding-heading": "Understanding the «Cause of Health» with Citizen Science",
   "understanding-text-1": "Switzerland has a long tradition in classical health cohorts (CoLaus, Sapladia, AIDS, Swiss Transplant). However, these cohorts are small (< 10’000 participants) and solely based on examinations in hospitals, thus expensive to maintain.",
-  "understanding-text-2": "The development of smartphone-based sensors, the increasing uptake of health related app and wearables, and the rapidly decreasing costs in genome sequencing, give hope for the establishment of much larger digital health cohorts (>100’000), that rely on the active participation of citizens (citizen science).",
+  "understanding-text-2": "The development of smartphone-based sensors, the increasing use of health related apps and wearables, and the rapidly decreasing costs in genome sequencing, give hope for the establishment of much larger digital health cohorts (>100’000), that rely on the active participation of citizens (citizen science).",
 
-  "cohcoh-heading": "The Swiss «Cause of Health» Cohort",
+  "cohcoh-heading": "The Swiss «Cause of Health» Cohort (CoHCo)",
   "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled MIDATA cooperative) allows individuals to control their own data.",
   "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
   "cohcoh-button": "Learn more"
@@ -124,7 +124,7 @@
       </div>
     </app-content-section>
 
-    <section-feedback email="cause-of-health@citizenscience.ch" color="light-greyish" ></section-feedback>
+    <section-feedback email="cohco@citizenscience.ch" color="light-greyish" ></section-feedback>
 
     <app-footer></app-footer>
 
