@@ -9,8 +9,8 @@
   "cover-button-secondary": "Learn more",
 
   "cause-of-health-heading": "What is the Cause of Health?",
-  "cause-of-health-text-1": "In fact we do not know since medical research has mainly focused on curing disease. We mostly wait to turn ill before we start to collect data.",
-  "cause-of-health-text-2": "Health and wellbeing are different in each individual and depends on the genome, the environment and behavior of each individual (Health Triangle). In order to understand the causes of health we need large sets of health-relevant data from a large number of people.",
+  "cause-of-health-text-1": "In fact we do not know since medical research has mainly focused on curing disease. We mostly wait to turn ill before we start collecting data.",
+  "cause-of-health-text-2": "Health and wellbeing are different in each individual and depend on the genome, the environment and behavior of each individual (Health Triangle). In order to understand the causes of health we need large sets of health-relevant data from a large number of people.",
   "cause-of-health-button": "Learn more",
 
   "cohcoh-heading": "The Swiss «Cause of Health» Cohort (CoHCo)",
@@ -32,8 +32,8 @@
   "cover-button-secondary": "Learn more",
 
   "cause-of-health-heading": "What is the Cause of Health?",
-  "cause-of-health-text-1": "In fact we do not know since medical research has mainly focused on curing disease. We mostly wait to turn ill before we start to collect data.",
-  "cause-of-health-text-2": "Health and wellbeing are different in each individual and depends on the genome, the environment and behavior of each individual (Health Triangle). In order to understand the causes of health we need large sets of health-relevant data from a large number of people.",
+  "cause-of-health-text-1": "In fact we do not know since medical research has mainly focused on curing disease. We mostly wait to turn ill before we start collecting data.",
+  "cause-of-health-text-2": "Health and wellbeing are different in each individual and depend on the genome, the environment and behavior of each individual (Health Triangle). In order to understand the causes of health we need large sets of health-relevant data from a large number of people.",
   "cause-of-health-button": "Learn more",
 
   "cohcoh-heading": "The Swiss «Cause of Health» Cohort (CoHCo)",
