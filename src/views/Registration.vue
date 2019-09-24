@@ -84,7 +84,7 @@
       </div>
     </app-content-section>
 
-    <section-feedback email="cohco@citizenscience.ch" color="light-greyish"></section-feedback>
+    <section-feedback email="cohcoh@citizenscience.ch" color="light-greyish"></section-feedback>
 
     <app-footer></app-footer>
 

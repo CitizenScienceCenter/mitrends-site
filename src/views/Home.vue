@@ -182,7 +182,7 @@
     </app-content-section>
 
 
-    <section-feedback color="light-greyish" email="cohco@citizenscience.ch"></section-feedback>
+    <section-feedback color="light-greyish" email="cohcoh@citizenscience.ch"></section-feedback>
 
     <section-s-d-g goal="3" color="greyish">
       This project supports Goal 3 of the UN SDGs: Ensure healthy lives and promote well-being for all at all ages, by accelerating and innovating in health research and development.
