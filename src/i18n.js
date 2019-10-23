@@ -14,9 +14,9 @@ if( !store.state.settings.language ) {
     // trim
     language = language.substr(0,2);
 
-    // check if valid
-    if( language !== 'en' ) {
-        language = "en";
+    // check if not valid
+    if( !store.state.consts.languages.includes( language ) ) {
+        language = store.state.consts.languages[0];
     }
 
     // language for prerendering default routes
@@ -31,7 +31,8 @@ export const i18n = new VueI18n({
   locale: store.state.settings.language,
   silentTranslationWarn: true,
   messages: {
-      'de': {
+
+      'en': {
 
           "site-title": "Cause of Health | Citizen Science Center Zurich",
           "site-description": "Be Part of a Revolutionary Digital Health Community.",
@@ -72,7 +73,7 @@ export const i18n = new VueI18n({
 
       },
 
-      'en': {
+      'de': {
 
           "site-title": "Cause of Health | Citizen Science Center Zurich",
           "site-description": "Be Part of a Revolutionary Digital Health Community.",
@@ -81,13 +82,13 @@ export const i18n = new VueI18n({
               'link': 'Home'
           },
           'navigation-registration': {
-              'link': 'Take part'
+              'link': 'Mitmachen'
           },
           'navigation-cause-of-health': {
-              'link': 'Causes of Health'
+              'link': 'Der «Cause of Health»'
           },
           'navigation-swiss-cohcoh': {
-              'link': 'The Swiss COH Cohort'
+              'link': 'Die Swiss COH Kohorte'
           },
           'navigation-forum': {
               'link': 'Forum'

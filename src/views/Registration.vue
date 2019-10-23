@@ -1,33 +1,33 @@
 <i18n>
 {
 
-  "de": {
-
-  "page-title": "Take part",
-
-  "registration-heading": "Take part",
-  "registration-text": "Swiss CohCoh only works if it is carried by scientists and citizen scientists who see the need for such a digital health cohort and are willing to take the lead.",
-
-  "existing-account": "<b>Do you already have a CitizenScience.ch account?</b>",
-  "existing-account-button": "Login",
-
-  "legal-heading": "Ethical and Legal Considerations",
-  "legal-text": "Any scientific study involving human participants requires ethical approval from the cantonal ethics commission. Novel participatory studies such as the Swiss CohCoh require novel approaches to ethical oversight and ethical approach. This is in itself a research project running within the Swiss CohCoh.  The specific law on genetic analysis in humans (GUMG) that is currently in revision provides the boundary conditions for this project. Naturally, this project will also generate interesting legal scientific questions."
-
-
-  },
   "en": {
 
   "page-title": "Take part",
 
   "registration-heading": "Take part",
-  "registration-text": "Swiss CohCoh only works if it is carried by scientists and citizen scientists who see the need for such a digital health cohort and are willing to take the lead.",
+  "registration-text": "Swiss COHCOH only works if it is carried by scientists and citizen scientists who see the need for such a digital health cohort and are willing to take the lead.",
 
   "existing-account": "<b>Do you already have a CitizenScience.ch account?</b>",
-  "existing-account-button": "Login",
+  "existing-account-button": "Login now",
 
   "legal-heading": "Ethical and Legal Considerations",
-  "legal-text": "Any scientific study involving human participants requires ethical approval from the cantonal ethics commission. Novel participatory studies such as the Swiss CohCoh require novel approaches to ethical oversight and ethical approach. This is in itself a research project running within the Swiss CohCoh.  The specific law on genetic analysis in humans (GUMG) that is currently in revision provides the boundary conditions for this project. Naturally, this project will also generate interesting legal scientific questions."
+  "legal-text": "Any scientific study involving human participants requires ethical approval from the cantonal ethics commission. Novel participatory studies such as the Swiss CohCoh require novel approaches to ethical oversight and ethical approach. This is in itself a research project running within the Swiss CohCoh.  The specific law on genetic analysis in humans (<a href='https://www.bag.admin.ch/bag/de/home/medizin-und-forschung/genetische-untersuchungen/aktuelle-rechtsetzungsprojekte1.html'>GUMG</a>) that is currently in revision provides the boundary conditions for this project. Naturally, this project will also generate interesting legal scientific questions."
+
+
+  },
+  "de": {
+
+  "page-title": "Mitmachen",
+
+  "registration-heading": "Jetzt mitmachen",
+  "registration-text": "Swiss COHCOH only works if it is carried by scientists and citizen scientists who see the need for such a digital health cohort and are willing to take the lead.",
+
+  "existing-account": "<b>Haben Sie bereits einen CitizenScience.ch-Account?</b>",
+  "existing-account-button": "Jetzt einloggen",
+
+  "legal-heading": "Ethische und rechtliche Aspekte",
+  "legal-text": "Jede wissenschaftliche Studie mit menschlichen Teilnehmern muss zuerst von der Kantonalen Ethikkommission bewilligt werden. Partizipativen Initiativen wie Swiss COHCOH werden diese traditionellen ethischen Rahmenbedingungen nicht mehr gerecht. Daher ist die Entwicklung angepasster Normen und Mechanismen tatsächlich ein eigenständiges Projekt von Swiss COHCOH. In der Schweiz sind die Rahmenbedingungen für Swiss COHCOH durch das “Genetische Untersuchungen am Menschen Gesetz” (<a href='https://www.bag.admin.ch/bag/de/home/medizin-und-forschung/genetische-untersuchungen/aktuelle-rechtsetzungsprojekte1.html'>GUMG</a>) geregelt.  Das Gesetz befindet sich zurZeit in Revision. Swiss COHCOH wird auch in diesem Bereich zu interessanten Resultaten hinsichtlich rechtlicher Aspekte von Citizen Science und Partizipativer Wissenschaft führen."
 
   }
 

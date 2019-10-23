@@ -1,15 +1,6 @@
-<i18n>
-  {
-  "en": {
-  },
-  "de": {
-  }
-  }
-</i18n>
-
 <template>
   <div id="app">
-    <app-header project-name="Cause of<br/>Health" :languages="['en']"></app-header>
+    <app-header project-name="Cause of<br/>Health" :languages="languages"></app-header>
     <div class="content-area">
       <router-view></router-view>
     </div>
@@ -68,6 +59,7 @@ export default {
       }
   },
   computed: mapState({
+      languages: state => state.consts.languages,
       language: state => state.settings.language
   }),
   mounted: function() {

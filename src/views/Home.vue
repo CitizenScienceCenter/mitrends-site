@@ -1,29 +1,6 @@
 <i18n>
 {
 
-  "de": {
-
-  "cover-heading": "Let's Discover <br/>the Cause of Health",
-  "cover-subheading": "Be Part of a Revolutionary <br/>Digital Health Community",
-  "cover-button-primary": "Take Part",
-  "cover-button-secondary": "Learn more",
-
-  "cause-of-health-heading": "What is the Cause of Health?",
-  "cause-of-health-text-1": "In fact we do not know since medical research has mainly focused on curing disease. We mostly wait to turn ill before we start collecting data.",
-  "cause-of-health-text-2": "Health and wellbeing are different in each individual and depend on the genome, the environment and behavior of each individual (Health Triangle). In order to understand the causes of health we need large sets of health-relevant data from a large number of people.",
-  "cause-of-health-button": "Learn more",
-
-  "cohcoh-heading": "The Swiss «Cause of Health» Cohort (CoHCo)",
-  "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled <a href='https://www.midata.coop' target='_blank'>MIDATA cooperative<a/>) allows individuals to control their own data.",
-  "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
-  "cohcoh-button": "Learn more",
-
-  "participate-heading": "Who can Participate?",
-  "participate-text-1": "Researchers from the ETH Zurich and the University of Zurich recognized and promoted the concept of sharing personal data for research. They initiate and participate in the “Swiss Cause of Health Cohort”, and encourage everybody in Switzerland to do the same.",
-  "participate-text-2": "Are you interested? Fill the form to be updated on the advancements of the CohCoh projects.",
-  "participate-button": "Take part"
-
-  },
   "en": {
 
   "cover-heading": "Let's Discover <br/>the Cause of Health",
@@ -36,14 +13,38 @@
   "cause-of-health-text-2": "Health and wellbeing are different in each individual and depend on the genome, the environment and behavior of each individual (Health Triangle). In order to understand the causes of health we need large sets of health-relevant data from a large number of people.",
   "cause-of-health-button": "Learn more",
 
-  "cohcoh-heading": "The Swiss «Cause of Health» Cohort (CoHCo)",
+  "cohcoh-heading": "The Swiss «Cause of Health» Cohort (COHCOH)",
   "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled <a href='https://www.midata.coop' target='_blank'>MIDATA cooperative</a>) allows individuals to control their own data.",
   "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
   "cohcoh-button": "Learn more",
 
   "participate-heading": "Who can Participate?",
   "participate-text-1": "Researchers from the ETH Zurich and the University of Zurich recognized and promoted the concept of sharing personal data for research. They initiate and participate in the “Swiss Cause of Health Cohort”, and encourage everybody in Switzerland to do the same.",
-  "participate-text-2": "Are you interested? Fill the form to be updated on the advancements of the CohCoh projects.",
+  "participate-text-2": "Are you interested? Fill the form to be updated on the advancements of the COHCOH projects.",
+  "participate-button": "Take part"
+
+  },
+
+  "de": {
+
+  "cover-heading": "Let's Discover <br/>the Cause of Health",
+  "cover-subheading": "Be Part of a Revolutionary <br/>Digital Health Community",
+  "cover-button-primary": "Jetzt mitmachen",
+  "cover-button-secondary": "Mehr erfahren",
+
+  "cause-of-health-heading": "Warum bleiben wir gesund?",
+  "cause-of-health-text-1": "Wir wissen es in der Tat nicht! Denn die medizinische Forschung beschäftigt sich traditionell nur mit Krankheitsentstehung. Gesundheitsdaten sind rar, denn wir beginnen erst damit Daten über uns zu sammeln, wenn wir bereits krank sind.",
+  "cause-of-health-text-2": "Gesundheit und Wohlbefinden sind individuell verschieden und werden durch das “Gesundheitsdreieck” bestimmt: Dem komplizierten Zusammenhang zwischen unserem individuellen Genom, der Umwelt und unserem Verhalten in der Umwelt. Zur Erforschung von Gesundheit und Wohlbefinden braucht die Wissenschaft sehr grosse Mengen an Gesundheitsrelevanten Daten von möglichst vielen Menschen.",
+  "cause-of-health-button": "Mehr erfahren",
+
+  "cohcoh-heading": "Die Schweizerische “Cause of Health Kohorte” (Swiss COHCOH)",
+  "cohcoh-text-1": "Die Schweizerische “Cause of Health Kohorte” wird von Wissenschaftlern in der Schweiz mit Ihren eigenen Gesundheitsdaten gestartet um die Personalisierte Medizin der Zukunft zu ermöglichen.",
+  "cohcoh-text-2": "Alle persönlichen Gesundheitsdaten werden auf einer einzigartigen Datenplattform gespeichert. Diese garantiert sichere Aufbewahrung in einem verschlüsselten persönlichen Datenkonto der Teilnehmer (nicht Gewinnorientierte und von Bürgern kontrollierte <a href='https://www.midata.coop' target='_blank'>MIDATA Genossenschaft</a>).",
+  "cohcoh-button": "Mehr erfahren",
+
+  "participate-heading": "Wer kann teilnehmen?",
+  "participate-text-1": "Wissenschaftler fordern seit einiger Zeit, dass persönliche Daten für die Forschung zur Verfügung stehen sollten. Nun starten Forscher der ETH Zürich und der Universität Zürich die “Swiss Cause of Health Kohorte” und nehmen mit ihren eigenen persönlichen Daten teil. Damit möchten sie alle Einwohnerinnen und Einwohner der Schweiz dazu ermuntern das Gleiche zu tun.",
+  "participate-text-2": "Sind Sie interessiert? Dann füllen sie jetzt gleich das Formular aus und wir informieren Sie über die Entwicklung der COHCOH Projekte!",
   "participate-button": "Take part"
 
   }

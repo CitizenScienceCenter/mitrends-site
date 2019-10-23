@@ -1,10 +1,10 @@
 <i18n>
     {
 
-    "de": {
+    "en": {
 
-    "registration-create-account": "Create Your CitizenScience.ch Account to Take Part in the Project",
-    "registration-take-part": "Tell us more about you",
+    "registration-create-account": "Create Your CitizenScience.ch Account to Take Part in the Project:",
+    "registration-take-part": "Tell us more about you:",
 
     "label-firstname": "First Name",
     "label-lastname": "Last Name",
@@ -40,27 +40,28 @@
     "message-success": "Thank you for your participation"
 
     },
-    "en": {
 
-    "registration-create-account": "Create Your CitizenScience.ch Account to Take Part in the Project",
-    "registration-take-part": "Tell us more about you",
+    "de": {
 
-    "label-firstname": "First Name",
-    "label-lastname": "Last Name",
+    "registration-create-account": "Erstellen Sie Ihren CitizenScience.ch-Account um mitzumachen:",
+    "registration-take-part": "Erzählen Sie uns mehr über sich:",
+
+    "label-firstname": "Vorname",
+    "label-lastname": "Nachname",
     "label-email": "Email",
-    "label-password": "Password",
-    "label-password-repeat": "Repeat Password",
+    "label-password": "Passwort",
+    "label-password-repeat": "Passwort wiederholen",
 
-    "label-why": "Why do you want to sign up?",
-    "placeholder-why": "Tell us about your interest in the project.",
-    "label-interests": "What is your specific interest?",
-    "label-interests-option-ancestry": "Ancestry",
-    "label-interests-option-activity": "Activity",
-    "label-interests-option-sleep": "Sleep",
-    "label-interests-option-nutrition": "Nutrition",
+    "label-why": "Warum melden Sie sich an?",
+    "placeholder-why": "Erzählen Sie uns mehr über Ihr Interesse am Projekt.",
+    "label-interests": "Was sind Ihre spezifischen Interessen?",
+    "label-interests-option-ancestry": "Abstammung",
+    "label-interests-option-activity": "Aktivität",
+    "label-interests-option-sleep": "Schlaf",
+    "label-interests-option-nutrition": "Ernährung",
     "label-interests-option-stress": "Stress",
-    "label-other-interests": "Other interests and ideas",
-    "placeholder-other-interests": "What’s on your mind?",
+    "label-other-interests": "Andere Interessen oder Ideen",
+    "placeholder-other-interests": "Was möchten Sie noch erwähnen?",
 
     "button-register": "Register",
 

@@ -1,27 +1,6 @@
 <i18n>
   {
 
-  "de": {
-
-  "page-title": "The Cause of Health",
-
-  "health-heading": "What is Health?",
-  "health-text-1": "The UN World Health Organization notes in its <a href='https://www.who.int/about/who-we-are/constitution' target='_blank'>constitution</a> that “Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity”. Health is hence much more than just a biomedical condition.",
-  "health-subheading": "The «Cause of Health»",
-  "health-text-2": "The Swiss Cause of Health Cohort initiative is built on the premise that an individual's health is determined by the Health Triangle, a complex interplay between a unique individual (genome), the environment, and the individual’s behaviour in the environment.",
-  "health-text-3": "To understand this complexity we need standardized longitudinal sets of health data from millions of people. Such data sets form the basis of precision health or P4 (personalized, predictive, preventive and participatory) health.",
-
-  "understanding-heading": "Understanding the «Cause of Health» with Citizen Science",
-  "understanding-text-1": "Switzerland has a long tradition in classical health cohorts (CoLaus, Sapladia, AIDS, Swiss Transplant). However, these cohorts are small (< 10’000 participants) and solely based on examinations in hospitals, thus expensive to maintain.",
-  "understanding-text-2": "The development of smartphone-based sensors, the increasing use of health related apps and wearables, and the rapidly decreasing costs in genome sequencing, give hope for the establishment of much larger digital health cohorts (>100’000), that rely on the active participation of citizens (citizen science).",
-
-  "cohcoh-heading": "The Swiss «Cause of Health» Cohort (CoHCo)",
-  "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled MIDATA cooperative) allows individuals to control their own data.",
-  "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
-  "cohcoh-button": "Learn more"
-
-
-  },
   "en": {
 
   "page-title": "The Cause of Health",
@@ -36,10 +15,32 @@
   "understanding-text-1": "Switzerland has a long tradition in classical health cohorts (CoLaus, Sapladia, AIDS, Swiss Transplant). However, these cohorts are small (< 10’000 participants) and solely based on examinations in hospitals, thus expensive to maintain.",
   "understanding-text-2": "The development of smartphone-based sensors, the increasing use of health related apps and wearables, and the rapidly decreasing costs in genome sequencing, give hope for the establishment of much larger digital health cohorts (>100’000), that rely on the active participation of citizens (citizen science).",
 
-  "cohcoh-heading": "The Swiss «Cause of Health» Cohort (CoHCo)",
+  "cohcoh-heading": "The Swiss «Cause of Health» Cohort (COHCOH)",
   "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled MIDATA cooperative) allows individuals to control their own data.",
   "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
   "cohcoh-button": "Learn more"
+
+
+  },
+  "de": {
+
+  "page-title": "The Cause of Health",
+
+  "health-heading": "Was ist Gesundheit?",
+  "health-text-1": "Die UN Weltgesundheitsorganisation hält in ihrer <a href='https://www.who.int/about/who-we-are/constitution' target='_blank'>Verfassung</a> fest: “Gesundheit ist ein Zustand des vollständigen körperlichen, geistigen und sozialen Wohlergehens und nicht nur das Fehlen von Krankheit oder Gebrechen.“ Gesundheit ist so gesehen viel mehr als nur ein biomedizinischer Zustand.",
+  "health-subheading": "«Cause of Health»",
+  "health-text-2": "Die Schweizerische “Cause of Health” Initiative ist auf das “Gesundheitsdreieck” ausgerichtet, der komplexen Wechselbeziehung zwischen einzigartigem Individuum (Genom), dessen Umwelt und Verhalten darin.",
+  "health-text-3": "Nur über das Studium von standardisierten longitudinalen Gesundheitsdaten von millionen von Menschen können wir hoffen in nicht zu ferner Zukunft die Komplexität des Gesundheitsdreiecks zu verstehen. Damit werden diese Daten zur Basis der personalisierten Präzisionsmedizin (P4 - personalized, predictive, preventive, and participatory).",
+
+  "understanding-heading": "Citizen Science hilft bei der Entschlüsselung des Gesundheitsdreiecks",
+  "understanding-text-1": "Die Schweiz hat eine lange Tradition in der Durchführung klassischer Gesundheitskohorten (CoLaus, Sapladia, AIDS, Swiss Transplant). Allerdings sind diese Kohorten bei weitem nicht gross genug (< 10’000 Teilnehmer) und sie stützen sich ausschliesslich auf Untersuchungsergebnis in Spitälern ab; ihre Durchführung verursacht ausserdem hohe Kosten.",
+  "understanding-text-2": "Mit der Integration von mobilen Sensoren in Smartphonen und Smartwatches, der Entwicklung und Verbreitung von Gesundheits/Fitness Apps, schnell sinkenden Kosten der Genomanalyse, wird es möglich viel grössere (> 100’000) digitale Gesundheitskohorten zu etablieren, unter aktiver Beteiligung der Bevölkerung (Citizen Science).",
+
+  "cohcoh-heading": "Die Schweizerische “Cause of Health Kohorte” (Swiss COHCOH)",
+  "cohcoh-text-1": "Die Schweizerische “Cause of Health Kohorte” wird von Wissenschaftlern in der Schweiz mit Ihren eigenen Gesundheitsdaten gestartet um die Personalisierte Medizin der Zukunft zu ermöglichen.",
+  "cohcoh-text-2": "Alle persönlichen Gesundheitsdaten werden auf einer einzigartigen Datenplattform gespeichert. Diese garantiert sichere Aufbewahrung in einem verschlüsselten persönlichen Datenkonto der Teilnehmer (nicht Gewinnorientierte und von Bürgern kontrollierte <a href='https://www.midata.coop' target='_blank'>MIDATA Genossenschaft</a>).",
+  "cohcoh-button": "Mehr erfahren"
+
 
   }
 
