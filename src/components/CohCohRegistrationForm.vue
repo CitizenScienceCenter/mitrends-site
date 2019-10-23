@@ -63,21 +63,21 @@
     "label-other-interests": "Andere Interessen oder Ideen",
     "placeholder-other-interests": "Was möchten Sie noch erwähnen?",
 
-    "button-register": "Register",
+    "button-register": "Registrieren",
 
-    "error-email-empty": "Enter an email address.",
-    "error-email-inuse": "Email already in use. Please login.",
-    "error-email-format": "No valid email address",
-    "error-username-inuse": "Username already in use.",
-    "error-password-length": "Password needs to be at least 8 characters long.",
-    "error-password-match": "Passwords don't match.",
+    "error-email-empty": "Bitte Emailadresse eingeben",
+    "error-email-inuse": "Email schon in Verwendung. Bitte einloggen.",
+    "error-email-format": "Keine gültige Email-Adresse",
+    "error-username-inuse": "Benutzername bereits vergeben.",
+    "error-password-length": "Passwort muss mindestens 8 Zeichen lang sein.",
+    "error-password-match": "Die Passwörter stimmen nicht überein.",
 
-    "error-server": "Server error occured",
+    "error-server": "Ein Server-Fehler ist aufgetreten",
 
-    "notifications-label": "Notifications",
-    "notifications-option-1": "I want to receive information about the Citizen Science Center Zurich.",
+    "notifications-label": "Notifikationen",
+    "notifications-option-1": "Ich möchte Informationen zum Citizen Science Center Zurich erhalten.",
 
-    "message-success": "Thank you for your participation"
+    "message-success": "Danke für Ihre Teilnahme"
 
     }
 
