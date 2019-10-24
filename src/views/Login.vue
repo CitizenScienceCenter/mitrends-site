@@ -6,7 +6,7 @@
   "page-title": "Login / Register",
 
   "heading-login": "Login",
-  "login-text": "Please Login with your existing <i>CitizenScience.ch</i> Account:"
+  "login-text": "Please Login with your existing CitizenScience.ch account:"
 
   },
 
@@ -15,7 +15,7 @@
   "page-title": "Anmelden / Registrieren",
 
   "heading-login": "Anmelden",
-  "login-text": "Please Login with your existing <i>CitizenScience.ch</i> Account:"
+  "login-text": "Bitte melden Sie sich mit Ihrem existierenden CitizenScience.ch-Account an:"
 
   }
 
