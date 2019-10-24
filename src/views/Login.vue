@@ -3,7 +3,7 @@
 
   "en": {
 
-  "page-title": "Login / Register",
+  "page-title": "Login",
 
   "heading-login": "Login",
   "login-text": "Please Login with your existing CitizenScience.ch account:"
@@ -12,7 +12,7 @@
 
   "de": {
 
-  "page-title": "Anmelden / Registrieren",
+  "page-title": "Anmelden",
 
   "heading-login": "Anmelden",
   "login-text": "Bitte melden Sie sich mit Ihrem existierenden CitizenScience.ch-Account an:"
