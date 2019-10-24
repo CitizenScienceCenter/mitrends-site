@@ -21,7 +21,7 @@
   "page-title": "Mitmachen",
 
   "registration-heading": "Jetzt mitmachen",
-  "registration-text": "Swiss COHCOH only works if it is carried by scientists and citizen scientists who see the need for such a digital health cohort and are willing to take the lead.",
+  "registration-text": "Werden Sie Teil der Swiss COHCOH Community und lassen Sie uns gemeinsam diese einzigartige digitale Gesundheitskohorte aufbauen!",
 
   "existing-account": "<b>Haben Sie bereits einen CitizenScience.ch-Account?</b>",
   "existing-account-button": "Jetzt einloggen",
