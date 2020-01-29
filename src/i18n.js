@@ -34,85 +34,27 @@ export const i18n = new VueI18n({
 
       'en': {
 
-          "site-title": "Cause of Health | Citizen Science Center Zurich",
-          "site-description": "Be Part of a Revolutionary Digital Health Community.",
+          "site-title": "MitrendS Study | Citizen Science Center Zurich",
+          "site-description": "Site Description",
 
           'navigation-homepage': {
               'link': 'Home'
           },
-          'navigation-registration': {
+          'navigation-take-part': {
               'link': 'Take part'
           },
-          'navigation-cause-of-health': {
-              'link': 'Causes of Health'
+          'navigation-about': {
+              'link': 'About us'
           },
-          'navigation-swiss-cohcoh': {
-              'link': 'The Swiss COH Cohort'
-          },
-          'navigation-forum': {
-              'link': 'Forum'
+          'navigation-faq': {
+              'link': 'FAQ'
           },
           'navigation-terms': {
               'link': 'Privacy Policy & Terms of Use'
-          },
-          'navigation-login': {
-              'link': 'Anmelden'
-          },
-          'navigation-register': {
-              'link': 'Registrieren'
-          },
-          'navigation-logout': {
-              'link': 'Logout'
-          },
-          'navigation-reset': {
-              'link': 'Passwort zurücksetzen'
-          },
-          'navigation-profile': {
-              'link': 'Profil'
-          }
-
-      },
-
-      'de': {
-
-          "site-title": "Cause of Health | Citizen Science Center Zurich",
-          "site-description": "Be Part of a Revolutionary Digital Health Community.",
-
-          'navigation-homepage': {
-              'link': 'Home'
-          },
-          'navigation-registration': {
-              'link': 'Mitmachen'
-          },
-          'navigation-cause-of-health': {
-              'link': 'Der «Cause of Health»'
-          },
-          'navigation-swiss-cohcoh': {
-              'link': 'Die Swiss COH Kohorte'
-          },
-          'navigation-forum': {
-              'link': 'Forum'
-          },
-          'navigation-terms': {
-              'link': 'Privacy Policy & Terms of Use'
-          },
-          'navigation-login': {
-              'link': 'Anmelden'
-          },
-          'navigation-register': {
-              'link': 'Registrieren'
-          },
-          'navigation-logout': {
-              'link': 'Logout'
-          },
-          'navigation-reset': {
-              'link': 'Passwort zurücksetzen'
-          },
-          'navigation-profile': {
-              'link': 'Profil'
           }
 
       }
+
   }
 
 })

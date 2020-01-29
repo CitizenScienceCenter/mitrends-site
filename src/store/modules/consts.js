@@ -10,8 +10,8 @@ const getters = {
 
 const state = {
     languages: ['en','de'],
-    projectId: '3f97e6cc-ede6-4a60-8582-5638668d45e1'
-    //identificationActivity: '312eb927-7191-4609-96f2-7b194cd44126'
+    projectId: '611aceb7-8f09-4fce-91bd-19ead22f15b8'
+    //identificationActivity: ''
 };
 
 export default {

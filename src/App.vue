@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <app-header project-name="Cause of<br/>Health" :languages="languages"></app-header>
+    <app-header project-name="Mitrends<br>Study" :languages="languages" hide-login></app-header>
     <div class="content-area">
       <router-view></router-view>
     </div>
@@ -14,7 +14,7 @@ import {mapState} from 'vuex';
 import Header from './components/shared/Header.vue';
 import GDPR from "./components/shared/GDPR";
 
-const url = 'https://cause-of-health.citizenscience.ch';
+const url = 'https://mitrends.citizenscience.ch';
 
 export default {
   name: 'app',

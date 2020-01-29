@@ -3,49 +3,23 @@
 
   "en": {
 
-  "cover-heading": "Let's Discover <br/>the Cause of Health",
-  "cover-subheading": "Be Part of a Revolutionary <br/>Digital Health Community",
+  "cover-heading": "Understanding<br>Multiple Sclerosis",
+  "cover-subheading": "Take Part in our Exercises",
   "cover-button-primary": "Take Part",
   "cover-button-secondary": "Learn more",
 
-  "cause-of-health-heading": "What is the Cause of Health?",
-  "cause-of-health-text-1": "In fact we do not know since medical research has mainly focused on curing disease. We mostly wait to turn ill before we start collecting data.",
-  "cause-of-health-text-2": "Health and wellbeing are different in each individual and depend on the genome, the environment and behavior of each individual (Health Triangle). In order to understand the causes of health we need large sets of health-relevant data from a large number of people.",
-  "cause-of-health-button": "Learn more",
+  "study-heading": "What is this Study About?",
+  "study-text-1": "Multiple Sclerosis (MS) is an inflammatory disease of the nervous system. In Switzerland, <a href='https://www.multiplesklerose.ch/de/ueber-ms/multiple-sklerose/vorkommen/' target='_blank'>around 15,000 people are affected</a>.",
+  "study-text-2": "The purpose of MitrendS is to discover new information about symptoms and physical limitations in patients with multiple sclerosis. In the Citizen Science project, healthy people can help to collect comparative data by using a tablet app designed for this purpose.",
+  "study-text-3": "By participating in this study, you will help to gain a deeper, more differentiated knowledge of the individual progression of the disease and symptoms of MS.",
+  "study-button": "More About the Study"
 
-  "cohcoh-heading": "The Swiss «Cause of Health» Cohort (COHCOH)",
-  "cohcoh-text-1": "The “Swiss Cause of Health Cohort” is initiated by swiss scientists, who make their personal data available to pave the way for superior personalized medicine in Switzerland. A secure database with unique governance structure (non-profit citizen-controlled <a href='https://www.midata.coop' target='_blank'>MIDATA cooperative</a>) allows individuals to control their own data.",
-  "cohcoh-text-2": "The cohort is open for everyone to join, and scalable within Europe.",
-  "cohcoh-button": "Learn more",
-
-  "participate-heading": "Who can Participate?",
-  "participate-text-1": "Researchers from the ETH Zurich and the University of Zurich recognized and promoted the concept of sharing personal data for research. They initiate and participate in the “Swiss Cause of Health Cohort”, and encourage everybody in Switzerland to do the same.",
-  "participate-text-2": "Are you interested? Fill the form to be updated on the advancements of the COHCOH projects.",
-  "participate-button": "Take part"
 
   },
 
   "de": {
 
-  "cover-heading": "Let's Discover <br/>the Cause of Health",
-  "cover-subheading": "Be Part of a Revolutionary <br/>Digital Health Community",
-  "cover-button-primary": "Jetzt mitmachen",
-  "cover-button-secondary": "Mehr erfahren",
 
-  "cause-of-health-heading": "Warum bleiben wir gesund?",
-  "cause-of-health-text-1": "Wir wissen es in der Tat nicht! Denn die medizinische Forschung beschäftigt sich traditionell nur mit Krankheitsentstehung. Gesundheitsdaten sind rar, denn wir beginnen erst damit Daten über uns zu sammeln, wenn wir bereits krank sind.",
-  "cause-of-health-text-2": "Gesundheit und Wohlbefinden sind individuell verschieden und werden durch das “Gesundheitsdreieck” bestimmt: Dem komplizierten Zusammenhang zwischen unserem individuellen Genom, der Umwelt und unserem Verhalten in der Umwelt. Zur Erforschung von Gesundheit und Wohlbefinden braucht die Wissenschaft sehr grosse Mengen an Gesundheitsrelevanten Daten von möglichst vielen Menschen.",
-  "cause-of-health-button": "Mehr erfahren",
-
-  "cohcoh-heading": "Die Schweizerische “Cause of Health Kohorte” (Swiss COHCOH)",
-  "cohcoh-text-1": "Die Schweizerische “Cause of Health Kohorte” wird von Wissenschaftlern in der Schweiz mit Ihren eigenen Gesundheitsdaten gestartet um die Personalisierte Medizin der Zukunft zu ermöglichen.",
-  "cohcoh-text-2": "Alle persönlichen Gesundheitsdaten werden auf einer einzigartigen Datenplattform gespeichert. Diese garantiert sichere Aufbewahrung in einem verschlüsselten persönlichen Datenkonto der Teilnehmer (nicht Gewinnorientierte und von Bürgern kontrollierte <a href='https://www.midata.coop' target='_blank'>MIDATA Genossenschaft</a>).",
-  "cohcoh-button": "Mehr erfahren",
-
-  "participate-heading": "Wer kann teilnehmen?",
-  "participate-text-1": "Wissenschaftler fordern seit einiger Zeit, dass persönliche Daten für die Forschung zur Verfügung stehen sollten. Nun starten Forscher der ETH Zürich und der Universität Zürich die “Swiss Cause of Health Kohorte” und nehmen mit ihren eigenen persönlichen Daten teil. Damit möchten sie alle Einwohnerinnen und Einwohner der Schweiz dazu ermuntern das Gleiche zu tun.",
-  "participate-text-2": "Sind Sie interessiert? Dann füllen sie jetzt gleich das Formular aus und wir informieren Sie über die Entwicklung der COHCOH Projekte!",
-  "participate-button": "Take part"
 
   }
 
@@ -55,7 +29,7 @@
 <template>
   <div>
 
-    <app-cover imageUrl="/img/cover.jpg" goal="3" logoUrl="/img/logo-midata.svg">
+    <app-cover imageUrl="/img/cover.jpg" goal="3" logoUrl="/img/logo-mitrends.svg">
       <div class="row row-centered">
         <div class="col col-large-8">
           <h2 class="cover-heading scroll-effect" v-html="$t('cover-heading')"></h2>
@@ -82,17 +56,18 @@
 
           <div class="col col-10 col-tablet-portrait-8 col-large-6 col-wrapping scroll-effect">
             <div class="extra-padding-h">
-              <img src="/img/graphic-intro.png" />
+              <img src="/img/graphic-study.png" />
             </div>
           </div>
 
           <div class="col col-large-5 col-large-after-1 col-wrapping scroll-effect scroll-effect-delayed-1">
             <div>
-              <h2 class="heading centered left-aligned-large">{{ $t('cause-of-health-heading') }}</h2>
-              <p v-html="$t('cause-of-health-text-1')" class="reduced-bottom-margin"></p>
-              <p v-html="$t('cause-of-health-text-2')" class="reduced-bottom-margin"></p>
+              <h2 class="heading centered left-aligned-large">{{ $t('study-heading') }}</h2>
+              <p v-html="$t('study-text-1')" class="reduced-bottom-margin"></p>
+              <p v-html="$t('study-text-2')" class="reduced-bottom-margin"></p>
+              <p v-html="$t('study-text-3')" class="reduced-bottom-margin"></p>
               <div class="button-group centered left-aligned-large">
-                <router-link tag="button" to="/cause-of-health" class="button button-secondary">{{ $t('cause-of-health-button') }}</router-link>
+                <router-link tag="button" to="/about" class="button button-secondary">{{ $t('study-button') }}</router-link>
               </div>
             </div>
           </div>
@@ -109,7 +84,7 @@
           <div class="col col-10 col-tablet-portrait-8 col-large-6 col-wrapping scroll-effect">
             <div>
               <div class="extra-padding-large-h">
-                <img src="/img/graphic-cohcoh.png"/>
+                <img src="/img/image-tablet.png"/>
               </div>
             </div>
           </div>
