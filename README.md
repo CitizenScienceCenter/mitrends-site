@@ -1,4 +1,4 @@
-# hatespeech-site
+# mitrends-site
 
 Use `.autodeploy` file to handle deployments through the c3s kubernetes cluster
 
