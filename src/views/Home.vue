@@ -4,7 +4,7 @@
   "en": {
 
   "cover-heading": "Understanding<br>Multiple Sclerosis",
-  "cover-subheading": "Take Part in our Exercises",
+  "cover-subheading": "Help Us by Doing<br>our Tablet Exercises",
   "cover-button-primary": "Take Part",
   "cover-button-secondary": "Learn more",
 
@@ -12,7 +12,18 @@
   "study-text-1": "Multiple Sclerosis (MS) is an inflammatory disease of the nervous system. In Switzerland, <a href='https://www.multiplesklerose.ch/de/ueber-ms/multiple-sklerose/vorkommen/' target='_blank'>around 15,000 people are affected</a>.",
   "study-text-2": "The purpose of MitrendS is to discover new information about symptoms and physical limitations in patients with multiple sclerosis. In the Citizen Science project, healthy people can help to collect comparative data by using a tablet app designed for this purpose.",
   "study-text-3": "By participating in this study, you will help to gain a deeper, more differentiated knowledge of the individual progression of the disease and symptoms of MS.",
-  "study-button": "More About the Study"
+  "study-button": "More About the Study",
+
+  "take-part-heading": "Help us With Your Contribution",
+  "take-part-text": "With your contribution, you power medical research! Three exercises will be performed:",
+  "take-part-bullet-1": "The lines exercise",
+  "take-part-bullet-2": "The points exercise",
+  "take-part-bullet-3": "The symbols exercise",
+  "take-part-button": "Take part",
+
+  "contact-heading": "Contact us",
+  "contact-text": "The Swiss «Causes of Health« Cohort (Swiss CohCoh)<br>ETH Zürich<br>Rämistrasse 101, 8092 Zürich<br>044 567 89 10",
+  "contact-email": "email.address@ethz.ch"
 
 
   },
@@ -36,15 +47,15 @@
         </div>
       </div>
       <div class="row row-centered">
-        <div class="col col-large-8">
+        <div class="col col-large-6">
           <p class="cover-subheading scroll-effect scroll-effect-delayed-1" v-html="$t('cover-subheading')"></p>
         </div>
       </div>
       <div class="row row-centered">
         <div class="col col-large-8">
           <div class="button-group centered scroll-effect scroll-effect-delayed-2">
-            <router-link tag="button" to="/registration" class="button button-primary">{{ $t('cover-button-primary') }}</router-link>
-            <router-link tag="button" to="/cause-of-health" class="button button-secondary button-secondary-inverted">{{ $t('cover-button-secondary') }}</router-link>
+            <router-link tag="button" to="/take-part" class="button button-primary">{{ $t('cover-button-primary') }}</router-link>
+            <router-link tag="button" to="/about" class="button button-secondary button-secondary-inverted">{{ $t('cover-button-secondary') }}</router-link>
           </div>
         </div>
       </div>
@@ -83,7 +94,7 @@
 
           <div class="col col-10 col-tablet-portrait-8 col-large-6 col-wrapping scroll-effect">
             <div>
-              <div class="extra-padding-large-h">
+              <div>
                 <img src="/img/image-tablet.png"/>
               </div>
             </div>
@@ -91,11 +102,15 @@
 
           <div class="col col-large-5 col-large-before-1 col-wrapping scroll-effect scroll-effect-delayed-1">
             <div>
-              <h2 class="heading centered left-aligned-large">{{ $t('cohcoh-heading') }}</h2>
-              <p v-html="$t('cohcoh-text-1')" class="reduced-bottom-margin"></p>
-              <p v-html="$t('cohcoh-text-2')" class="reduced-bottom-margin"></p>
+              <h2 class="heading centered left-aligned-large">{{ $t('take-part-heading') }}</h2>
+              <p v-html="$t('take-part-text')" class="reduced-bottom-margin"></p>
+              <ul>
+                <li v-html="$t('take-part-bullet-1')" ></li>
+                <li v-html="$t('take-part-bullet-2')" ></li>
+                <li v-html="$t('take-part-bullet-3')" ></li>
+              </ul>
               <div class="button-group centered left-aligned-large">
-                <router-link tag="button" to="/swiss-cohcoh" class="button button-secondary">{{ $t('cohcoh-button') }}</router-link>
+                <router-link tag="button" to="/take-part" class="button button-primary">{{ $t('take-part-button') }}</router-link>
               </div>
             </div>
           </div>
@@ -129,7 +144,6 @@
         </div>
       </div>
     </app-content-section>
-    -->
 
     <app-content-section class="overflow-hidden">
       <div class="background-wrapper background-wrapper-move-left scroll-effect scroll-effect-delayed-1">
@@ -157,14 +171,43 @@
       </div>
     </app-content-section>
 
+    <section-feedback color="greyish" email="cohcoh@citizenscience.ch"></section-feedback>
+    -->
 
-    <section-feedback color="light-greyish" email="cohcoh@citizenscience.ch"></section-feedback>
+    <app-content-section color="greyish">
+      <div class="content-wrapper">
+        <div class="row row-centered row-middle row-reverse-large">
 
-    <section-s-d-g goal="3" color="greyish">
+          <div class="col col-large-5 scroll-effect">
+            <div>
+              <h2 class="heading centered">{{ $t('contact-heading') }}</h2>
+              <p v-html="$t('contact-text')" class="centered reduced-bottom-margin"></p>
+              <div class="button-group centered">
+                <router-link tag="button" to="/take-part" class="button button-primary button-icon button-normal-case">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <path d="M502.3,190.8c3.9-3.1,9.7-0.2,9.7,4.7V400c0,26.5-21.5,48-48,48H48c-26.5,0-48-21.5-48-48V195.6c0-5,5.7-7.8,9.7-4.7
+                    c22.4,17.4,52.1,39.5,154.1,113.6c21.1,15.4,56.7,47.8,92.2,47.6c35.7,0.3,72-32.8,92.3-47.6C450.3,230.4,479.9,208.2,502.3,190.8z
+                     M256,320c23.2,0.4,56.6-29.2,73.4-41.4c132.7-96.3,142.8-104.7,173.4-128.7c5.8-4.5,9.2-11.5,9.2-18.9v-19c0-26.5-21.5-48-48-48H48
+                    C21.5,64,0,85.5,0,112v19c0,7.4,3.4,14.3,9.2,18.9c30.6,23.9,40.7,32.4,173.4,128.7C199.4,290.8,232.8,320.4,256,320L256,320z"/>
+                  </svg>
+                  {{ $t('contact-email') }}
+                </router-link>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </app-content-section>
+
+    <section-s-d-g goal="3" color="more-greyish">
       This project supports Goal 3 of the UN SDGs: Ensure healthy lives and promote well-being for all at all ages, by accelerating and innovating in health research and development.
     </section-s-d-g>
 
+    <!--
     <section-newsletter-signup></section-newsletter-signup>
+    -->
 
     <app-footer></app-footer>
 
