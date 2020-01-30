@@ -53,6 +53,8 @@ export const i18n = new VueI18n({
               'link': 'Privacy Policy & Terms of Use'
           }
 
+
+
       }
 
   }

@@ -50,7 +50,7 @@
         <div class="content-wrapper">
           <div class="row row-centered">
             <div class="col col-tablet-portrait-10 col-large-6 col-wrapping">
-              <div class="extra-padding">
+              <div class="extra-padding-h">
                 <img src="/img/graphic-ms.png"/>
               </div>
             </div>
@@ -73,7 +73,7 @@
         <div class="content-wrapper">
           <div class="row row-centered">
             <div class="col col-tablet-portrait-10 col-large-6 col-wrapping">
-              <div class="extra-padding">
+              <div class="">
                 <img src="/img/graphic-study.png"/>
               </div>
             </div>
@@ -106,7 +106,7 @@
         <div class="content-wrapper">
           <div class="row row-centered">
             <div class="col col-tablet-portrait-10 col-large-6 col-wrapping">
-              <div class="extra-padding">
+              <div class="extra-padding-h">
                 <img src="/img/graphic-midata.png"/>
               </div>
             </div>

@@ -119,60 +119,6 @@
       </div>
     </app-content-section>
 
-    <!--
-    <app-content-section>
-      <div class="content-wrapper">
-        <div class="row row-centered row-middle row-wrapping">
-
-          <div class="col col-10 col-tablet-portrait-8 col-large-6 col-wrapping scroll-effect">
-            <div class="extra-padding-h">
-              <img src="/img/image-participate.jpg" style="border-radius:50%"/>
-            </div>
-          </div>
-
-          <div class="col col-large-5 col-large-after-1 col-wrapping scroll-effect scroll-effect-delayed-1">
-            <div>
-              <h2 class="heading centered left-aligned-large">{{ $t('participate-heading') }}</h2>
-              <p v-html="$t('participate-text-1')" class="reduced-bottom-margin"></p>
-              <p v-html="$t('participate-text-2')" class="reduced-bottom-margin"></p>
-              <div class="button-group centered left-aligned-large">
-                <router-link tag="button" to="/registration" class="button button-primary">{{ $t('participate-button') }}</router-link>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </app-content-section>
-
-    <app-content-section class="overflow-hidden">
-      <div class="background-wrapper background-wrapper-move-left scroll-effect scroll-effect-delayed-1">
-        <div class="content-wrapper">
-          <div class="row row-centered">
-            <div class="col col-tablet-portrait-10 col-large-6 col-wrapping">
-              <div class="extra-padding">
-                <img src="/img/image-participate.jpg" style="border-radius: 50%" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="content-wrapper">
-        <div class="row row-wrapping">
-          <div class="col col-tablet-portrait-7 col-large-6 col-large-before-5 col-wrapping scroll-effect">
-            <h2 class="heading centered left-aligned-large">{{ $t('participate-heading') }}</h2>
-            <p v-html="$t('participate-text-1')" class="reduced-bottom-margin"></p>
-            <p v-html="$t('participate-text-2')" class="reduced-bottom-margin"></p>
-            <div class="button-group centered left-aligned-large">
-              <router-link tag="button" to="/registration" class="button button-primary">{{ $t('participate-button') }}</router-link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </app-content-section>
-
-    <section-feedback color="greyish" email="cohcoh@citizenscience.ch"></section-feedback>
-    -->
 
     <app-content-section color="greyish">
       <div class="content-wrapper">
@@ -205,9 +151,6 @@
       This project supports Goal 3 of the UN SDGs: Ensure healthy lives and promote well-being for all at all ages, by accelerating and innovating in health research and development.
     </section-s-d-g>
 
-    <!--
-    <section-newsletter-signup></section-newsletter-signup>
-    -->
 
     <app-footer></app-footer>
 
