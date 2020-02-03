@@ -53,24 +53,23 @@
   <div>
 
 
-    <app-content-section class="overflow-hidden">
-      <div class="background-wrapper background-wrapper-move-left scroll-effect scroll-effect-delayed-1">
-        <div class="content-wrapper">
-          <div class="row row-centered">
-            <div class="col col-tablet-portrait-10 col-large-6 col-wrapping">
-              <div class="extra-padding-h">
-                <img src="/img/graphic-calendar.png"/>
-              </div>
+    <app-content-section>
+      <div class="content-wrapper">
+        <div class="row row-centered row-middle row-wrapping">
+
+          <div class="col col-10 col-tablet-portrait-8 col-large-6 col-wrapping scroll-effect">
+            <div class="extra-padding-h">
+              <img src="/img/graphic-participate.png"/>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="content-wrapper">
-        <div class="row row-wrapping">
-          <div class="col col-tablet-portrait-7 col-large-6 col-large-before-5 col-wrapping scroll-effect">
-            <h2 class="heading centered left-aligned-large">{{ $t('participating-heading') }}</h2>
-            <p v-html="$t('participating-text')"></p>
+
+          <div class="col col-large-5 col-large-after-1 col-wrapping scroll-effect scroll-effect-delayed-1">
+            <div>
+              <h2 class="heading centered left-aligned-large">{{ $t('participating-heading') }}</h2>
+              <p v-html="$t('participating-text')"></p>
+            </div>
           </div>
+
         </div>
       </div>
     </app-content-section>

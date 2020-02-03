@@ -4,7 +4,7 @@
   "en": {
 
   "cover-heading": "Understanding<br>Multiple Sclerosis",
-  "cover-subheading": "Help Us by Doing<br>Tablet Exercises",
+  "cover-subheading": "Help Us by Doing Tablet Exercises",
   "cover-button-primary": "Take Part",
   "cover-button-secondary": "Learn more",
 
