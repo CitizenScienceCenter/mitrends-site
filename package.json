@@ -69,7 +69,7 @@
     ],
     "concurrency": 1,
     "inlineCss": false,
-    "puppeteerExecutablePath": "./node_modules/puppeteer/.local-chromium/linux-662092/chrome-linux/chrome"
+    "puppeteerExecutablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
   },
   "browserslist": [
     "> 1%",

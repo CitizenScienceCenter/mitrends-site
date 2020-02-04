@@ -1,12 +1,6 @@
 {
-  "name": "cohcoh-site",
+  "name": "mitrends-site",
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/static-build"
-    }
-  ],
   "routes": [
     {
       "src": "/(js|css|img)/.*",
@@ -15,6 +9,6 @@
     { "handle": "filesystem" },
     { "src": "./dist/*", "dest": "/" }
   ],
-  "alias": "cause-of-health.citizenscience.ch"
+  "alias": "mitrends.staging.citizenscience.ch"
 }
 
