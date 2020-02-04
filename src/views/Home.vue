@@ -4,7 +4,7 @@
   "en": {
 
   "cover-heading": "Understanding<br>Multiple Sclerosis",
-  "cover-subheading": "Help Us by Doing Tablet Exercises",
+  "cover-subheading": "People-controlled data<br>for research on MS",
   "cover-button-primary": "Take Part",
   "cover-button-secondary": "Learn more",
 
@@ -22,9 +22,8 @@
   "take-part-button": "Take part",
 
   "contact-heading": "Contact us",
-  "contact-text": "The Swiss «Causes of Health« Cohort (Swiss CohCoh)<br>ETH Zürich<br>Rämistrasse 101, 8092 Zürich<br>044 567 89 10",
-  "contact-email": "email.address@ethz.ch"
-
+  "contact-text": "MIDATA Genossenschaft<br>c/o EvalueScience AG<br>Pfingstweidstrasse 16, 8005 Zürich<br>012 345 67 89",
+  "contact-email": "nims@usz.ch"
 
   },
 

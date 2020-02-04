@@ -6,15 +6,15 @@
   "page-title": "The Swiss «Cause of Health» Cohort (Swiss COHCOH)",
 
   "ms-heading": "What is Multiple Sclerosis?",
-  "ms-text": "Multiple sclerosis (MS) is a chronic disease of the central nervous system. The protective and insulating cells of the nerves of the brain and spinal cord are attached and destroyed by the body’s own immune system. This results in an individual constellation of symptoms for each patient. Many studies are currently focusing on the exact mechanisms contributing to this disease process and the correlations with other aspects of the disease. Although new drugs are able to stop the progression of the disease to a large extent, the body’s immune system is slowed down. A cure for MS does not yet exist. In addition to the development of targeted drugs, the development of new measuring methods for the more accurate recording of individual symptoms is also important. This is the goal of the MitrendS study.",
+  "ms-text": "Multiple sclerosis (MS) is a chronic disease of the central nervous system. The protective and insulating cells of the nerves of the brain and spinal cord are attached and destroyed by the body’s own immune system. This results in an individual constellation of symptoms for each patient. The exact mechanisms that lead to MS are still being investigated. However it is a complex interplay of infectious, environmental and genetic influences. Although new drugs are able to stop the progression of the disease to a large extent, the body’s immune system is slowed down. A cure for MS does not yet exist. In addition to the development of targeted drugs, the development of new measuring methods for the more accurate recording of individual symptoms is also important. This is the goal of the MitrendS study.",
 
   "study-heading": "The Study",
-  "study-text-1": "MitrendS is an app developed by physicians and IT specialists to specifically examine certain neurological symptoms, such as hand functions. MitrendS is used in a study in the Department of Neuroimmunology and MS Research (nims) of the University Hospital Zurich.",
+  "study-button": "MitrendS Citizen Science Project",
+  "study-text-1": "MitrendS is an app developed by physicians and IT specialists to specifically examine certain neurological symptoms, such as hand functions. MitrendS is used in a study in the <a href='http://nims-zh.ch/index.html' target='_blank'>Department of Neuroimmunology and MS Research (nims)</a> of the University Hospital Zurich.",
   "study-text-2": "The purpose of this study is to discover new information about symptoms and physical limitations in patients with multiple sclerosis (MS). Using a new tablet app developed for this purpose, regular exercises are carried out which offer a new method for recording and documenting progress. In the Citizen Science project, healthy people can help to collect comparative data by using a tablet app designed for this purpose.",
-  "study-text-3": "The longterm goal is to use the obtained data for a better and more precise record of the individual disease progression and neurological deficits. Based on this data, individually adapted therapies and close monitoring of their effectiveness will be made possible in the future.",
+  "study-text-3": "The long term goal is to use the obtained data for a better and more precise record of the individual disease progression and neurological deficits. Based on this data, individually adapted therapies and close monitoring of their effectiveness will be made possible in the future.",
   "study-text-4": "By participating in this study, you will help us to gain a deeper, more differentiated knowledge of the individual progression of the disease and symptoms of MS.",
   "study-text-5": "If new findings become evident during the study, you will be informed by e-mail via the MIDATA platform.",
-  "study-button": "MitrendS Citizen Science Project",
 
   "data-heading": "Data Usage",
   "data-text-1": "The data is stored on the corresponding user account of the MIDATA platform. Thus, the data remains completely in the possession and under the control of the user. The MIDATA cooperative is a completely independent platform and supports data-driven research through patient empowerment and “Citizen Science” approaches. The MIDATA platform provides a personal and secure environment to merge the data collected by MitrendS with health-related data from hospitals and physicians. This data is used for results evaluation and research. The user decides to whom the access to the data is granted. They can share their data anonymously in order to participate in appropriate studies or make it available to their attending physicians. In the case of MitrendS, the participants receive evaluations of the exercise performance directly via the MIDATA platform.",
@@ -31,8 +31,8 @@
   "partners-button": "Our Partners",
 
   "contact-heading": "Contact us",
-  "contact-text": "The Swiss «Causes of Health« Cohort (Swiss CohCoh)<br>ETH Zürich<br>Rämistrasse 101, 8092 Zürich<br>044 567 89 10",
-  "contact-email": "email.address@ethz.ch"
+  "contact-text": "MIDATA Genossenschaft<br>c/o EvalueScience AG<br>Pfingstweidstrasse 16, 8005 Zürich<br>012 345 67 89",
+  "contact-email": "nims@usz.ch"
 
   },
   "de": {
@@ -84,17 +84,19 @@
         <div class="row row-wrapping">
           <div class="col col-tablet-portrait-7 col-large-6 col-large-before-5 col-wrapping scroll-effect">
             <h2 class="heading centered left-aligned-large">{{ $t('study-heading') }}</h2>
+            <div class="margin-bottom">
+              <div class="button-group centered left-aligned-large">
+                <a href="" target="_blank" class="button button-primary button-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576"><path d="M576,56V184c0,21.47-26,32-41,17l-35.71-35.71L255.8,408.77a24,24,0,0,1-33.94,0l-22.63-22.63a24,24,0,0,1,0-33.94L442.76,108.68,407.05,73C392,57.9,402.66,32,424,32H552A24,24,0,0,1,576,56ZM407,302.79l-16,16a24,24,0,0,0-7,17V480H64V160H328a24,24,0,0,0,17-7l16-16c15.12-15.12,4.41-41-17-41H48A48,48,0,0,0,0,144V496a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V319.76C448,298.38,422.15,287.67,407,302.79Z"/></svg>
+                  {{ $t('study-button') }}
+                </a>
+              </div>
+            </div>
             <p v-html="$t('study-text-1')"></p>
             <p v-html="$t('study-text-2')"></p>
             <p v-html="$t('study-text-3')"></p>
             <p v-html="$t('study-text-4')"></p>
             <p v-html="$t('study-text-5')"></p>
-            <div class="button-group centered left-aligned-large">
-              <a href="" target="_blank" class="button button-primary button-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576"><path d="M576,56V184c0,21.47-26,32-41,17l-35.71-35.71L255.8,408.77a24,24,0,0,1-33.94,0l-22.63-22.63a24,24,0,0,1,0-33.94L442.76,108.68,407.05,73C392,57.9,402.66,32,424,32H552A24,24,0,0,1,576,56ZM407,302.79l-16,16a24,24,0,0,0-7,17V480H64V160H328a24,24,0,0,0,17-7l16-16c15.12-15.12,4.41-41-17-41H48A48,48,0,0,0,0,144V496a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V319.76C448,298.38,422.15,287.67,407,302.79Z"/></svg>
-                {{ $t('study-button') }}
-              </a>
-            </div>
           </div>
         </div>
       </div>

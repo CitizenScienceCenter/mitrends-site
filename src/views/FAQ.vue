@@ -7,22 +7,27 @@
 
   "faq-heading": "Frequently Asked Questions",
   "faq-1-question": "How is my data treated?",
-  "faq-1-answer":"",
-  "faq-2-question": "Do I get compensation?",
-  "faq-2-answer":"",
-  "faq-3-question": "What are my rights?",
-  "faq-3-answer":"",
-  "faq-4-question": "How is this project financed?",
-  "faq-4-answer":"",
-  "faq-5-question": "How can I get in touch with you?",
-  "faq-5-answer":"",
-  "faq-6-question": "What exercises do I have to do?",
-  "faq-6-answer":"",
+  "faq-1-answer": "<p>All the data collected via the MitrendS app is encrypted and securely stored in your personal account on the MIDATA platform. With your consent, this data will be shared with our research team in anonymized form. This means that throughout the project your identity will always be protected.</p>",
+  "faq-2-question": "What data is being collected/used?",
+  "faq-2-answer": "<p>The data that we collect and use for this project include:</p><ul class='reduced-bottom-margin'><li>year of birth</li><li>gender</li><li>handedness (left or right)</li><li>level of education</li><li>presence of MS or neurological disease (yes/no)</li><li>regular medication intake (yes/no)</li><li>arm or hand disabilities (right/left/both sides/none)</li><li>results of the performed exercises (incl. completion time, execution speed, accuracy, number of attempts and error rates)</li></ul><p class='reduced-bottom-margin'>All the data will be shared anonymously. Further information <a href='https://ch.midata.coop/#/portal/terms/mitrends-cs-terms-of-use--1.0?lang=en' target='_blank'>here</a>.</p>",
+  "faq-3-question": "What exercises do I have to do and what is my daily commitment?",
+  "faq-3-answer": "<p>Currently, three exercises are implemented in MitrendS: The Lines exercise, the Points exercise and the Symbols exercise. In the Lines exercise, curved lines must be drawn one after the other with a pencil and both index fingers. In the Points exercise, three blue points are moved in three circles with thumb, index finger and middle finger. Both exercises serve to evaluate the motor function of hand and arm. All exercises can be performed by the patients at home. In addition, several questionnaires which have already been validated are stored in the app. Further exercises are currently being developed to expand the neurological examinations.</p>",
+  "faq-4-question": "Do I get compensation?",
+  "faq-4-answer": "<p class='reduced-bottom-margin'>You will not receive any compensation for participating in this study. You will receive an evaluation of your exercise results by email at the end of the study.</p>",
+  "faq-5-question": "What are my rights?",
+  "faq-5-answer": "<p>Your participation is on a voluntary basis. If you do not want to participate or later withdraw your participation, you do not have to justify this. All data collected up to the time of your withdrawal will be used anonymously in the evaluation. You may ask questions about participation and the project at any time. For further information, please contact: <a href='mailto:nims@usz.ch' target='_blank'>nims@usz.ch</a></p>",
+  "faq-6-question": "How is this project financed?",
+  "faq-6-answer": "<p>The project is funded by the <a href='https://www.multiplesclerosis.uzh.ch/en.html' target='_blank'>Clinical Research Program Multiple Sclerosis</a>, the <a href='https://www.sfa-phrt.ch/projects' target='_blank'>Personalized Health and Related Technologies</a> and the <a href='https://datascience.ch/' target='_blank'>Swiss Data Science Center</a>.</p>",
+  "faq-7-question": "How can I get in touch with you?",
+  "faq-7-answer": "<p>In case of any uncertainties or emergencies occurring during or after the project, you can always contact us on: <a href='mailto:nims@usz.ch' target='_blank'>nims@usz.ch</a></p>",
+  "faq-8-question": "How long is the study?",
+  "faq-8-answer": "<p>tbd</p>",
+  "faq-9-question": "Will I discover if I have MS?",
+  "faq-9-answer": "<p>tbd</p>",
 
   "contact-heading": "Contact us",
-  "contact-text": "The Swiss «Causes of Health« Cohort (Swiss CohCoh)<br>ETH Zürich<br>Rämistrasse 101, 8092 Zürich<br>044 567 89 10",
-  "contact-email": "email.address@ethz.ch"
-
+  "contact-text": "MIDATA Genossenschaft<br>c/o EvalueScience AG<br>Pfingstweidstrasse 16, 8005 Zürich<br>012 345 67 89",
+  "contact-email": "nims@usz.ch"
 
   },
   "de": {
@@ -44,49 +49,55 @@
             <expandable>
               <template slot="header">{{ $t('faq-1-question') }}</template>
               <template slot="content">
-                <p>
-                  {{ $t('faq-1-answer') }}
-                </p>
+                <div v-html="$t('faq-1-answer')"></div>
               </template>
             </expandable>
             <expandable>
               <template slot="header">{{ $t('faq-2-question') }}</template>
               <template slot="content">
-                <p>
-                  {{ $t('faq-2-answer') }}
-                </p>
+                <div v-html="$t('faq-2-answer')"></div>
               </template>
             </expandable>
             <expandable>
               <template slot="header">{{ $t('faq-3-question') }}</template>
               <template slot="content">
-                <p>
-                  {{ $t('faq-3-answer') }}
-                </p>
+                <div v-html="$t('faq-3-answer')"></div>
               </template>
             </expandable>
             <expandable>
               <template slot="header">{{ $t('faq-4-question') }}</template>
               <template slot="content">
-                <p>
-                  {{ $t('faq-4-answer') }}
-                </p>
+                <div v-html="$t('faq-4-answer')"></div>
               </template>
             </expandable>
             <expandable>
               <template slot="header">{{ $t('faq-5-question') }}</template>
               <template slot="content">
-                <p>
-                  {{ $t('faq-5-answer') }}
-                </p>
+                <div v-html="$t('faq-5-answer')"></div>
               </template>
             </expandable>
             <expandable>
               <template slot="header">{{ $t('faq-6-question') }}</template>
               <template slot="content">
-                <p>
-                  {{ $t('faq-6-answer') }}
-                </p>
+                <div v-html="$t('faq-6-answer')"></div>
+              </template>
+            </expandable>
+            <expandable>
+              <template slot="header">{{ $t('faq-7-question') }}</template>
+              <template slot="content">
+                <div v-html="$t('faq-7-answer')"></div>
+              </template>
+            </expandable>
+            <expandable>
+              <template slot="header">{{ $t('faq-8-question') }}</template>
+              <template slot="content">
+                <div v-html="$t('faq-8-answer')"></div>
+              </template>
+            </expandable>
+            <expandable>
+              <template slot="header">{{ $t('faq-9-question') }}</template>
+              <template slot="content">
+                <div v-html="$t('faq-9-answer')"></div>
               </template>
             </expandable>
           </div>

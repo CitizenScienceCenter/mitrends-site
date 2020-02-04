@@ -6,7 +6,15 @@
   "page-title": "The Cause of Health",
 
   "participating-heading": "Participating in the Study",
-  "participating-text": "You can participate in this study, if you are over 18 years old and live in Switzerland. You should also be willing to follow the study protocol for the two-week period. In this period, you will do the exercises on five days, approximately xy minutes each day. In between there is a four-day break with no exercises.",
+  "participating-text": "Who can participate?",
+  "participating-bullet-1": "Age 18 years or older",
+  "participating-bullet-2": "Swiss resident",
+  "participating-bullet-3": "Own and able to use an Android or Apple tablet",
+  "participating-bullet-4": "Own MIDATA account or willing to create one",
+  "participating-bullet-5": "Agree to follow the study protocol",
+  "participating-bullet-6": "share the data collected while using MitrendS in an anonymized form with the study team",
+  "protocol-heading": "Study Protocol",
+  "protocol-text": "You should make sure that you are able to participate in the study for a minimum period of 9 days. During that time,there will be exercises on five days, which will take you approximately 5 minutes each day. In between there is a four-day break with no exercises.",
 
   "app-heading": "Use the MitrendS App",
   "app-text": "This is a tablet app, you can only use it with a tablet computer. The reason for that is that in order to do the exercises, you need a big enough screen. Mobile phones can therefore not be used.",
@@ -15,31 +23,32 @@
 
   "exercises-heading": "The Exercises",
   "exercises-text": "As part of the study, three exercises will be performed:",
-  "exercises-bullet-1": "The lines exercise",
-  "exercises-bullet-2": "The points exercise",
-  "exercises-bullet-3": "The symbols exercise",
+  "exercises-bullet-1": "<a href='https://mitrends.ch/line-test/' target='_blank'>The lines exercise</a>",
+  "exercises-bullet-2": "<a href='https://mitrends.ch/move-dots-test/' target='_blank'>The points exercise</a>",
+  "exercises-bullet-3": "<a href='https://mitrends.ch/symbol-digit-modalities-test/' target='_blank'>The symbols exercise</a>",
 
   "procedure-heading": "Procedure",
-  "procedure-1-text": "<b>Day 1</b>",
+  "procedure-1-title": "<b>Day 1</b>",
+  "procedure-1-text": "Use your MIDATA credentials to log-in to the MitrendS App. In case you are new to MIDATA, you can create a new account directly via the MitrendS App. You hereby give your consent to the study project to evaluate your data as described <a href='https://ch.midata.coop/#/portal/terms/mitrends-cs-terms-of-use--1.0?lang=en' target='_blank'>here</a>.",
   "procedure-1-bullet-1": "Register via MitrendS app. You hereby give your consent to MIDATA to evaluate your data.",
   "procedure-1-bullet-2": "Fill in an initial questionnaire.",
   "procedure-1-bullet-3": "Perform the series of exercises.",
-  "procedure-2-text": "<b>Day 2 and 3</b>",
+  "procedure-2-title": "<b>Day 2 and 3</b>",
   "procedure-2-bullet-1": "Perform the complete series of exercises (as many times as you want).",
-  "procedure-3-text": "<b>Days 4 to 7</b>",
+  "procedure-3-title": "<b>Days 4 to 7</b>",
   "procedure-3-bullet-1": "Take a break, no exercises",
-  "procedure-4-text": "<b>Day 8 and 9</b>",
+  "procedure-4-title": "<b>Day 8 and 9</b>",
   "procedure-4-bullet-1": "Perform the complete series of exercises at least once a day.",
   "procedure-subtext": "After that there are no more scheduled exercises, but you are free to do the exercise on your own. Your data will continue to be stored in your MIDATA account and will be available for us for evaluation.",
 
   "benefits-heading": "Benefits",
-  "benefits-text-1": "At the end of the study, after the inclusion of all test persons and the final evaluation, you will receive an evaluation of your hand function exercises in comparison to other participants via your MIDATA account.",
-  "benefits-text-2": "The results of the study project may help to improve the understanding and targeted treatment of patients with multiple sclerosis in the future and to better understand the progression of the disease.",
+  "benefits-text-1": "At the end of the study, after the inclusion of all test persons and the final evaluation, you will receive an evaluation of your hand function and cognition exercises in comparison to other participants via your MIDATA account.",
+  "benefits-text-2": "The results of the study project may help to improve the understanding and targeted treatment of patients with multiple sclerosis in the future and are a step towards individualized medicine.",
   "benefits-text-3": "<b>With your contribution, you power medical research. Thank you!</b>",
 
   "contact-heading": "Contact us",
-  "contact-text": "The Swiss «Causes of Health« Cohort (Swiss CohCoh)<br>ETH Zürich<br>Rämistrasse 101, 8092 Zürich<br>044 567 89 10",
-  "contact-email": "email.address@ethz.ch"
+  "contact-text": "MIDATA Genossenschaft<br>c/o EvalueScience AG<br>Pfingstweidstrasse 16, 8005 Zürich<br>012 345 67 89",
+  "contact-email": "nims@usz.ch"
 
   },
   "de": {
@@ -66,7 +75,17 @@
           <div class="col col-large-5 col-large-after-1 col-wrapping scroll-effect scroll-effect-delayed-1">
             <div>
               <h2 class="heading centered left-aligned-large">{{ $t('participating-heading') }}</h2>
-              <p v-html="$t('participating-text')"></p>
+              <p class="reduced-bottom-margin" v-html="$t('participating-text')"></p>
+              <ul>
+                <li v-html="$t('participating-bullet-1')"></li>
+                <li v-html="$t('participating-bullet-2')"></li>
+                <li v-html="$t('participating-bullet-3')"></li>
+                <li v-html="$t('participating-bullet-4')"></li>
+                <li v-html="$t('participating-bullet-5')"></li>
+                <li v-html="$t('participating-bullet-6')"></li>
+              </ul>
+              <h3 class="subheading" v-html="$t('protocol-heading')"></h3>
+              <p v-html="$t('protocol-text')"></p>
             </div>
           </div>
 
@@ -130,21 +149,22 @@
           <div class="col col-large-6 col-wrapping scroll-effect">
             <div>
               <h3 class="subheading centered">{{ $t('procedure-heading') }}</h3>
+              <p v-html="$t('procedure-1-title')" class="reduced-bottom-margin"></p>
               <p v-html="$t('procedure-1-text')" class="reduced-bottom-margin"></p>
               <ul>
                 <li v-html="$t('procedure-1-bullet-1')" ></li>
                 <li v-html="$t('procedure-1-bullet-2')" ></li>
                 <li v-html="$t('procedure-1-bullet-3')" ></li>
               </ul>
-              <p v-html="$t('procedure-2-text')" class="reduced-bottom-margin"></p>
+              <p v-html="$t('procedure-2-title')" class="reduced-bottom-margin"></p>
               <ul>
                 <li v-html="$t('procedure-2-bullet-1')" ></li>
               </ul>
-              <p v-html="$t('procedure-3-text')" class="reduced-bottom-margin"></p>
+              <p v-html="$t('procedure-3-title')" class="reduced-bottom-margin"></p>
               <ul>
                 <li v-html="$t('procedure-3-bullet-1')" ></li>
               </ul>
-              <p v-html="$t('procedure-4-text')" class="reduced-bottom-margin"></p>
+              <p v-html="$t('procedure-4-title')" class="reduced-bottom-margin"></p>
               <ul>
                 <li v-html="$t('procedure-4-bullet-1')" ></li>
               </ul>
