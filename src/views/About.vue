@@ -84,6 +84,7 @@
         <div class="row row-wrapping">
           <div class="col col-tablet-portrait-7 col-large-6 col-large-before-5 col-wrapping scroll-effect">
             <h2 class="heading centered left-aligned-large">{{ $t('study-heading') }}</h2>
+            <!--
             <div class="margin-bottom">
               <div class="button-group centered left-aligned-large">
                 <a href="" target="_blank" class="button button-primary button-icon">
@@ -92,6 +93,7 @@
                 </a>
               </div>
             </div>
+            -->
             <p v-html="$t('study-text-1')"></p>
             <p v-html="$t('study-text-2')"></p>
             <p v-html="$t('study-text-3')"></p>
