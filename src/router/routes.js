@@ -1,5 +1,6 @@
 import Home from '@/views/Home';
 import TakePart from '@/views/TakePart';
+import Exercises from '@/views/Exercises';
 import About from '@/views/About';
 import FAQ from '@/views/FAQ';
 
@@ -19,6 +20,11 @@ export const routes = [
                 path: "take-part",
                 component: TakePart,
                 meta: {i18n: 'navigation-take-part', nav: true}
+            },
+            {
+                path: "exercises",
+                component: Exercises,
+                meta: {i18n: 'navigation-exercises', nav: true}
             },
             {
                 path: "about",

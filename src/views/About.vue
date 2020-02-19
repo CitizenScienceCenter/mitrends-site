@@ -3,7 +3,7 @@
 
   "en": {
 
-  "page-title": "The Swiss «Cause of Health» Cohort (Swiss COHCOH)",
+  "page-title": "About",
 
   "ms-heading": "What is Multiple Sclerosis?",
   "ms-text": "Multiple sclerosis (MS) is a chronic disease of the central nervous system. The protective and insulating cells of the nerves of the brain and spinal cord are attached and destroyed by the body’s own immune system. This results in an individual constellation of symptoms for each patient. The exact mechanisms that lead to MS are still being investigated. However it is a complex interplay of infectious, environmental and genetic influences. Although new drugs are able to stop the progression of the disease to a large extent, the body’s immune system is slowed down. A cure for MS does not yet exist. In addition to the development of targeted drugs, the development of new measuring methods for the more accurate recording of individual symptoms is also important. This is the goal of the MitrendS study.",
@@ -28,11 +28,7 @@
   "coordination-bullet-2": "Stefano Napolitano, MIDATA",
   "partners-subheading": "Partners",
   "partners-text": "Find a complete list of our partners on our website",
-  "partners-button": "Our Partners",
-
-  "contact-heading": "Contact us",
-  "contact-text": "MIDATA Genossenschaft<br>c/o EvalueScience AG<br>Pfingstweidstrasse 16, 8005 Zürich<br>012 345 67 89",
-  "contact-email": "nims@usz.ch"
+  "partners-button": "Our Partners"
 
   },
   "de": {
@@ -124,7 +120,7 @@
             <p v-html="$t('data-text-1')"></p>
             <p v-html="$t('data-text-2')"></p>
             <div class="button-group centered left-aligned-large">
-              <a href="" target="_blank" class="button button-primary button-icon">
+              <a href="https://midata.coop" target="_blank" class="button button-primary button-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576"><path d="M576,56V184c0,21.47-26,32-41,17l-35.71-35.71L255.8,408.77a24,24,0,0,1-33.94,0l-22.63-22.63a24,24,0,0,1,0-33.94L442.76,108.68,407.05,73C392,57.9,402.66,32,424,32H552A24,24,0,0,1,576,56ZM407,302.79l-16,16a24,24,0,0,0-7,17V480H64V160H328a24,24,0,0,0,17-7l16-16c15.12-15.12,4.41-41-17-41H48A48,48,0,0,0,0,144V496a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V319.76C448,298.38,422.15,287.67,407,302.79Z"/></svg>
                 {{ $t('data-button') }}
               </a>
@@ -143,7 +139,7 @@
               <h2 class="heading centered">{{ $t('team-heading') }}</h2>
               <div class="margin-bottom">
                 <div class="button-group centered">
-                  <a href="" target="_blank" class="button button-primary button-icon">
+                  <a href="https://midata.coop/offer/mitrends/" target="_blank" class="button button-primary button-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576"><path d="M576,56V184c0,21.47-26,32-41,17l-35.71-35.71L255.8,408.77a24,24,0,0,1-33.94,0l-22.63-22.63a24,24,0,0,1,0-33.94L442.76,108.68,407.05,73C392,57.9,402.66,32,424,32H552A24,24,0,0,1,576,56ZM407,302.79l-16,16a24,24,0,0,0-7,17V480H64V160H328a24,24,0,0,0,17-7l16-16c15.12-15.12,4.41-41-17-41H48A48,48,0,0,0,0,144V496a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V319.76C448,298.38,422.15,287.67,407,302.79Z"/></svg>
                     {{ $t('team-button') }}
                   </a>
@@ -155,33 +151,12 @@
                 <li v-html="$t('coordination-bullet-2')" ></li>
               </ul>
               <h3 v-html="$t('partners-subheading')" class="subheading centered"></h3>
-              <p v-html="$t('partners-text')" class="centered"></p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </app-content-section>
-
-    <app-content-section color="greyish">
-      <div class="content-wrapper">
-        <div class="row row-centered row-middle row-reverse-large">
-
-          <div class="col col-large-5 scroll-effect">
-            <div>
-              <h2 class="heading centered">{{ $t('contact-heading') }}</h2>
-              <p v-html="$t('contact-text')" class="centered reduced-bottom-margin"></p>
+              <p v-html="$t('partners-text')" class="centered reduced-bottom-margin"></p>
               <div class="button-group centered">
-                <router-link tag="button" to="/take-part" class="button button-primary button-icon button-normal-case">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                    <path d="M502.3,190.8c3.9-3.1,9.7-0.2,9.7,4.7V400c0,26.5-21.5,48-48,48H48c-26.5,0-48-21.5-48-48V195.6c0-5,5.7-7.8,9.7-4.7
-                    c22.4,17.4,52.1,39.5,154.1,113.6c21.1,15.4,56.7,47.8,92.2,47.6c35.7,0.3,72-32.8,92.3-47.6C450.3,230.4,479.9,208.2,502.3,190.8z
-                     M256,320c23.2,0.4,56.6-29.2,73.4-41.4c132.7-96.3,142.8-104.7,173.4-128.7c5.8-4.5,9.2-11.5,9.2-18.9v-19c0-26.5-21.5-48-48-48H48
-                    C21.5,64,0,85.5,0,112v19c0,7.4,3.4,14.3,9.2,18.9c30.6,23.9,40.7,32.4,173.4,128.7C199.4,290.8,232.8,320.4,256,320L256,320z"/>
-                  </svg>
-                  {{ $t('contact-email') }}
-                </router-link>
+                <a href="https://mitrends.ch/#partners" target="_blank" class="button button-secondary button-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576"><path d="M576,56V184c0,21.47-26,32-41,17l-35.71-35.71L255.8,408.77a24,24,0,0,1-33.94,0l-22.63-22.63a24,24,0,0,1,0-33.94L442.76,108.68,407.05,73C392,57.9,402.66,32,424,32H552A24,24,0,0,1,576,56ZM407,302.79l-16,16a24,24,0,0,0-7,17V480H64V160H328a24,24,0,0,0,17-7l16-16c15.12-15.12,4.41-41-17-41H48A48,48,0,0,0,0,144V496a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V319.76C448,298.38,422.15,287.67,407,302.79Z"/></svg>
+                  {{ $t('partners-button') }}
+                </a>
               </div>
             </div>
           </div>
@@ -189,6 +164,8 @@
         </div>
       </div>
     </app-content-section>
+
+    <section-contact></section-contact>
 
     <app-footer></app-footer>
 
@@ -203,9 +180,11 @@
     import Footer from '@/components/shared/Footer.vue';
     import SectionNewsletterSignup from "@/components/shared/SectionNewsletterSignup";
     import SectionFeedback from "../components/shared/SectionFeedback";
+    import SectionContact from "../components/SectionContact";
 
     export default {
         components: {
+          SectionContact,
             SectionFeedback,
             SectionNewsletterSignup,
             'app-content-section': ContentSection,

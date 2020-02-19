@@ -9,7 +9,7 @@ const getters = {
 }
 
 const state = {
-    languages: ['en','de'],
+    languages: ['en'],
     projectId: '611aceb7-8f09-4fce-91bd-19ead22f15b8'
     //identificationActivity: ''
 };

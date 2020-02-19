@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <app-header project-name="Mitrends<br>Study" :languages="languages" hide-login></app-header>
+    <app-header project-name="Mitrends<br>Study" :languages="['en']" hide-login></app-header>
     <div class="content-area">
       <router-view></router-view>
     </div>

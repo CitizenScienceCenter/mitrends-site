@@ -9,6 +9,6 @@
     { "handle": "filesystem" },
     { "src": "/.*", "dest": "/index.html" }
   ],
-  "alias": "mitrends.staging.citizenscience.ch"
+  "alias": "mitrends.citizenscience.ch"
 }
 

@@ -3,7 +3,7 @@
 
   "en": {
 
-  "page-title": "The Cause of Health",
+  "page-title": "Take Part",
 
   "participating-heading": "Participating in the Study",
   "participating-text": "Who can participate?",
@@ -19,20 +19,21 @@
   "app-heading": "Use the MitrendS App",
   "app-text": "This is a tablet app, you can only use it with a tablet computer. The reason for that is that in order to do the exercises, you need a big enough screen. Mobile phones can therefore not be used.",
   "app-text-2": "Download the MitrendS tablet app here:",
-  "app-button": "Download the App",
+  "app-button-ios": "Download the iPad App",
+  "app-button-android": "Download the Android App",
 
   "exercises-heading": "The Exercises",
   "exercises-text": "As part of the study, three exercises will be performed:",
-  "exercises-bullet-1": "<a href='https://mitrends.ch/line-test/' target='_blank'>The lines exercise</a>",
-  "exercises-bullet-2": "<a href='https://mitrends.ch/move-dots-test/' target='_blank'>The points exercise</a>",
-  "exercises-bullet-3": "<a href='https://mitrends.ch/symbol-digit-modalities-test/' target='_blank'>The symbols exercise</a>",
+  "exercises-bullet-1": "The lines exercise",
+  "exercises-bullet-2": "The points exercise",
+  "exercises-bullet-3": "The symbols exercise",
+  "exercises-button": "About the Exercises",
 
   "procedure-heading": "Procedure",
   "procedure-1-title": "<b>Day 1</b>",
   "procedure-1-text": "Use your MIDATA credentials to log-in to the MitrendS App. In case you are new to MIDATA, you can create a new account directly via the MitrendS App. You hereby give your consent to the study project to evaluate your data as described <a href='https://ch.midata.coop/#/portal/terms/mitrends-cs-terms-of-use--1.0?lang=en' target='_blank'>here</a>.",
-  "procedure-1-bullet-1": "Register via MitrendS app. You hereby give your consent to MIDATA to evaluate your data.",
-  "procedure-1-bullet-2": "Fill in an initial questionnaire.",
-  "procedure-1-bullet-3": "Perform the series of exercises.",
+  "procedure-1-bullet-1": "Fill in an initial questionnaire.",
+  "procedure-1-bullet-2": "Perform the series of exercises.",
   "procedure-2-title": "<b>Day 2 and 3</b>",
   "procedure-2-bullet-1": "Perform the complete series of exercises (as many times as you want).",
   "procedure-3-title": "<b>Days 4 to 7</b>",
@@ -44,11 +45,7 @@
   "benefits-heading": "Benefits",
   "benefits-text-1": "At the end of the study, after the inclusion of all test persons and the final evaluation, you will receive an evaluation of your hand function and cognition exercises in comparison to other participants via your MIDATA account.",
   "benefits-text-2": "The results of the study project may help to improve the understanding and targeted treatment of patients with multiple sclerosis in the future and are a step towards individualized medicine.",
-  "benefits-text-3": "<b>With your contribution, you power medical research. Thank you!</b>",
-
-  "contact-heading": "Contact us",
-  "contact-text": "MIDATA Genossenschaft<br>c/o EvalueScience AG<br>Pfingstweidstrasse 16, 8005 Zürich<br>012 345 67 89",
-  "contact-email": "nims@usz.ch"
+  "benefits-text-3": "<b>With your contribution, you power medical research. Thank you!</b>"
 
   },
   "de": {
@@ -101,7 +98,7 @@
           <div class="col col-10 col-tablet-portrait-8 col-large-6 col-wrapping scroll-effect">
             <div>
               <div>
-                <img src="/img/image-tablet-2.png"/>
+                <img src="/img/image-tablet-symbols.png"/>
               </div>
             </div>
           </div>
@@ -112,9 +109,12 @@
               <p v-html="$t('app-text')" class="reduced-bottom-margin"></p>
               <p v-html="$t('app-text-2')" class="reduced-bottom-margin"></p>
               <div class="button-group centered left-aligned-large">
-                <a href="/take-part" target="_blank" class="button button-primary button-icon">
+                <a href="https://apps.apple.com/ch/app/mitrends-citizen-science/id1446748510?l=en" target="_blank" class="button button-primary button-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576"><path d="M576,56V184c0,21.47-26,32-41,17l-35.71-35.71L255.8,408.77a24,24,0,0,1-33.94,0l-22.63-22.63a24,24,0,0,1,0-33.94L442.76,108.68,407.05,73C392,57.9,402.66,32,424,32H552A24,24,0,0,1,576,56ZM407,302.79l-16,16a24,24,0,0,0-7,17V480H64V160H328a24,24,0,0,0,17-7l16-16c15.12-15.12,4.41-41-17-41H48A48,48,0,0,0,0,144V496a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V319.76C448,298.38,422.15,287.67,407,302.79Z"/></svg>
-                  {{ $t('app-button') }}</a>
+                  {{ $t('app-button-ios') }}</a>
+                <a href="https://play.google.com/store/apps/details?id=ch.bfh.i4mi.mitrends.citizenscience&hl=en" target="_blank" class="button button-primary button-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576"><path d="M576,56V184c0,21.47-26,32-41,17l-35.71-35.71L255.8,408.77a24,24,0,0,1-33.94,0l-22.63-22.63a24,24,0,0,1,0-33.94L442.76,108.68,407.05,73C392,57.9,402.66,32,424,32H552A24,24,0,0,1,576,56ZM407,302.79l-16,16a24,24,0,0,0-7,17V480H64V160H328a24,24,0,0,0,17-7l16-16c15.12-15.12,4.41-41-17-41H48A48,48,0,0,0,0,144V496a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V319.76C448,298.38,422.15,287.67,407,302.79Z"/></svg>
+                  {{ $t('app-button-android') }}</a>
               </div>
             </div>
           </div>
@@ -143,6 +143,9 @@
                 <li v-html="$t('exercises-bullet-2')" ></li>
                 <li v-html="$t('exercises-bullet-3')" ></li>
               </ul>
+              <div class="button-group centered left-aligned-large">
+                <router-link tag="button" to="/exercises" class="button button-secondary">{{ $t('exercises-button') }}</router-link>
+              </div>
             </div>
           </div>
 
@@ -154,7 +157,6 @@
               <ul>
                 <li v-html="$t('procedure-1-bullet-1')" ></li>
                 <li v-html="$t('procedure-1-bullet-2')" ></li>
-                <li v-html="$t('procedure-1-bullet-3')" ></li>
               </ul>
               <p v-html="$t('procedure-2-title')" class="reduced-bottom-margin"></p>
               <ul>
@@ -202,33 +204,7 @@
     </app-content-section>
 
 
-    <app-content-section color="greyish">
-      <div class="content-wrapper">
-        <div class="row row-centered row-middle row-reverse-large">
-
-          <div class="col col-large-5 scroll-effect">
-            <div>
-              <h2 class="heading centered">{{ $t('contact-heading') }}</h2>
-              <p v-html="$t('contact-text')" class="centered reduced-bottom-margin"></p>
-              <div class="button-group centered">
-                <router-link tag="button" to="/take-part" class="button button-primary button-icon button-normal-case">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                    <path d="M502.3,190.8c3.9-3.1,9.7-0.2,9.7,4.7V400c0,26.5-21.5,48-48,48H48c-26.5,0-48-21.5-48-48V195.6c0-5,5.7-7.8,9.7-4.7
-                    c22.4,17.4,52.1,39.5,154.1,113.6c21.1,15.4,56.7,47.8,92.2,47.6c35.7,0.3,72-32.8,92.3-47.6C450.3,230.4,479.9,208.2,502.3,190.8z
-                     M256,320c23.2,0.4,56.6-29.2,73.4-41.4c132.7-96.3,142.8-104.7,173.4-128.7c5.8-4.5,9.2-11.5,9.2-18.9v-19c0-26.5-21.5-48-48-48H48
-                    C21.5,64,0,85.5,0,112v19c0,7.4,3.4,14.3,9.2,18.9c30.6,23.9,40.7,32.4,173.4,128.7C199.4,290.8,232.8,320.4,256,320L256,320z"/>
-                  </svg>
-                  {{ $t('contact-email') }}
-                </router-link>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </app-content-section>
-
+    <section-contact></section-contact>
 
     <app-footer></app-footer>
 
@@ -243,9 +219,11 @@
     import Footer from '@/components/shared/Footer.vue';
     import SectionNewsletterSignup from "@/components/shared/SectionNewsletterSignup";
     import SectionFeedback from "../components/shared/SectionFeedback";
+    import SectionContact from "../components/SectionContact";
 
     export default {
         components: {
+          SectionContact,
             SectionFeedback,
             SectionNewsletterSignup,
             'app-content-section': ContentSection,

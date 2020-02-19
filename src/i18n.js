@@ -43,6 +43,9 @@ export const i18n = new VueI18n({
           'navigation-take-part': {
               'link': 'Take part'
           },
+          'navigation-exercises': {
+              'link': 'Exercises'
+          },
           'navigation-about': {
               'link': 'About us'
           },
