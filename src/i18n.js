@@ -44,10 +44,10 @@ export const i18n = new VueI18n({
               'link': 'Take part'
           },
           'navigation-exercises': {
-              'link': 'Exercises'
+              'link': 'The Exercises'
           },
           'navigation-about': {
-              'link': 'About us'
+              'link': 'Our Study'
           },
           'navigation-faq': {
               'link': 'FAQ'

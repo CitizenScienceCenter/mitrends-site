@@ -6,13 +6,13 @@
   "cover-heading": "Understanding<br>Multiple Sclerosis",
   "cover-subheading": "People-controlled data<br>for research on MS",
   "cover-button-primary": "Take Part",
-  "cover-button-secondary": "Learn more",
+  "cover-button-secondary": "About the Study",
 
   "study-heading": "What is this Study About?",
   "study-text-1": "Multiple Sclerosis (MS) is an inflammatory disease of the nervous system. In Switzerland, <a href='https://www.multiplesklerose.ch/de/ueber-ms/multiple-sklerose/vorkommen/' target='_blank'>around 15,000 people are affected</a>.",
-  "study-text-2": "The purpose of MitrendS is to discover new information about symptoms and physical limitations in patients with multiple sclerosis. In the Citizen Science project, healthy people can help to collect comparative data by using a tablet app designed for this purpose.",
-  "study-text-3": "By participating in this study, you will help to gain a deeper, more differentiated knowledge of the individual progression of the disease and symptoms of MS.",
-  "study-button": "More About the Study",
+  "study-text-2": "The purpose of MitrendS is to discover new information about symptoms and physical limitations in patients with Multiple Sclerosis. In the citizen science part of the project, healthy people can participate and collect baseline and comparative data by using a tablet app designed for this purpose.",
+  "study-text-3": "The MitrendS study will help researchers to gain a deeper, more differentiated knowledge of the individual progression of the disease and symptoms of MS.",
+  "study-button": "About the Study",
 
   "take-part-heading": "Help us With Your Contribution",
   "take-part-text": "With your contribution, you power medical research! Three exercises will be performed:",
@@ -73,7 +73,7 @@
               <p v-html="$t('study-text-2')" class="reduced-bottom-margin"></p>
               <p v-html="$t('study-text-3')" class="reduced-bottom-margin"></p>
               <div class="button-group centered left-aligned-large">
-                <router-link tag="button" to="/about" class="button button-secondary">{{ $t('study-button') }}</router-link>
+                <router-link tag="button" to="/about" class="button button-primary">{{ $t('study-button') }}</router-link>
               </div>
             </div>
           </div>
