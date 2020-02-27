@@ -4,7 +4,7 @@
   "en": {
 
   "cover-heading": "Understanding<br>Multiple Sclerosis",
-  "cover-subheading": "People-controlled data<br>for research on MS",
+  "cover-subheading": "Citizen-controlled data<br>for research on MS",
   "cover-button-primary": "Take Part",
   "cover-button-secondary": "About the Study",
 

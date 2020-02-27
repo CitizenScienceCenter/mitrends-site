@@ -10,7 +10,7 @@
   "participating-bullet-1": "Age 18 years or older",
   "participating-bullet-2": "Swiss resident",
   "participating-bullet-3": "Own and be able to use an Android or Apple tablet",
-  "participating-bullet-4": "Own a MIDATA account or be willing to create one",
+  "participating-bullet-4": "Own a <a href='https://www.midata.coop/' target='_blank'>MIDATA</a> account or be willing to create one",
   "participating-bullet-5": "Agree to follow the study protocol",
   "participating-bullet-6": "Willing to share the data collected while using MitrendS in an anonymized form with the study team",
   "protocol-heading": "Study Protocol",
@@ -42,7 +42,7 @@
 
   "benefits-heading": "Benefits",
   "benefits-text-1": "Your research participation will not bring you immediate personal benefits, however, in your MIDATA account you will find all the raw data collected during the exercises and some basic measurement of your results. You will have the chance to download and share those data through the MIDATA platform.",
-  "benefits-text-2": "The results of the study may help to improve the understanding and targeted treatment of patients with Multiple Sclerosis in the future and are a step towards individualized medicine. We will keep you informed about new findings and relevant updates about the project.",
+  "benefits-text-2": "The results of the study may help to improve the understanding and targeted treatment of patients with Multiple Sclerosis in the future and are a step towards individualized medicine. We will keep you informed via email about new findings and relevant updates about the project.",
   "benefits-text-3": "<b>With your contribution, you power medical research. Thank you!</b>"
 
   },

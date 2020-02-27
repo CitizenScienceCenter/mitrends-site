@@ -25,7 +25,7 @@
   "faq-9-question": "How long is the study?",
   "faq-9-answer": "<p>The study is scheduled to last two years. During this time you have the opportunity to participate for two weeks.</p>",
   "faq-10-question": "Will I discover if I have MS?",
-  "faq-10-answer": "<p>This app cannot tell you if you suffer from Multiple Sclerosis. It was developed as an aid for people who are already ill and is used to monitor their progress.</p>"
+  "faq-10-answer": "<p>This app cannot tell you if you suffer from Multiple Sclerosis. The tests are designed to surveil long-term changes in hand function and cognition, they are not able to diagnose Multiple Sclerosis.</p>"
 
   },
   "de": {

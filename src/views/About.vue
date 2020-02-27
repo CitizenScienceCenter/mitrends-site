@@ -39,7 +39,7 @@
   "analysis-bullet-2": "Dr. Cristóbal Esteban, <a href='https://bmi.inf.ethz.ch/' target='_blank'>Biomedical Informatics Lab</a>",
   "analysis-bullet-3": "Dr. Fernando Perez Cruz, <a href='https://datascience.ch/' target='_blank'>Swiss Data Science Center</a>",
   "ethics-subheading": "Ethics",
-  "ethics-bullet-1": "Prof. Dr. Effy Vayena, <a href='https://bioethics.ethz.ch/' target='_blank'>Bioethics</a>",
+  "ethics-bullet-1": "Prof. Dr. Effy Vayena, Chair of <a href='https://bioethics.ethz.ch/' target='_blank'>Bioethics ETH Zurich</a>",
   "partners-subheading": "Partners",
   "partners-text": "Find a complete list of our partners on our website",
   "partners-button": "Our Partners"
