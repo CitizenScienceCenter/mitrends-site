@@ -42,7 +42,12 @@
   "ethics-bullet-1": "Prof. Dr. Effy Vayena, Chair of <a href='https://bioethics.ethz.ch/' target='_blank'>Bioethics ETH Zurich</a>",
   "partners-subheading": "Partners",
   "partners-text": "Find a complete list of our partners on our website",
-  "partners-button": "Our Partners"
+  "partners-button": "Our Partners",
+  "sponsors-subheading": "Sponsors",
+  "sponsors-text": "The MitrendS app is provided by the MIDATA Cooperative. The following national initiatives have contributed to the development of the app:",
+  "sponsors-bullet-1": "PHRT - <a href='https://www.sfa-phrt.ch/projects' target='_blank'>Personalized Health and Related Technologies</a>",
+  "sponsors-bullet-2": "SDSC - <a href='https://datascience.ch/' target='_blank'>Swiss Data Science Center</a>",
+  "sponsors-bullet-3": "<a href='https://www.multiplesclerosis.uzh.ch/en.html' target='_blank'>Clinical Research Program Multiple Sclerosis</a>"
 
   },
   "de": {
@@ -157,7 +162,7 @@
                   </a>
                 </div>
               </div>
-              <div class="row row-wrapping row-centered">
+              <div class="row row-wrapping">
                 <div class="col col-wrapping col-large-6">
                   <h3 v-html="$t('coordination-subheading')" class="subheading"></h3>
                   <ul>
@@ -204,6 +209,15 @@
                       {{ $t('partners-button') }}
                     </a>
                   </div>
+                </div>
+                <div class="col col-wrapping col-large-6">
+                  <h3 v-html="$t('sponsors-subheading')" class="subheading"></h3>
+                  <p class="reduced-bottom-margin" v-html="$t('sponsors-text')"></p>
+                  <ul>
+                    <li v-html="$t('sponsors-bullet-1')" ></li>
+                    <li v-html="$t('sponsors-bullet-2')" ></li>
+                    <li v-html="$t('sponsors-bullet-3')" ></li>
+                  </ul>
                 </div>
               </div>
 
