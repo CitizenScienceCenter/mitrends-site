@@ -47,7 +47,7 @@ export const i18n = new VueI18n({
               'link': 'The Exercises'
           },
           'navigation-about': {
-              'link': 'Our Study'
+              'link': 'About'
           },
           'navigation-faq': {
               'link': 'FAQ'
