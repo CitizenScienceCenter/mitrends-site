@@ -12,6 +12,10 @@
 
     "de": {
 
+    "contact-heading": "Kontakt",
+    "contact-text": "<b>Neuroimmunologie und MS Forschung (nims)</b><br>Klinik für Neurologie<br>Universitätsspital Zürich<br>Frauenklinikstrasse 26, 8091 Zürich",
+    "contact-website": "nims-zh.ch",
+    "contact-email": "nims@usz.ch"
 
     }
 

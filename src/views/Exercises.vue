@@ -6,7 +6,7 @@
   "page-title": "Exercises",
 
   "lines-heading": "The Lines Exercise",
-  "lines-text": "Place your index finger of your left or right hand on the START circle and follow the dotted line to the GOAL circle as quickly and exactly as possible. The evaluation of the exercise consists of both the speed and the accuracy with which you follow the line. If you have a tablet pen (stylus or touchpen) and specify it when starting the app for the first time, you will regularly be asked to perform an iteration with the pen.",
+  "lines-text": "Place your index finger of your left or right hand on the START circle and follow the dotted line to the GOAL circle as quickly and exactly as possible. The evaluation of the exercise consists of both the speed and the accuracy with which you follow the line.<br>If you have a tablet pen (stylus or touchpen) and specify it when starting the app for the first time, you will regularly be asked to perform an iteration with the pen.",
   "lines-background-subheading": "Background",
   "lines-background-anatomy-title": "Anatomy",
   "lines-background-anatomy-text": "The movements of the hand are the result of a complex interaction of the processing of information. To make a movement, the following steps are performed: First, the information is recorded and then processed into an intended plan. Based on that, the necessary muscle groups are planned, and the movement is precisely coordinated. Finally, the movement performed is compared and verified with the intended target.",
@@ -26,6 +26,26 @@
 
   },
   "de": {
+
+  "page-title": "Übungen",
+
+  "lines-heading": "Die Linien-Übung",
+  "lines-text": "Setzen Sie den Zeigefinger der entsprechenden Hand in die Mitte des Start-Kreises auf und folgen Sie möglichst schnell und genau der gestrichelten Linie. Die Auswertung der Übung setzt sich sowohl aus der Geschwindigkeit als auch aus der Genauigkeit zusammen, mit der Sie der Linie folgen.<br>Falls Sie über einen Tablet Stift (auch Stylus oder Touchpen) verfügen und diesen beim erstmaligen Start der App angeben, werden Sie regelmässig gebeten, einen Durchlauf mit dem Stift durchzuführen.",
+  "lines-background-subheading": "Hintergrund",
+  "lines-background-anatomy-title": "Anatomie",
+  "lines-background-anatomy-text": "Die Bewegungen der Hand erfolgen aus einer komplexen Verarbeitungsabfolge. Um eine Bewegung durchzuführen, werden folgende Schritte umgesetzt: Als erstes werden die Informationen aufgenommen und anschliessend zu einem gewünschten Ziel verarbeitet. Aufgrund dieses Ziels werden die nötigen Muskelgruppen geplant, woraufhin die Bewegung präzise koordiniert wird. Abschliessend wird die durchgeführte Bewegung mit dem gewünschten Ziel verglichen und überprüft.",
+  "lines-background-context-title": "Zusammenhang",
+  "lines-background-context-text": "Die erwähnten Schritte werden in dieser Übung gefordert. Unterschiedliche neurologische Probleme können zur Folge haben, dass bei Patienten die Fähigkeit abnimmt, der Linie zu folgen. So können von uns allfällige Rückschlüsse auf bestimmte Defizite gemacht werden.",
+
+  "points-heading": "Die Punkte-Übung",
+  "points-text": "Wählen Sie mit Ihrem Daumen, Zeige- und Mittelfinger die blauen Punkte an. Es müssen alle drei Punkte gleichzeitig berührt werden. Sind die Punkte korrekt ausgewählt, leuchten diese auf. Anschliessend müssen die drei Punkte in drei schwarze Ringe geschoben werden. Sobald die blauen Punkte korrekt in den Ringen abgelegt wurden, springen die Punkte auf eine veränderte Ausgangsposition zurück und die Übung beginnt von vorne. Der Vorgang soll oft wie möglich innerhalb von 60 Sekunden wiederholt werden.",
+  "points-background-subheading": "Hintergrund",
+  "points-background-text": "Bei der Punkte-Übung werden die wichtigsten Finger der Hände verwendet. So sind für die Greifbewegungen der Hand gezielte und individuelle Bewegungen des Daumens, des Zeige- und Mittelfingers nötig.",
+
+  "symbols-heading": "Die Symbol-Übung",
+  "symbols-text": "In dieser Übung sehen Sie eine Abfolge von Figuren, die Sie anhand der Legende einer Nummer zuordnen sollen. Die Nummer kann, insofern die Spracherkennung aktiviert ist, laut genannt werden. Alternativ kann die entsprechende Nummer durch Tippen gewählt werden. Die Übung dauert insgesamt 90 Sekunden. Die Anzahl an korrekt den Symbolen zugeordneten Zahlen wird ausgewertet.",
+  "symbols-background-subheading": "Hintergrund",
+  "symbols-background-text": "Bei dieser Übung handelt es sich um die digitale Weiterentwicklung einer klinischen Routineuntersuchung, welche die Aufmerksamkeit und Konzentration untersucht."
 
   }
 

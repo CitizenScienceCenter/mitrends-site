@@ -48,6 +48,50 @@
   },
   "de": {
 
+
+  "page-title": "Teilnehmen",
+
+  "participating-heading": "Studienteilnahme",
+  "participating-text": "Wer kann teilnehmen?",
+  "participating-bullet-1": "Mind. 18 Jahre alt",
+  "participating-bullet-2": "Schweizer Bürgerinnen und Bürger",
+  "participating-bullet-3": "In Besitz und fähig, ein Android oder Apple Tablet zu benutzen",
+  "participating-bullet-4": "In Besitz eines <a href='https://www.midata.coop/' target='_blank'>MIDATA</a>-Accounts oder in Bereitschaft, einen Account zu erstellen",
+  "participating-bullet-5": "Zustimmung, dem Studienprotokoll zu folgen",
+  "participating-bullet-6": "In Bereitschaft, die bei der Verwendung von MitrendS gesammelten Daten in anonymisierter Form an das Studienteam weiterzugeben",
+  "protocol-heading": "Studienprotokoll",
+  "protocol-text": "Sie sollen sicherstellen, dass Sie für mindestens neun Tage an der Studie teilnehmen können. Während dieser Zeit werden an fünf Tagen Übungen durchgeführt, für die Sie jeden Tag etwa 5 Minuten benötigen. Dazwischen gibt es eine viertägige Pause ohne Übungen.",
+
+  "app-heading": "Wie verwende ich die MitrendS App?",
+  "app-text": "Dies ist eine Tablet-Applikation, welche Sie ausschliesslich mit dem Tablet verwenden können. Der Grund dafür ist, dass Sie zur Durchführung der Übungen einen ausreichend grossen Bildschirm benötigen. Smartphones können daher nicht verwendet werden.",
+  "app-text-2": "Laden Sie hier die MitrendS Citizen Science App herunter:",
+
+  "exercises-heading": "Die Übungen",
+  "exercises-text": "Im Rahmen dieser Studie werden drei Übungen durchgeführt:",
+  "exercises-bullet-1": "Die Linien-Übung",
+  "exercises-bullet-2": "Die Punkte-Übung",
+  "exercises-bullet-3": "Die Symbol-Übung",
+  "exercises-button": "Über die Übungen",
+
+  "procedure-heading": "Ablauf",
+  "procedure-1-title": "<b>Tag 1</b>",
+  "procedure-1-text": "Verwenden Sie Ihre MIDATA-Zugangsdaten, um sich in der MitrendS Citizen Science App anzumelden. Falls Sie neu bei MIDATA sind, können Sie direkt über die MitrendS App ein neues Konto erstellen. Verwenden Sie die App das erste Mal, müssen Sie den <a href='https://ch.midata.coop/#/portal/terms/mitrends-cs-terms-of-use--1.0?lang=de' target='_blank'>Nutzungsbedingungen</a> der Applikation zustimmen, sowie bestätigen, dass Ihre Daten in anonymisierter Form im Rahmen der Studie ausgewertet werden dürfen.",
+  "procedure-1-bullet-1": "Füllen Sie einen Einstiegsfragebogen aus.",
+  "procedure-1-bullet-2": "Führen Sie die Übungsreihe durch.",
+  "procedure-2-title": "<b>Tag 2 und 3</b>",
+  "procedure-2-bullet-1": "Führen Sie die gesamte Übungsreihe durch (so oft Sie möchten).",
+  "procedure-3-title": "<b>Tag 4 bis 7</b>",
+  "procedure-3-bullet-1": "Machen Sie eine Pause, keine Übungen",
+  "procedure-4-title": "<b>Tag 8 und 9</b>",
+  "procedure-4-bullet-1": "Führen Sie die gesamte Übungsreihe mindestens einmal täglich durch.",
+  "procedure-subtext": "Danach gibt es keine geplanten Übungen mehr. Es steht Ihnen jedoch frei, die Übungen alleine durchzuführen. Ihre Daten werden weiterhin in Ihrem MIDATA-Konto gespeichert und stehen uns zur Auswertung zur Verfügung.",
+
+  "benefits-heading": "Nutzen",
+  "benefits-text-1": "Ihre Forschungsteilnahme wird Ihnen keinen unmittelbaren persönlichen Nutzen bringen. Jedoch finden Sie in Ihrem MIDATA-Konto alle während der Übungen gesammelten Rohdaten und einige grundlegende Messungen Ihrer Ergebnisse. Sie werden die Möglichkeit haben, diese Daten über die MIDATA-Plattform herunterzuladen und mit anderen zu teilen.",
+  "benefits-text-2": "Die Ergebnisse des Studienprojekts können in Zukunft zu einem besseren Verständnis des Fortschreitens der Erkrankung und einer zielgerichteten Behandlung von Patienten und Patientinnen mit Multipler Sklerose beitragen. Zudem bietet das Projekt ein Schritt in Richtung individualisierter Medizin, womit ein auf die Betroffenen zugeschnittener Behandlungsplan ermöglicht wird. Werden während der Studie neue Erkenntnisse gewonnen, werden Sie per E-Mail über die MIDATA Plattform informiert.",
+  "benefits-text-3": "<b>Mit Ihrem Beitrag treiben Sie die medizinische Forschung voran. Vielen Dank!</b>"
+
+
   }
 
   }

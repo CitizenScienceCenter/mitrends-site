@@ -1,5 +1,6 @@
 import Home from '@/views/Home';
 import TakePart from '@/views/TakePart';
+import Study from '@/views/Study';
 import Exercises from '@/views/Exercises';
 import About from '@/views/About';
 import FAQ from '@/views/FAQ';
@@ -20,6 +21,11 @@ export const routes = [
                 path: "take-part",
                 component: TakePart,
                 meta: {i18n: 'navigation-take-part', nav: true}
+            },
+            {
+                path: "study",
+                component: Study,
+                meta: {i18n: 'navigation-study', nav: true}
             },
             {
                 path: "exercises",

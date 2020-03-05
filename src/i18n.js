@@ -43,20 +43,49 @@ export const i18n = new VueI18n({
           'navigation-take-part': {
               'link': 'Take part'
           },
+          'navigation-study': {
+              'link': 'The Study'
+          },
           'navigation-exercises': {
               'link': 'The Exercises'
           },
-          'navigation-about': {
-              'link': 'About'
-          },
           'navigation-faq': {
               'link': 'FAQ'
+          },
+          'navigation-about': {
+              'link': 'About us'
           },
           'navigation-terms': {
               'link': 'Privacy Policy & Terms of Use'
           }
 
+      },
+      'de': {
 
+          "site-title": "MitrendS Studie | Citizen Science Center Zurich",
+          "site-description": "Schweizer Bevölkerung unterstützt mit ihren Daten die MS-Forschung",
+
+          'navigation-homepage': {
+              'link': 'Home'
+          },
+          'navigation-take-part': {
+              'link': 'Teilnehmen'
+          },
+          'navigation-study': {
+              'link': 'Die Studie'
+          },
+          'navigation-exercises': {
+              'link': 'Übungen'
+          },
+          'navigation-faq': {
+              'link': 'FAQ'
+          },
+          'navigation-about': {
+              'link': 'Über uns'
+          },
+          'navigation-terms': {
+              'link': 'Privacy Policy & Terms of Use'
+          }
 
       }
 
