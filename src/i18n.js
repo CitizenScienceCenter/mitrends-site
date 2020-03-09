@@ -35,7 +35,7 @@ export const i18n = new VueI18n({
       'en': {
 
           "site-title": "MitrendS Study | Citizen Science Center Zurich",
-          "site-description": "Citizen-controlled data for research on ms",
+          "site-description": "Citizen-controlled data for research on MS",
 
           'navigation-homepage': {
               'link': 'Home'
@@ -63,7 +63,7 @@ export const i18n = new VueI18n({
       'de': {
 
           "site-title": "MitrendS Studie | Citizen Science Center Zurich",
-          "site-description": "Schweizer Bevölkerung unterstützt mit ihren Daten die MS-Forschung",
+          "site-description": "Durch die Schweizer Bevölkerung unterstützte MS Forschung",
 
           'navigation-homepage': {
               'link': 'Home'
