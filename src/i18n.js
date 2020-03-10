@@ -63,7 +63,7 @@ export const i18n = new VueI18n({
       'de': {
 
           "site-title": "MitrendS Studie | Citizen Science Center Zurich",
-          "site-description": "Durch die Schweizer Bevölkerung unterstützte MS Forschung",
+          "site-description": "Bürger generieren Daten für die MS-Forschung",
 
           'navigation-homepage': {
               'link': 'Home'

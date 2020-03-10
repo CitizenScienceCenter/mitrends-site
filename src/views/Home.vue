@@ -26,7 +26,7 @@
   "de": {
 
   "cover-heading": "Multiple Sklerose<br>verstehen",
-  "cover-subheading": "Durch die Schweizer Bevölkerung unterstützte MS Forschung",
+  "cover-subheading": "Bürger generieren Daten für die MS-Forschung",
   "cover-button-primary": "Teilnehmen",
   "cover-button-secondary": "Über die Studie",
 
