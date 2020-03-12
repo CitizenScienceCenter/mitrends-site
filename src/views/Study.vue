@@ -26,7 +26,7 @@
   },
   "de": {
 
-  "page-title": "Die Study",
+  "page-title": "Die Studie",
 
   "ms-heading": "Was ist Multiple Sklerose?",
   "ms-text": "Multiple Sklerose (MS) ist eine chronische Erkrankung des zentralen Nervensystems. Die schützenden und isolierenden Zellen der Nerven des Gehirns und des Rückenmarks werden durch das körpereigene Immunsystem angegriffen und zerstört. Dadurch entsteht bei jeder Person eine individuelle Symptomkonstellation. Welche Mechanismen genau zu diesem Krankheitsgeschehen beitragen und welche Zusammenhänge mit anderen Krankheitsaspekten bestehen, ist aktuell Gegenstand vieler Untersuchungen. Es handelt sich jedoch um ein komplexes Zusammenspiel von infektiösen, umweltbedingten und genetischen Einflussfaktoren. Neue Medikamente sind zwar dazu in der Lage, das Fortschreiten der Erkrankung weitgehend aufzuhalten, allerdings geschieht dies durch ein gezieltes Ausbremsen der Immunabwehr des Körpers. Eine Heilung für MS existiert bisher nicht. Nebst der Entwicklung gezielt ansetzender Medikamente ist ebenso die Entwicklung neuer Messmethoden zur präziseren Erfassung der individuellen Symptome wichtig. Genau dies ist das Ziel der MitrendS-Studie.",
