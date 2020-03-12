@@ -5,7 +5,7 @@
 
   "page-title": "The Study",
 
-  "ms-heading": "What is Multiple Sclerosis?",
+  "ms-heading": "What Is Multiple Sclerosis?",
   "ms-text": "Multiple Sclerosis (MS) is a chronic disease of the central nervous system. The protective and insulating cells of the nerves of the brain and spinal cord are attacked and destroyed by the body’s immune system. This results in an individual constellation of symptoms for each patient. The exact mechanisms that lead to MS are still being investigated. At the moment we know that it is a complex interaction of multiple sources. Infectious as well as genetic and environmental influences contribute to the development of the disease.  Although new drugs are able to stop the progression of the disease to a large extent, it involves slowing down the body’s immune system, which leads to side effects such as increased susceptibility to sickness.  A cure for MS does not yet exist. In addition to the development of targeted drugs, the development of new measurement methods for the more accurate recording of individual symptoms is also important. This is the goal of the MitrendS study.",
 
   "study-heading": "The Study",
@@ -15,11 +15,13 @@
   "study-text-4": "By participating in this citizen science project, you will help us to gain a deeper, more differentiated knowledge of the individual progression of the disease and symptoms of MS.",
   "study-text-5": "To learn more about the study, visit our website:",
   "study-button": "MitrendS.ch",
+  "study-button-link" : "https://mitrends.ch/en",
 
   "data-heading": "Data Usage",
   "data-text-1": "The data is stored on individual user accounts on the MIDATA platform. Thus, the data remains completely in the possession and under the control of the users. The non-profit MIDATA cooperative runs a platform which supports data-driven research through patient empowerment and citizen science approaches. The MIDATA platform provides a personal and secure environment to merge the data collected by various mobile applications (i.e., MitrendS) with health-related data from hospitals and physicians. This data is used for results evaluation and research. Users have complete control about data sharing. Any type of data sharing requires their consent.",
   "data-text-2": "For further information about MIDATA and its structure, visit:",
-  "data-button": "midata.coop"
+  "data-button": "midata.coop",
+  "data-button-link" : "https://www.midata.coop/en"
 
   },
   "de": {
@@ -36,11 +38,13 @@
   "study-text-4": "Mit der Teilnahme an dieser Studie helfen Sie uns vertiefte, differenzierte Kenntnisse über den individuellen Krankheitsverlauf und Symptome der Multiplen Sklerose zu erlangen.",
   "study-text-5": "Um mehr über die Studie zu erfahren, besuchen Sie unsere Website:",
   "study-button": "MitrendS.ch",
+  "study-button-link" : "https://mitrends.ch/de",
 
   "data-heading": "Datennutzung",
   "data-text-1": "Die Daten werden auf dem entsprechenden Benutzerkonto der MIDATA-Plattform gespeichert. Somit bleiben die Daten vollständig in Besitz und unter Kontrolle der Nutzenden. Die MIDATA Genossenschaft ist eine komplett unabhängige Plattform und unterstützt datengetriebene Forschung durch Patientenbefähigung und «Citizen Science» Ansätze. Die MIDATA-Plattform bietet eine persönliche und sichere Umgebung, um die von verschiedenen mobilen Anwendungen (z.B. MitrendS) gesammelten Daten mit gesundheitsbezogenen Daten von Spitälern und Gesundheitsfachpersonen zusammenzuführen. Diese Daten werden für die Ergebnisbewertung und Forschung verwendet. Die Nutzerinnen und Nutzer haben die vollständige Kontrolle über die gemeinsame Nutzung der Daten. Jede Art der gemeinsamen Nutzung von Daten erfordert ihre Zustimmung.",
   "data-text-2": "Weitere Informationen über MIDATA:",
-  "data-button": "midata.coop"
+  "data-button": "midata.coop",
+  "data-button-link" : "https://www.midata.coop"
 
   }
 
@@ -96,7 +100,7 @@
             <p v-html="$t('study-text-5')"></p>
             <div class="margin-bottom">
               <div class="button-group centered left-aligned-large">
-                <a href="https://mitrends.ch/" target="_blank" class="button button-primary button-icon button-normal-case">
+                <a :href="$t('study-button-link')" target="_blank" class="button button-primary button-icon button-normal-case">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576"><path d="M576,56V184c0,21.47-26,32-41,17l-35.71-35.71L255.8,408.77a24,24,0,0,1-33.94,0l-22.63-22.63a24,24,0,0,1,0-33.94L442.76,108.68,407.05,73C392,57.9,402.66,32,424,32H552A24,24,0,0,1,576,56ZM407,302.79l-16,16a24,24,0,0,0-7,17V480H64V160H328a24,24,0,0,0,17-7l16-16c15.12-15.12,4.41-41-17-41H48A48,48,0,0,0,0,144V496a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V319.76C448,298.38,422.15,287.67,407,302.79Z"/></svg>
                   {{ $t('study-button') }}
                 </a>
@@ -127,7 +131,7 @@
             <p v-html="$t('data-text-1')"></p>
             <p v-html="$t('data-text-2')"></p>
             <div class="button-group centered left-aligned-large">
-              <a href="https://midata.coop" target="_blank" class="button button-primary button-icon button-normal-case">
+              <a :href="$t('data-button-link')" target="_blank" class="button button-primary button-icon button-normal-case">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 576"><path d="M576,56V184c0,21.47-26,32-41,17l-35.71-35.71L255.8,408.77a24,24,0,0,1-33.94,0l-22.63-22.63a24,24,0,0,1,0-33.94L442.76,108.68,407.05,73C392,57.9,402.66,32,424,32H552A24,24,0,0,1,576,56ZM407,302.79l-16,16a24,24,0,0,0-7,17V480H64V160H328a24,24,0,0,0,17-7l16-16c15.12-15.12,4.41-41-17-41H48A48,48,0,0,0,0,144V496a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V319.76C448,298.38,422.15,287.67,407,302.79Z"/></svg>
                 {{ $t('data-button') }}
               </a>

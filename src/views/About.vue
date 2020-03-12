@@ -17,8 +17,13 @@
 
   "sdsc-subheading": "Swiss Data Science Center",
 
-  "usz-subheading": "Neurology and MS Research (nims)"
+  "usz-subheading": "Neurology and MS Research (nims)",
 
+  "sponsors-heading": "Sponsors",
+  "sponsors-text": "The MitrendS app is provided by the MIDATA Cooperative. The following national initiatives have contributed to the development of the app:",
+  "sponsors-bullet-1": "PHRT - <a href='https://www.sfa-phrt.ch/projects' target='_blank'>Personalized Health and Related Technologies</a>",
+  "sponsors-bullet-2": "SDSC - <a href='https://datascience.ch/' target='_blank'>Swiss Data Science Center</a>",
+  "sponsors-bullet-3": "<a href='https://www.multiplesclerosis.uzh.ch/en.html' target='_blank'>Clinical Research Program Multiple Sclerosis</a>"
 
   },
   "de": {
@@ -37,7 +42,13 @@
 
   "sdsc-subheading": "Swiss Data Science Center",
 
-  "usz-subheading": "Neurology and MS Research (nims)"
+  "usz-subheading": "Neurology and MS Research (nims)",
+
+  "sponsors-heading": "Sponsoren",
+  "sponsors-text": "Die MitrendS-App wird von der MIDATA-Genossenschaft bereitgestellt. Die folgenden nationalen Initiativen haben zur Entwicklung der App beigetragen:",
+  "sponsors-bullet-1": "PHRT - <a href='https://www.sfa-phrt.ch/projects' target='_blank'>Personalized Health and Related Technologies</a>",
+  "sponsors-bullet-2": "SDSC - <a href='https://datascience.ch/' target='_blank'>Swiss Data Science Center</a>",
+  "sponsors-bullet-3": "<a href='https://www.multiplesclerosis.uzh.ch/en.html' target='_blank'>Clinical Research Program Multiple Sclerosis</a>"
 
   }
 
@@ -69,11 +80,6 @@
   "partners-subheading": "Partners",
   "partners-text": "Find a complete list of our partners on our website",
   "partners-button": "Our Partners",
-  "sponsors-subheading": "Sponsors",
-  "sponsors-text": "The MitrendS app is provided by the MIDATA Cooperative. The following national initiatives have contributed to the development of the app:",
-  "sponsors-bullet-1": "PHRT - <a href='https://www.sfa-phrt.ch/projects' target='_blank'>Personalized Health and Related Technologies</a>",
-  "sponsors-bullet-2": "SDSC - <a href='https://datascience.ch/' target='_blank'>Swiss Data Science Center</a>",
-  "sponsors-bullet-3": "<a href='https://www.multiplesclerosis.uzh.ch/en.html' target='_blank'>Clinical Research Program Multiple Sclerosis</a>"
   -->
   <div>
 
@@ -103,6 +109,7 @@
                       <li>Gabriel Hess</li>
                       <li>Stefan Iseli</li>
                       <li>Carole Kaiser</li>
+                      <li>Alexander Kreutz</li>
                       <li>Daniel Lawniczak</li>
                       <li>Lea Meier</li>
                       <li>François von Kaenel</li>
@@ -252,6 +259,24 @@
               -->
 
             </div>
+          </div>
+
+        </div>
+      </div>
+    </app-content-section>
+
+    <app-content-section color="light-greyish">
+      <div class="content-wrapper">
+        <div class="row row-centered">
+
+          <div class="col col-large-6 scroll-effect">
+            <h2 class="heading centered">{{ $t('sponsors-heading') }}</h2>
+            <p class="reduced-bottom-margin" v-html="$t('sponsors-text')"></p>
+            <ul>
+              <li v-html="$t('sponsors-bullet-1')" ></li>
+              <li v-html="$t('sponsors-bullet-2')" ></li>
+              <li v-html="$t('sponsors-bullet-3')" ></li>
+            </ul>
           </div>
 
         </div>

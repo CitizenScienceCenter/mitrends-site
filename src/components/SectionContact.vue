@@ -3,7 +3,7 @@
 
     "en": {
 
-    "contact-heading": "Contact us",
+    "contact-heading": "Contact Us",
     "contact-text": "<b>Neuroimmunology and MS Research</b><br>Department of Neurology<br>University Hospital Zurich<br>Frauenklinikstrasse 26, 8091 Zürich",
     "contact-website": "nims-zh.ch",
     "contact-email": "nims@usz.ch"

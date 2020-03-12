@@ -8,13 +8,13 @@
   "cover-button-primary": "Take Part",
   "cover-button-secondary": "About the Study",
 
-  "study-heading": "What is this Study About?",
+  "study-heading": "What Is This Study About?",
   "study-text-1": "Multiple Sclerosis (MS) is an inflammatory disease of the nervous system. In Switzerland, <a href='https://www.multiplesklerose.ch/de/ueber-ms/multiple-sklerose/vorkommen/' target='_blank'>around 15,000 people are affected</a>.",
   "study-text-2": "The purpose of MitrendS is to discover new information about symptoms and physical limitations in patients with Multiple Sclerosis. In the citizen science part of the project, healthy people can participate and collect baseline and comparative data by using a tablet app designed for this purpose.",
   "study-text-3": "The MitrendS study will help researchers to gain a deeper, more differentiated knowledge of the individual progression of the disease and symptoms of MS.",
   "study-button": "About the Study",
 
-  "take-part-heading": "Help us With Your Contribution",
+  "take-part-heading": "Help Us With Your Contribution",
   "take-part-text": "With your contribution, you power medical research! Three exercises will be performed:",
   "take-part-bullet-1": "The lines exercise",
   "take-part-bullet-2": "The points exercise",
@@ -26,7 +26,7 @@
   "de": {
 
   "cover-heading": "Multiple Sklerose<br>verstehen",
-  "cover-subheading": "Bürger generieren Daten für die MS-Forschung",
+  "cover-subheading": "Bürger generieren Daten für<br>die MS-Forschung",
   "cover-button-primary": "Teilnehmen",
   "cover-button-secondary": "Über die Studie",
 
@@ -51,7 +51,7 @@
 <template>
   <div>
 
-    <app-cover imageUrl="/img/cover.jpg" goal="3" logoUrl="/img/logo-mitrends.svg">
+    <app-cover imageUrl="/img/cover.jpg" goal="3" logoUrl="/img/logo-combo.png" logosMitrends>
       <div class="row row-centered">
         <div class="col col-large-8">
           <h2 class="cover-heading scroll-effect" v-html="$t('cover-heading')"></h2>
@@ -66,7 +66,7 @@
         <div class="col col-large-8">
           <div class="button-group centered scroll-effect scroll-effect-delayed-2">
             <router-link tag="button" to="/take-part" class="button button-primary">{{ $t('cover-button-primary') }}</router-link>
-            <router-link tag="button" to="/about" class="button button-secondary button-secondary-inverted">{{ $t('cover-button-secondary') }}</router-link>
+            <router-link tag="button" to="/study" class="button button-secondary button-secondary-inverted">{{ $t('cover-button-secondary') }}</router-link>
           </div>
         </div>
       </div>
@@ -89,7 +89,7 @@
               <p v-html="$t('study-text-2')" class="reduced-bottom-margin"></p>
               <p v-html="$t('study-text-3')" class="reduced-bottom-margin"></p>
               <div class="button-group centered left-aligned-large">
-                <router-link tag="button" to="/about" class="button button-primary">{{ $t('study-button') }}</router-link>
+                <router-link tag="button" to="/study" class="button button-primary">{{ $t('study-button') }}</router-link>
               </div>
             </div>
           </div>
