@@ -15,7 +15,7 @@
   "study-text-4": "By participating in this citizen science project, you will help us to gain a deeper, more differentiated knowledge of the individual progression of the disease and symptoms of MS.",
   "study-text-5": "To learn more about the study, visit our website:",
   "study-button": "MitrendS.ch",
-  "study-button-link" : "https://mitrends.ch/en",
+  "study-button-link" : "https://mitrends.ch",
 
   "data-heading": "Data Usage",
   "data-text-1": "The data is stored on individual user accounts on the MIDATA platform. Thus, the data remains completely in the possession and under the control of the users. The non-profit MIDATA cooperative runs a platform which supports data-driven research through patient empowerment and citizen science approaches. The MIDATA platform provides a personal and secure environment to merge the data collected by various mobile applications (i.e., MitrendS) with health-related data from hospitals and physicians. This data is used for results evaluation and research. Users have complete control about data sharing. Any type of data sharing requires their consent.",

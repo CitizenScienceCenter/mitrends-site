@@ -48,7 +48,7 @@
   "sponsors-text": "Die MitrendS-App wird von der MIDATA-Genossenschaft bereitgestellt. Die folgenden nationalen Initiativen haben zur Entwicklung der App beigetragen:",
   "sponsors-bullet-1": "PHRT - <a href='https://www.sfa-phrt.ch/projects' target='_blank'>Personalized Health and Related Technologies</a>",
   "sponsors-bullet-2": "SDSC - <a href='https://datascience.ch/' target='_blank'>Swiss Data Science Center</a>",
-  "sponsors-bullet-3": "<a href='https://www.multiplesclerosis.uzh.ch/en.html' target='_blank'>Clinical Research Program Multiple Sclerosis</a>"
+  "sponsors-bullet-3": "<a href='https://www.multiplesclerosis.uzh.ch/de.html' target='_blank'>Klinischer Forschungsschwerpunkt Multiple Sklerose</a>"
 
   }
 
@@ -135,7 +135,7 @@
                     <h3 v-html="$t('eth-subheading-2')" class="subheading reduced-bottom-margin"></h3>
                     <ul class="reduced-bottom-margin">
                       <li>Dr. Felix Gille</li>
-                      <li>Prof. Dr. Effy Vaneya</li>
+                      <li>Prof. Dr. Effy Vayena</li>
                     </ul>
                     <h3 v-html="$t('eth-subheading-3')" class="subheading reduced-bottom-margin"></h3>
                     <ul class="reduced-bottom-margin">
