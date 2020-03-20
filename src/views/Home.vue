@@ -31,7 +31,7 @@
   "cover-button-secondary": "Über die Studie",
 
   "study-heading": "Ziel der Studie",
-  "study-text-1": "Multiple Sklerose (MS) ist eine entzündliche Erkrankung des zentralen Nervensystems. In der Schweiz <a href='https://www.multiplesklerose.ch/de/ueber-ms/multiple-sklerose/vorkommen/' target='_blank'>sind rund 150'000 Personen betroffen</a>.",
+  "study-text-1": "Multiple Sklerose (MS) ist eine entzündliche Erkrankung des zentralen Nervensystems. In der Schweiz <a href='https://www.multiplesklerose.ch/de/ueber-ms/multiple-sklerose/vorkommen/' target='_blank'>sind rund 15'000 Personen betroffen</a>.",
   "study-text-2": "Ziel von MitrendS ist, neue Informationen über die Symptome und körperlichen Einschränkungen bei Patientinnen und Patienten mit MS zu entdecken. Durch die Teilnahme am Citizen Science Projekt können gesunde Personen bei der Erhebung von Vergleichsdaten mithelfen. Dies indem sie eine dafür entwickelte MitrendS Citizen Science Tablet-Applikation über eine bestimmte Zeit verwenden.",
   "study-text-3": "Durch Ihre Teilnahme an dieser Studie helfen Sie, ein tieferes, differenziertes Wissen über den individuellen Verkauf der Krankheit und die Symptome von MS zu erlangen.",
   "study-button": "Über die Studie",
