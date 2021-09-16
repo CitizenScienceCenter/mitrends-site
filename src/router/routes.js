@@ -17,11 +17,11 @@ export const routes = [
                 component: Home,
                 meta: {i18n: "navigation-homepage",nav: false}
             },
-            {
-                path: "take-part",
-                component: TakePart,
-                meta: {i18n: 'navigation-take-part', nav: true}
-            },
+            // {
+            //     path: "take-part",
+            //     component: TakePart,
+            //     meta: {i18n: 'navigation-take-part', nav: true}
+            // },
             {
                 path: "study",
                 component: Study,
@@ -37,11 +37,11 @@ export const routes = [
                 component: About,
                 meta: {i18n: 'navigation-about', nav: true}
             },
-            {
-                path: "faq",
-                component: FAQ,
-                meta: {i18n: 'navigation-faq', nav: true}
-            },
+            // {
+            //     path: "faq",
+            //     component: FAQ,
+            //     meta: {i18n: 'navigation-faq', nav: true}
+            // },
             {
                 path: "terms",
                 component: Terms,

@@ -65,8 +65,8 @@
       <div class="row row-centered">
         <div class="col col-large-8">
           <div class="button-group centered scroll-effect scroll-effect-delayed-2">
-            <router-link tag="button" to="/take-part" class="button button-primary">{{ $t('cover-button-primary') }}</router-link>
-            <router-link tag="button" to="/study" class="button button-secondary button-secondary-inverted">{{ $t('cover-button-secondary') }}</router-link>
+            <!-- <router-link tag="button" to="/take-part" class="button button-primary">{{ $t('cover-button-primary') }}</router-link> -->
+            <router-link tag="button" to="/study" class="button button-primary">{{ $t('cover-button-secondary') }}</router-link>
           </div>
         </div>
       </div>
@@ -120,9 +120,9 @@
                 <li v-html="$t('take-part-bullet-2')" ></li>
                 <li v-html="$t('take-part-bullet-3')" ></li>
               </ul>
-              <div class="button-group centered left-aligned-large">
+              <!-- <div class="button-group centered left-aligned-large">
                 <router-link tag="button" to="/take-part" class="button button-primary">{{ $t('take-part-button') }}</router-link>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -132,10 +132,11 @@
 
     <section-contact></section-contact>
 
-    <section-s-d-g goal="3" color="more-greyish">
+    <section-s-d-g goal="3" color="greyish">
       This project supports Goal 3 of the UN SDGs: Ensure healthy lives and promote well-being for all at all ages, by accelerating and innovating in health research and development.
     </section-s-d-g>
 
+    <section-newsletter-signup></section-newsletter-signup>
 
     <app-footer></app-footer>
 
